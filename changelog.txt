@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.11.3
+Game Versions: e1.8.0
+
+* Fix teleportation issue when sending messenger to a target that's in a settlement
+---------------------------------------------------------------------------------------------------
 Version: 1.1.11.2
 Game Versions: e1.8.0
 
