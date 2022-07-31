@@ -2,6 +2,12 @@
 Version: 1.1.11.3
 Game Versions: e1.8.0
 
+* Fix faction selection issue in the Kingdom -> Diplomacy view, alliances/war/pacts listing should
+now be correct, as well as information in the tooltips.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.11.3
+Game Versions: e1.8.0
+
 * Fix teleportation issue when sending messenger to a target that's in a settlement
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.11.2

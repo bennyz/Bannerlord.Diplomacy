@@ -22,14 +22,19 @@ namespace Diplomacy.Patches
             var instance = methodInfo.GetType().GetField("_instance", BindingFlags.NonPublic | BindingFlags.Instance);
             if (instance != null && instance.GetValue(methodInfo) is ViewModelMixin.KingdomTruceItemVmMixin)
             {
-                var MixinInstance = (ViewModelMixin.KingdomTruceItemVmMixin) instance.GetValue(methodInfo);
-                var BadVm = MixinInstance.GetType().BaseType.GetField("_vm", BindingFlags.Instance | BindingFlags.NonPublic);
-                // Replace VM with obj
-                BadVm.SetValue(MixinInstance, new WeakReference<KingdomTruceItemVM>((KingdomTruceItemVM)obj));
+                if (!Environment.StackTrace.Contains("OnRefresh"))
+                {
+                    var MixinInstance = (ViewModelMixin.KingdomTruceItemVmMixin) instance.GetValue(methodInfo);
+                    var BadVm = MixinInstance.GetType().BaseType.GetField("_vm", BindingFlags.Instance | BindingFlags.NonPublic);
+                    // Replace VM with obj
+                    BadVm.SetValue(MixinInstance, new WeakReference<KingdomTruceItemVM>((KingdomTruceItemVM) obj));
 
-                // Replace private _factionN reference
-                var vm = MixinInstance.GetType().GetField("_faction2", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.IgnoreCase);
-                vm.SetValue(MixinInstance, ((KingdomTruceItemVM) obj).Faction2);
+                    // Replace private _factionN reference
+                    var vm = MixinInstance.GetType().GetField("_faction2", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.IgnoreCase);
+                    vm.SetValue(MixinInstance, ((KingdomTruceItemVM) obj).Faction2);
+                    MixinInstance.GetType().GetProperty("DiplomacyProperties").SetValue(MixinInstance, new Diplomacy.ViewModel.DiplomacyPropertiesVM(((KingdomTruceItemVM) obj).Faction1, ((KingdomTruceItemVM) obj).Faction2));
+                    MixinInstance.OnRefresh();
+                }
             }
         }
     }
