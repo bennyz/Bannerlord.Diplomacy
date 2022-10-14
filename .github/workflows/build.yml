@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - main
+      - 1.1.13
 
 env:
   # Disable the .NET logo in the console output.
