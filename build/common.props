@@ -2,7 +2,7 @@
 
     <!--Module Version-->
     <PropertyGroup>
-        <Version>1.1.11</Version>
+        <Version>1.1.13</Version>
     </PropertyGroup>
 
     <!-- Versions of Major Dependencies (For Package References & SubModule.xml Substitution) -->
@@ -10,17 +10,17 @@
         <!--BuildResources Version-->
         <BuildResourcesVersion>1.0.1.68</BuildResourcesVersion>
         <!--Harmony Version-->
-        <HarmonyVersion>2.2.1</HarmonyVersion>
+        <HarmonyVersion>2.2.2</HarmonyVersion>
         <!--ButterLib Version-->
-        <ButterLibVersion>2.1.13</ButterLibVersion>
+        <ButterLibVersion>2.2.4</ButterLibVersion>
         <!--MCM Version-->
-        <MCMVersion>4.7.7</MCMVersion>
+        <MCMVersion>4.7.9</MCMVersion>
         <!--UIExtenderEx Version-->
-        <UIExtenderExVersion>2.2.5</UIExtenderExVersion>
+        <UIExtenderExVersion>2.2.8</UIExtenderExVersion>
         <!--BUTRShared Version-->
-        <BUTRSharedVersion>2.0.0.86</BUTRSharedVersion>
+        <BUTRSharedVersion>2.0.0.101</BUTRSharedVersion>
         <!--BUTRModuleManager Version-->
-        <BUTRModuleManagerVersion>4.0.121</BUTRModuleManagerVersion>
+        <BUTRModuleManagerVersion>4.0.146</BUTRModuleManagerVersion>
         <!--ModuleLoader Version-->
         <BUTRModuleLoaderVersion>1.0.1.36</BUTRModuleLoaderVersion>
         <!--Harmony Extensions Version-->
@@ -110,7 +110,7 @@
 
     <!--CI Builds-->
     <ItemGroup Condition="$(TargetFramework) == 'net472' AND $(OS) != 'Windows_NT'">
-        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
