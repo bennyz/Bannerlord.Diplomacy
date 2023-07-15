@@ -139,6 +139,7 @@ namespace Diplomacy.ViewModel
                 inquiryElements,
                 true,
                 1,
+                1,
                 GameTexts.FindText("str_ok").ToString(),
                 GameTexts.FindText("str_cancel").ToString(),
                 HandleCreateFaction,

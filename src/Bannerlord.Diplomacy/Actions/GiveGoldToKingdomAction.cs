@@ -62,7 +62,10 @@ namespace Diplomacy.Actions
                         {
                             foreach ((var settlement, var amountToCoverBySettlement) in MBMath.DistributeShares(amountToCover, giverKingdom.Settlements.Where(s => s.IsCastle || s.IsTown), CalculateSettlementShare))
                             {
-                                settlement.Prosperity -= amountToCoverBySettlement / GoldPerProsperity;
+                                if (settlement.IsTown)
+                                {
+                                    ((Town)settlement.Town).Prosperity -= amountToCoverBySettlement / GoldPerProsperity;
+                                }
                             }
                             amount = tolerableAmount;
                         }
@@ -141,7 +144,7 @@ namespace Diplomacy.Actions
 
         private static int CalculateShare(Clan clan) => Math.Max(clan.Tier / 2, 1) + (clan == clan.Kingdom?.Leader?.Clan ? 1 : 0);
         private static int CalculateMercenaryShare(Clan clan) => Math.Max((int) clan.Influence, 1);
-        private static int CalculateSettlementShare(Settlement settlement) => Math.Max((int) settlement.Prosperity, 1);
+        private static int CalculateSettlementShare(Settlement settlement) => Math.Max((int) settlement.Town.Prosperity, 1);
 
         public static void ApplyFromHeroToKingdom(Hero giverHero, Kingdom kingdom, int amount)
         {

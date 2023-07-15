@@ -15,7 +15,7 @@ namespace Diplomacy.DiplomaticAction.WarPeace.Conditions
             if (kingdom == playerKingdom || otherKingdom == playerKingdom)
             {
                 var besiegedKingdom = PlayerSiege.PlayerSiegeEvent?.BesiegedSettlement?.OwnerClan.Kingdom;
-                var besiegingKingdom = PlayerSiege.PlayerSiegeEvent?.BesiegerCamp?.BesiegerParty.LeaderHero.MapFaction as Kingdom;
+                var besiegingKingdom = PlayerSiege.PlayerSiegeEvent?.BesiegerCamp?.LeaderParty.MapFaction as Kingdom;
 
                 if ((besiegedKingdom == playerKingdom || besiegingKingdom == playerKingdom) && (besiegedKingdom == otherKingdom || besiegingKingdom == otherKingdom))
                 {

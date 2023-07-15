@@ -112,7 +112,7 @@ namespace Diplomacy.WarExhaustion
                        DefinesVictor == other.DefinesVictor;
             }
 
-            public override int GetHashCode() => HashCode.Combine(Faction1ScoreClamped, Faction2ScoreClamped, DefinesVictor);
+            public override int GetHashCode() => System.HashCode.Combine(Faction1ScoreClamped, Faction2ScoreClamped, DefinesVictor);
 
             public void Deconstruct(out bool faction1ScoreClamped, out bool faction2ScoreClamped, out bool definesVictor)
             {

@@ -66,28 +66,18 @@ namespace Diplomacy.CivilWar.Actions
 
                 if (clanKingdom == kingdom)
                 {
-                    var visuals = mobileParty.Party!.Visuals;
-                    if (visuals != null)
-                    {
-                        visuals.SetMapIconAsDirty();
-                    }
+                    mobileParty.Party!.SetVisualAsDirty();
                 }
             }
 
             foreach (var settlement in kingdom.Settlements)
             {
-                var visuals = settlement.Party.Visuals;
-                if (visuals != null)
-                {
-                    visuals.SetMapIconAsDirty();
-                }
-
                 if (settlement.IsVillage && settlement.Village.VillagerPartyComponent != null)
                 {
                     var party = settlement.Village.VillagerPartyComponent.MobileParty.Party;
                     if (party != null)
                     {
-                        party.Visuals.SetMapIconAsDirty();
+                        party.SetVisualAsDirty();
                     }
                 }
                 else if ((settlement.IsCastle || settlement.IsTown) && settlement.Town.GarrisonParty != null)
@@ -95,7 +85,7 @@ namespace Diplomacy.CivilWar.Actions
                     var party = settlement.Town.GarrisonParty.Party;
                     if (party != null)
                     {
-                        party.Visuals.SetMapIconAsDirty();
+                        party.SetVisualAsDirty();
                     }
                 }
             }

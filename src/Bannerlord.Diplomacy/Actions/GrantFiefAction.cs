@@ -51,7 +51,13 @@ namespace Diplomacy.Actions
         {
             // TODO: Consider basing the relationship change with the granted clan upon the fief's value
             // normalized to the average fief value in the kingdom.
-            var baseRelationChange = (int) Math.Round(Math.Max(5, Math.Log(settlement.Prosperity / 1000, 1.1f)));
+            var prosperity = 0.0;
+            if (settlement.IsTown)
+            {
+                prosperity = settlement.Town.Prosperity;
+            }
+         
+            var baseRelationChange = (int) Math.Round(Math.Max(5, Math.Log(prosperity / 1000, 1.1f)));
             return (int) (baseRelationChange * Settings.Instance!.GrantFiefPositiveRelationMultiplier);
         }
 

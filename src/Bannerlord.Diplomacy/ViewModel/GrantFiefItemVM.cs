@@ -30,7 +30,7 @@ namespace Diplomacy.ViewModel
             }
             else if (settlement.IsCastle)
             {
-                Prosperity = (int) Math.Round(settlement.Prosperity);
+                Prosperity = (int) Math.Round(settlement.Town.Prosperity);
                 IconPath = "";
             }
             Garrison = Settlement.Town.GarrisonParty?.Party.NumberOfAllMembers ?? 0;
