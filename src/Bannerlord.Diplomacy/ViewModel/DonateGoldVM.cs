@@ -1,4 +1,5 @@
 ﻿using Diplomacy.Actions;
+using Diplomacy.Character;
 
 using JetBrains.Annotations;
 
@@ -7,6 +8,7 @@ using System.ComponentModel;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
+using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
@@ -25,68 +27,32 @@ namespace Diplomacy.ViewModel
         private string _relationGain = string.Empty;
 
         [DataSourceProperty]
-        public float MaxValue
-        {
-            get => _maxValue;
-            set
-            {
-                if (value != _maxValue)
-                {
-                    _maxValue = value;
-                    OnPropertyChanged(nameof(MaxValue));
-                }
-            }
-        }
+        public float MaxValue { get => _maxValue; set => SetField(ref _maxValue, value, nameof(MaxValue)); }
 
         [DataSourceProperty]
-        public string GoldCost
-        {
-            get => _goldCost;
-            set
-            {
-                if (value != _goldCost)
-                {
-                    _goldCost = value;
-                    OnPropertyChanged(nameof(GoldCost));
-                }
-            }
-        }
+        public string GoldCost { get => _goldCost; set => SetField(ref _goldCost, value, nameof(GoldCost)); }
 
         [DataSourceProperty]
-        public string RelationGain
-        {
-            get => _relationGain;
-            set
-            {
-                if (value != _relationGain)
-                {
-                    _relationGain = value;
-                    OnPropertyChanged(nameof(RelationGain));
-                }
-            }
-        }
-
-        [DataSourceProperty][UsedImplicitly] public float MinValue { get; }
+        public string RelationGain { get => _relationGain; set => SetField(ref _relationGain, value, nameof(RelationGain)); }
 
         [DataSourceProperty]
-        public int IntValue
-        {
-            get => _intValue;
-            set
-            {
-                if (value != _intValue)
-                {
-                    _intValue = value;
-                    OnPropertyChanged(nameof(IntValue));
-                }
-            }
-        }
+        [UsedImplicitly]
+        public float MinValue { get; }
 
-        [DataSourceProperty][UsedImplicitly] public string AcceptText { get; } = new TextObject(StringConstants.Accept).ToString();
+        [DataSourceProperty]
+        public int IntValue { get => _intValue; set => SetField(ref _intValue, value, nameof(IntValue)); }
 
-        [DataSourceProperty][UsedImplicitly] public string CancelText { get; } = GameTexts.FindText("str_cancel").ToString();
+        [DataSourceProperty]
+        [UsedImplicitly]
+        public string AcceptText { get; } = new TextObject(StringConstants.Accept).ToString();
 
-        [DataSourceProperty][UsedImplicitly] public string TitleText { get; } = new TextObject("{=Gzq6VHPt}Donate Gold").ToString();
+        [DataSourceProperty]
+        [UsedImplicitly]
+        public string CancelText { get; } = GameTexts.FindText("str_cancel").ToString();
+
+        [DataSourceProperty]
+        [UsedImplicitly]
+        public string TitleText { get; } = new TextObject("{=Gzq6VHPt}Donate Gold").ToString();
 
         public DonateGoldVM(Clan clan, Action onFinalize)
         {
@@ -116,7 +82,11 @@ namespace Diplomacy.ViewModel
             var relationValue = GetBaseRelationValueOfCurrentGoldCost();
 
             if (relationValue > 0)
+            {
                 ChangeRelationAction.ApplyPlayerRelation(_clan.Leader, relationValue);
+                PlayerCharacterTraitHelper.UpdateTrait(DefaultTraits.Generosity, MBMath.ClampInt(relationValue * 5, 0, 50));
+                PlayerCharacterTraitHelper.UpdateTrait(DefaultTraits.Calculating, MBMath.ClampInt(relationValue * GetCalculatingTraitFactor(), 0, 50));
+            }
 
             _onFinalize();
         }
@@ -152,5 +122,7 @@ namespace Diplomacy.ViewModel
             var adjustedRelation = Campaign.Current.Models.DiplomacyModel.GetRelationIncreaseFactor(Hero.MainHero, _clan.Leader, baseRelation);
             return (int) Math.Floor(adjustedRelation);
         }
+
+        private int GetCalculatingTraitFactor() => Math.Max(70 - (int) _clan.Leader.GetRelationWithPlayer(), 0) / 20 * (_clan.Tier / 2);
     }
 }

@@ -1,5 +1,4 @@
-﻿using HarmonyLib;
-using HarmonyLib.BUTR.Extensions;
+﻿using HarmonyLib.BUTR.Extensions;
 
 using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.ScreenSystem;
@@ -8,11 +7,13 @@ namespace Diplomacy.GauntletInterfaces
 {
     public abstract class GenericInterface
     {
+        protected bool _isShown = false;
+
         protected static readonly LoadMovieDelegate? LoadMovieDel =
-            AccessTools2.GetDelegateObjectInstance<LoadMovieDelegate>(AccessTools.Method(typeof(GauntletLayer), "LoadMovie"));
+            AccessTools2.GetDelegate<LoadMovieDelegate>(typeof(GauntletLayer), "LoadMovie");
 
         protected static readonly ReleaseMovieDelegate? ReleaseMovieDel =
-            AccessTools2.GetDelegateObjectInstance<ReleaseMovieDelegate>(AccessTools.Method(typeof(GauntletLayer), "ReleaseMovie"));
+            AccessTools2.GetDelegate<ReleaseMovieDelegate>(typeof(GauntletLayer), "ReleaseMovie");
 
         protected GauntletLayer _layer = default!;
 
@@ -21,6 +22,13 @@ namespace Diplomacy.GauntletInterfaces
         protected TaleWorlds.Library.ViewModel? _vm;
 
         protected abstract string MovieName { get; }
+
+        protected bool ShowInterfaceWithCheck()
+        {
+            if (_isShown)
+                return false;
+            return _isShown = true;
+        }
 
         protected object? LoadMovie()
         {
@@ -36,6 +44,7 @@ namespace Diplomacy.GauntletInterfaces
             _movie = null!;
             _vm = null;
             _screenBase = null!;
+            _isShown = false;
         }
 
         protected delegate object LoadMovieDelegate(object instance, string movieName, TaleWorlds.Library.ViewModel dataSource);

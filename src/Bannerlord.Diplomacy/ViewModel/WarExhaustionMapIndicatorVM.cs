@@ -1,4 +1,6 @@
-﻿using Diplomacy.Event;
+﻿using Diplomacy.Events;
+
+using System;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
@@ -10,27 +12,20 @@ namespace Diplomacy.ViewModel
         private MBBindingList<WarExhaustionMapIndicatorItemVM> _kingdomsAtWar;
 
         [DataSourceProperty]
-        public MBBindingList<WarExhaustionMapIndicatorItemVM> KingdomsAtWar
-        {
-            get => _kingdomsAtWar;
-            set
-            {
-                if (value != _kingdomsAtWar)
-                {
-                    _kingdomsAtWar = value;
-                    OnPropertyChanged(nameof(KingdomsAtWar));
-                }
-            }
-        }
+        public MBBindingList<WarExhaustionMapIndicatorItemVM> KingdomsAtWar { get => _kingdomsAtWar; set => SetField(ref _kingdomsAtWar, value, nameof(KingdomsAtWar)); }
 
         public WarExhaustionMapIndicatorVM()
         {
             _kingdomsAtWar = new MBBindingList<WarExhaustionMapIndicatorItemVM>();
             RefreshValues();
-            CampaignEvents.WarDeclared.AddNonSerializedListener(this, HandleStanceChange);
-            CampaignEvents.MakePeace.AddNonSerializedListener(this, HandleStanceChange);
+            DiplomacyEvents.WarExhaustionInitialized.AddNonSerializedListener(this, HandleStanceChange);
+#if v124
+            CampaignEvents.OnClanChangedKingdomEvent.AddNonSerializedListener(this, (x, _, _, _, _) => HandleClanChangedKingdom(x));
+#elif v100 || v101 || v102 || v103 || v110 || v111 || v112 || v113 || v114 || v115 || v116 || v120 || v121 || v122 || v123
             CampaignEvents.ClanChangedKingdom.AddNonSerializedListener(this, (x, _, _, _, _) => HandleClanChangedKingdom(x));
-            Events.WarExhaustionAdded.AddNonSerializedListener(this, HandleWarExhaustionChange);
+#endif
+            DiplomacyEvents.WarExhaustionAdded.AddNonSerializedListener(this, HandleWarExhaustionChange);
+            Settings.Instance!.PropertyChanged += Settings_PropertyChanged;
         }
 
         private void HandleClanChangedKingdom(Clan clan)
@@ -38,30 +33,31 @@ namespace Diplomacy.ViewModel
             if (Clan.PlayerClan == clan) RefreshValues();
         }
 
-        private void HandleWarExhaustionChange(WarExhaustionEvent warExhaustionEvent)
+        private void HandleWarExhaustionChange(WarExhaustionAddedEvent warExhaustionEvent)
         {
-            Kingdom playerKingdom = Clan.PlayerClan.Kingdom;
+            var playerKingdom = Clan.PlayerClan.Kingdom;
             if (warExhaustionEvent.Kingdom == playerKingdom || warExhaustionEvent.OtherKingdom == playerKingdom)
-                foreach (WarExhaustionMapIndicatorItemVM item in _kingdomsAtWar)
+                foreach (var item in _kingdomsAtWar)
                     item.UpdateWarExhaustion();
         }
 
-        private void HandleStanceChange(IFaction arg1, IFaction arg2)
+        private void HandleStanceChange(WarExhaustionInitializedEvent warExhaustionEvent)
         {
-            if (Clan.PlayerClan.MapFaction is Kingdom playerKingdom
-                && arg1 is Kingdom kingdom1
-                && arg2 is Kingdom kingdom2
-                && (kingdom1 == playerKingdom || kingdom2 == playerKingdom))
+            if (Clan.PlayerClan.MapFaction is Kingdom playerKingdom && (warExhaustionEvent.Kingdom == playerKingdom || warExhaustionEvent.OtherKingdom == playerKingdom))
                 RefreshValues();
         }
 
         public override void OnFinalize()
         {
             base.OnFinalize();
-            CampaignEvents.WarDeclared.ClearListeners(this);
-            CampaignEvents.MakePeace.ClearListeners(this);
+
+#if v124
+            CampaignEvents.OnClanChangedKingdomEvent.ClearListeners(this);
+#elif v100 || v101 || v102 || v103 || v110 || v111 || v112 || v113 || v114 || v115 || v116 || v120 || v121 || v122 || v123
             CampaignEvents.ClanChangedKingdom.ClearListeners(this);
-            Events.WarExhaustionAdded.ClearListeners(this);
+#endif
+            DiplomacyEvents.WarExhaustionInitialized.ClearListeners(this);
+            DiplomacyEvents.WarExhaustionAdded.ClearListeners(this);
         }
 
         public void UpdateBanners()
@@ -75,10 +71,20 @@ namespace Diplomacy.ViewModel
         public override void RefreshValues()
         {
             KingdomsAtWar.Clear();
+            if (!Settings.Instance!.EnableWarExhaustionCampaignMapWidget)
+                return;
 
             if (Clan.PlayerClan.MapFaction is Kingdom playerKingdom)
-                foreach (Kingdom enemyKingdom in FactionManager.GetEnemyKingdoms(playerKingdom))
+                foreach (var enemyKingdom in FactionManager.GetEnemyKingdoms(playerKingdom))
                     KingdomsAtWar.Add(new WarExhaustionMapIndicatorItemVM(enemyKingdom));
+        }
+
+        private void Settings_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(Settings.Instance.EnableWarExhaustionCampaignMapWidget))
+            {
+                RefreshValues();
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Diplomacy.CivilWar.Factions;
 using Diplomacy.CivilWar.Scoring;
+using Diplomacy.Helpers;
 
 using JetBrains.Annotations;
 
@@ -17,20 +18,18 @@ namespace Diplomacy.ViewModel
 {
     public class RebelFactionParticipantVM : EncyclopediaFactionVM
     {
-        private static readonly TextObject _TPlus = new("{=eTw2aNV5}+");
         private static readonly TextObject _TRequiredScore = new("{=XIBUWDlT}Required Score");
         private static readonly TextObject _TCurrentScore = new("{=5r6fsHgm}Current Score");
         private static readonly TextObject _TClanText = GameTexts.FindText("str_clan");
         private readonly Action _onComplete;
 
-        [DataSourceProperty] public BasicTooltipViewModel Hint { get; set; }
+        [DataSourceProperty]
+        public BasicTooltipViewModel Hint { get; set; }
 
         public RebelFactionParticipantVM(Clan clan, RebelFaction rebelFaction, Action onComplete) : base(clan)
         {
             var explainedNumber = RebelFactionScoringModel.GetDemandScore(clan, rebelFaction);
             _onComplete = onComplete;
-
-
 
             List<TooltipProperty> list = new()
             {
@@ -40,18 +39,13 @@ namespace Diplomacy.ViewModel
                     TooltipProperty.TooltipPropertyFlags.Title)
             };
 
-
             foreach (var (name, number) in explainedNumber.GetLines())
-                list.Add(new TooltipProperty(name, PlusPrefixed(number), 0));
+                list.Add(new TooltipProperty(name, StringHelper.GetPlusPrefixed(number), 0));
 
             list.Add(new TooltipProperty(string.Empty, string.Empty, 0, false, TooltipProperty.TooltipPropertyFlags.RundownSeperator));
             list.Add(new TooltipProperty(_TRequiredScore.ToString(), $"{RebelFactionScoringModel.RequiredScore:0.##}", 0, false,
                 TooltipProperty.TooltipPropertyFlags.RundownResult));
             Hint = new BasicTooltipViewModel(() => list);
-        }
-        private static string PlusPrefixed(float value)
-        {
-            return $"{(value >= 0.005f ? _TPlus.ToString() : string.Empty)}{value:0.##}";
         }
 
         [UsedImplicitly]

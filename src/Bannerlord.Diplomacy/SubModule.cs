@@ -1,32 +1,37 @@
 ﻿using Bannerlord.ButterLib.Common.Extensions;
+
 using Bannerlord.UIExtenderEx;
+using Bannerlord.UIExtenderEx.ResourceManager;
 
 using Diplomacy.CampaignBehaviors;
-using Diplomacy.Event;
+using Diplomacy.Events;
+using Diplomacy.Models;
 using Diplomacy.PatchTools;
+using Diplomacy.Widgets;
 
 using Microsoft.Extensions.Logging;
 
 using Serilog.Events;
 
+using System.Linq;
+
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.ComponentInterfaces;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
-using TaleWorlds.ModuleManager;
 using TaleWorlds.MountAndBlade;
 
 namespace Diplomacy
 {
     public sealed class SubModule : MBSubModuleBase
     {
-        public static readonly int VersionMajor = 0;
-        public static readonly int VersionMinor = 1;
-        public static readonly int VersionPatch = 1;
-        public static readonly string Version = $"v{VersionMajor}.{VersionMinor}.{VersionPatch}";
+        public static readonly string Version = $"v{typeof(SubModule).Assembly.GetName().Version.ToString(3)}";
 
         public static readonly string Name = typeof(SubModule).Namespace;
         public static readonly string DisplayName = Name;
-        public static readonly string HarmonyDomain = "com.zijistark.bannerlord." + Name.ToLower();
+        public static readonly string MainHarmonyDomain = "bannerlord." + Name.ToLower();
+        public static readonly string CampaignHarmonyDomain = MainHarmonyDomain + ".campaign";
+        public static readonly string WidgetHarmonyDomain = MainHarmonyDomain + ".widgets";
 
         internal static readonly Color StdTextColor = Color.FromUint(0x00F16D26); // Orange
 
@@ -47,8 +52,11 @@ namespace Diplomacy
 
             this.AddSerilogLoggerProvider($"{Name}.log", new[] { $"{Name}.*" }, config => config.MinimumLevel.Is(LogEventLevel.Verbose));
             Log = LogFactory.Get<SubModule>();
+            Log.LogInformation($"Loading {Name} {Version}...");
 
-            PatchManager.PatchAll(HarmonyDomain);
+            PatchManager.ApplyMainPatches(MainHarmonyDomain);
+
+            WidgetFactoryManager.Register(typeof(CriticalThresholdTextWidget));
         }
 
         protected override void OnSubModuleUnloaded()
@@ -64,8 +72,6 @@ namespace Diplomacy
             if (!_hasLoaded)
             {
                 _hasLoaded = true;
-
-                Log = LogFactory.Get<SubModule>(); // Upgrade to dedicated log file from closed service registry
                 Log.LogInformation($"Loaded {Name} {Version}!");
 
                 InformationManager.DisplayMessage(new InformationMessage($"Loaded {DisplayName}", StdTextColor));
@@ -78,7 +84,9 @@ namespace Diplomacy
 
             if (game.GameType is Campaign)
             {
-                Events.Instance = new Events();
+                PatchManager.ApplyCampaignPatches(CampaignHarmonyDomain);
+
+                DiplomacyEvents.Instance = new DiplomacyEvents();
                 var gameStarter = (CampaignGameStarter) gameStarterObject;
 
                 gameStarter.AddBehavior(new DiplomaticAgreementBehavior());
@@ -96,8 +104,27 @@ namespace Diplomacy
                 gameStarter.AddBehavior(new ExpansionismBehavior());
                 gameStarter.AddBehavior(new CivilWarBehavior());
                 gameStarter.AddBehavior(new UIBehavior());
+
+                var currentKingdomDecisionPermissionModel = GetGameModel<KingdomDecisionPermissionModel>(gameStarterObject);
+                if (currentKingdomDecisionPermissionModel is null)
+                    Log.LogWarning("No default KingdomDecisionPermissionModel found!");
+
+                gameStarter.AddModel(new DiplomacyKingdomDecisionPermissionModel(currentKingdomDecisionPermissionModel));
+
                 Log.LogDebug("Campaign session started.");
             }
+        }
+
+        private T? GetGameModel<T>(IGameStarter gameStarterObject) where T : GameModel
+        {
+            var models = gameStarterObject.Models.ToArray();
+
+            for (int index = models.Length - 1; index >= 0; --index)
+            {
+                if (models[index] is T gameModel1)
+                    return gameModel1;
+            }
+            return default;
         }
 
         public override void OnGameEnd(Game game)
@@ -105,7 +132,10 @@ namespace Diplomacy
             base.OnGameEnd(game);
 
             if (game.GameType is Campaign)
+            {
+                //PatchManager.RemoveCampaignPatches();// Not sure we should do this...
                 Log.LogDebug("Campaign session ended.");
+            }
         }
     }
 }

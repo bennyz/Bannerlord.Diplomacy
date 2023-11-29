@@ -1,4 +1,5 @@
 ﻿using Diplomacy.GauntletInterfaces;
+using Diplomacy.WarExhaustion;
 
 using JetBrains.Annotations;
 
@@ -19,74 +20,22 @@ namespace Diplomacy.ViewModel
         private ImageIdentifierVM _faction2Visual = null!;
 
         [DataSourceProperty]
-        public int OpponentWarExhaustion
-        {
-            get => _opponentWarExhaustion;
-            set
-            {
-                if (value != _opponentWarExhaustion)
-                {
-                    _opponentWarExhaustion = value;
-                    OnPropertyChanged(nameof(OpponentWarExhaustion));
-                }
-            }
-        }
+        public int OpponentWarExhaustion { get => _opponentWarExhaustion; set => SetField(ref _opponentWarExhaustion, value, nameof(OpponentWarExhaustion)); }
 
         [DataSourceProperty]
-        public int PlayerWarExhaustion
-        {
-            get => _playerWarExhaustion;
-            set
-            {
-                if (value != _playerWarExhaustion)
-                {
-                    _playerWarExhaustion = value;
-                    OnPropertyChanged(nameof(PlayerWarExhaustion));
-                }
-            }
-        }
+        public int PlayerWarExhaustion { get => _playerWarExhaustion; set => SetField(ref _playerWarExhaustion, value, nameof(PlayerWarExhaustion)); }
 
         [DataSourceProperty]
-        public ImageIdentifierVM Faction1Visual
-        {
-            get => _faction1Visual;
-            set { _faction1Visual = value; OnPropertyChanged(nameof(Faction1Visual)); }
-        }
+        public ImageIdentifierVM Faction1Visual { get => _faction1Visual; set => SetField(ref _faction1Visual, value, nameof(Faction1Visual)); }
 
         [DataSourceProperty]
-        public ImageIdentifierVM Faction2Visual
-        {
-            get => _faction2Visual;
-            set { _faction2Visual = value; OnPropertyChanged(nameof(Faction2Visual)); }
-        }
+        public ImageIdentifierVM Faction2Visual { get => _faction2Visual; set => SetField(ref _faction2Visual, value, nameof(Faction2Visual)); }
 
         [DataSourceProperty]
-        public bool IsCriticalFaction1
-        {
-            get => _isCriticalFaction1;
-            set
-            {
-                if (value != _isCriticalFaction1)
-                {
-                    _isCriticalFaction1 = value;
-                    OnPropertyChangedWithValue(value, nameof(IsCriticalFaction1));
-                }
-            }
-        }
+        public bool IsCriticalFaction1 { get => _isCriticalFaction1; set => SetField(ref _isCriticalFaction1, value, nameof(IsCriticalFaction1)); }
 
         [DataSourceProperty]
-        public bool IsCriticalFaction2
-        {
-            get => _isCriticalFaction2;
-            set
-            {
-                if (value != _isCriticalFaction2)
-                {
-                    _isCriticalFaction2 = value;
-                    OnPropertyChangedWithValue(value, nameof(IsCriticalFaction2));
-                }
-            }
-        }
+        public bool IsCriticalFaction2 { get => _isCriticalFaction2; set => SetField(ref _isCriticalFaction2, value, nameof(IsCriticalFaction2)); }
 
         public WarExhaustionMapIndicatorItemVM(Kingdom opposingKingdom)
         {
@@ -106,10 +55,10 @@ namespace Diplomacy.ViewModel
 
         public void UpdateWarExhaustion()
         {
-            PlayerWarExhaustion = (int) WarExhaustionManager.Instance.GetWarExhaustion(Clan.PlayerClan.Kingdom, _opposingKingdom);
-            OpponentWarExhaustion = (int) WarExhaustionManager.Instance.GetWarExhaustion(_opposingKingdom, Clan.PlayerClan.Kingdom);
-            IsCriticalFaction1 = WarExhaustionManager.Instance.IsCriticalWarExhaustion(Clan.PlayerClan.Kingdom, _opposingKingdom);
-            IsCriticalFaction2 = WarExhaustionManager.Instance.IsCriticalWarExhaustion(_opposingKingdom, Clan.PlayerClan.Kingdom);
+            PlayerWarExhaustion = (int) WarExhaustionManager.Instance!.GetWarExhaustion(Clan.PlayerClan.Kingdom, _opposingKingdom);
+            OpponentWarExhaustion = (int) WarExhaustionManager.Instance!.GetWarExhaustion(_opposingKingdom, Clan.PlayerClan.Kingdom);
+            IsCriticalFaction1 = WarExhaustionManager.Instance!.HasCriticalWarExhaustion(Clan.PlayerClan.Kingdom, _opposingKingdom);
+            IsCriticalFaction2 = WarExhaustionManager.Instance!.HasCriticalWarExhaustion(_opposingKingdom, Clan.PlayerClan.Kingdom);
         }
 
         [UsedImplicitly]

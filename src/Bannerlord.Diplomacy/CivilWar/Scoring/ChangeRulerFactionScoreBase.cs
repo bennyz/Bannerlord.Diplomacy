@@ -11,7 +11,6 @@ using TaleWorlds.Localization;
 
 namespace Diplomacy.CivilWar.Scoring
 {
-
     internal abstract class ChangeRulerFactionScoreBase : AbstractFactionDemandScoringModel
     {
         public float FiefDeficit => 10;
@@ -22,7 +21,6 @@ namespace Diplomacy.CivilWar.Scoring
         protected static readonly TextObject _TLeaderTrait = new("{=EYB5Uggd}Leader is {TRAIT}");
         protected static readonly TextObject _TRulerTrait = new("{=E00ywbqb}Ruler is {TRAIT}");
         protected static readonly TextObject _TRulerNeedsRightToRule = new("{=1AZK0UVJ}Ruler doesn't have Right to Rule");
-
 
         protected ChangeRulerFactionScoreBase(IFactionDemandScores scores) : base(scores) { }
 
@@ -38,19 +36,19 @@ namespace Diplomacy.CivilWar.Scoring
 
         protected IEnumerable<Tuple<TextObject, float>> CalculateTraitScore(Clan clan, RebelFaction rebelFaction, Hero hero, TraitObject trait)
         {
-            Hero clanLeader = clan.Leader;
+            var clanLeader = clan.Leader;
 
-            bool factionLeader = hero == rebelFaction.SponsorClan.Leader;
+            var factionLeader = hero == rebelFaction.SponsorClan.Leader;
 
             if (clanLeader.GetTraitLevel(trait) > 0)
             {
-                int heroTraitLevel = hero.GetTraitLevel(trait);
+                var heroTraitLevel = hero.GetTraitLevel(trait);
                 if (heroTraitLevel != 0)
                 {
-                    TextObject traitName = GameTexts.FindText("str_trait_name_" + trait.StringId.ToLower(), (heroTraitLevel + Math.Abs(trait.MinValue)).ToString());
-                    TextObject baseText = factionLeader ? _TLeaderTrait : _TRulerTrait;
-                    TextObject heroTraitText = baseText.CopyTextObject().SetTextVariable("TRAIT", traitName);
-                    float score = heroTraitLevel * 10f;
+                    var traitName = GameTexts.FindText("str_trait_name_" + trait.StringId.ToLower(), (heroTraitLevel + Math.Abs(trait.MinValue)).ToString());
+                    var baseText = factionLeader ? _TLeaderTrait : _TRulerTrait;
+                    var heroTraitText = baseText.CopyTextObject().SetTextVariable("TRAIT", traitName);
+                    var score = heroTraitLevel * 10f;
                     yield return new Tuple<TextObject, float>(heroTraitText, factionLeader ? score : -score);
                 }
             }
@@ -58,7 +56,10 @@ namespace Diplomacy.CivilWar.Scoring
 
         protected override Tuple<TextObject, float> GetRelationshipScoreWithTarget(Clan clan, RebelFaction rebelFaction)
         {
-            var mercyMultiplier = 1 - (clan.Leader.GetTraitLevel(DefaultTraits.Mercy) * 0.25f);
+            if (clan?.Leader is null)
+                new Tuple<TextObject, float>(_TRelationsFactionTarget, 0);
+
+            var mercyMultiplier = 1 - (clan!.Leader!.GetTraitLevel(DefaultTraits.Mercy) * 0.25f);
             var relationshipWithRuler = clan.GetRelationWithClan(clan.Kingdom.RulingClan);
             var relationshipWithRulerAdj = relationshipWithRuler <= 0 ? relationshipWithRuler * mercyMultiplier : relationshipWithRuler;
 

@@ -10,18 +10,9 @@ namespace Diplomacy.Widgets
     {
         public CriticalThresholdTextWidget(UIContext context) : base(context) { }
 
-        protected override void OnUpdate(float dt)
-        {
-            base.OnUpdate(dt);
-            if (IsCritical)
-            {
-                base.SetState("Critical");
-            }
-        }
-
         private bool _isCritical;
 
-        [Editor()]
+        [Editor]
         public bool IsCritical
         {
             get => _isCritical;
@@ -30,6 +21,14 @@ namespace Diplomacy.Widgets
                 if (_isCritical != value)
                 {
                     _isCritical = value;
+                    if (_isCritical)
+                    {
+                        base.SetState("Critical");
+                    }
+                    else
+                    {
+                        base.SetState("Default");
+                    }
                     OnPropertyChanged(value, nameof(IsCritical));
                 }
             }

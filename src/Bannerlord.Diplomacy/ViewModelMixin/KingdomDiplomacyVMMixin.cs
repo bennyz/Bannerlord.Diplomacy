@@ -2,16 +2,13 @@
 using Bannerlord.UIExtenderEx.ViewModels;
 
 using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.Event;
+using Diplomacy.Events;
 using Diplomacy.Extensions;
-
-using HarmonyLib;
 
 using JetBrains.Annotations;
 
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ViewModelCollection.KingdomManagement.Diplomacy;
@@ -30,13 +27,7 @@ namespace Diplomacy.ViewModelMixin
         private static readonly TextObject _TOverview = new("{=OvbY5qxL}Overview");
         private static readonly TextObject _TDiplomacy = new("{=Q2vXbwvC}Diplomacy");
 
-        private static readonly MethodInfo OnDiplomacyItemSelectionMethod =
-            AccessTools.DeclaredMethod(typeof(KingdomDiplomacyVM), "OnDiplomacyItemSelection");
 
-        private static readonly MethodInfo SetDefaultSelectedItemMethod =
-            AccessTools.DeclaredMethod(typeof(KingdomDiplomacyVM), "SetDefaultSelectedItem");
-
-        private readonly PropertyChangedWithValueEventHandler _eventHandler;
         private string _numOfPlayerAlliancesText = null!;
 
 
@@ -45,68 +36,28 @@ namespace Diplomacy.ViewModelMixin
         private bool _showStats;
 
         [DataSourceProperty]
-        public bool ShowOverview
-        {
-            get => _showOverview;
-            set
-            {
-                if (value != _showOverview)
-                {
-                    _showOverview = value;
-                    ViewModel!.OnPropertyChanged(nameof(ShowOverview));
-                }
-            }
-        }
+        public bool ShowOverview { get => _showOverview; set => SetField(ref _showOverview, value, nameof(ShowOverview)); }
 
         [DataSourceProperty]
-        public bool ShowStats
-        {
-            get => _showStats;
-            set
-            {
-                if (value != _showStats)
-                {
-                    _showStats = value;
-                    ViewModel!.OnPropertyChanged(nameof(ShowStats));
-                }
-            }
-        }
-
-        [DataSourceProperty] public string PlayerAlliancesText { get; }
-
-        [DataSourceProperty] public string StatsText { get; }
-
-        [DataSourceProperty] public string OverviewText { get; }
-
-        [DataSourceProperty] public string DiplomacyText { get; }
+        public bool ShowStats { get => _showStats; set => SetField(ref _showStats, value, nameof(ShowStats)); }
 
         [DataSourceProperty]
-        public string NumOfPlayerAlliancesText
-        {
-            get => _numOfPlayerAlliancesText;
-            set
-            {
-                if (value != _numOfPlayerAlliancesText)
-                {
-                    _numOfPlayerAlliancesText = value;
-                    ViewModel!.OnPropertyChanged(nameof(NumOfPlayerAlliancesText));
-                }
-            }
-        }
+        public string PlayerAlliancesText { get; }
 
         [DataSourceProperty]
-        public MBBindingList<KingdomTruceItemVM> PlayerAlliances
-        {
-            get => _playerAlliances;
-            set
-            {
-                if (value != _playerAlliances)
-                {
-                    _playerAlliances = value;
-                    ViewModel!.OnPropertyChanged(nameof(PlayerAlliances));
-                }
-            }
-        }
+        public string StatsText { get; }
+
+        [DataSourceProperty]
+        public string OverviewText { get; }
+
+        [DataSourceProperty]
+        public string DiplomacyText { get; }
+
+        [DataSourceProperty]
+        public string NumOfPlayerAlliancesText { get => _numOfPlayerAlliancesText; set => SetField(ref _numOfPlayerAlliancesText, value, nameof(NumOfPlayerAlliancesText)); }
+
+        [DataSourceProperty]
+        public MBBindingList<KingdomTruceItemVM> PlayerAlliances { get => _playerAlliances; set => SetField(ref _playerAlliances, value, nameof(PlayerAlliances)); }
 
         public KingdomDiplomacyVMMixin(KingdomDiplomacyVM vm) : base(vm)
         {
@@ -117,33 +68,26 @@ namespace Diplomacy.ViewModelMixin
             DiplomacyText = _TDiplomacy.ToString();
 
             // No refresh needed on NAP because it doesn't move the item from one diplomacy group (At War / Alliances / At Peace) to another
-            Events.AllianceFormed.AddNonSerializedListener(this, _ => ViewModel!.RefreshValues());
-            Events.AllianceBroken.AddNonSerializedListener(this, _ => ViewModel!.RefreshValues());
+            DiplomacyEvents.AllianceFormed.AddNonSerializedListener(this, _ => ViewModel!.RefreshValues());
+            DiplomacyEvents.AllianceBroken.AddNonSerializedListener(this, _ => ViewModel!.RefreshValues());
+#if v100 || v101 || v102 || v103
             CampaignEvents.MakePeace.AddNonSerializedListener(this, (_, _) => ViewModel!.RefreshValues());
             CampaignEvents.WarDeclared.AddNonSerializedListener(this, (_, _) =>
+#else
+            CampaignEvents.MakePeace.AddNonSerializedListener(this, (_, _, _) => ViewModel!.RefreshValues());
+            CampaignEvents.WarDeclared.AddNonSerializedListener(this, (_, _, _) =>
+#endif
             {
                 if (Hero.MainHero.MapFaction is Kingdom)
                     ViewModel!.RefreshValues();
             });
 
             OnRefresh();
-            _eventHandler = OnPropertyChangedWithValue;
-
-            ViewModel!.PropertyChangedWithValue += _eventHandler;
-        }
-
-        private void OnPropertyChangedWithValue(object sender, PropertyChangedWithValueEventArgs e)
-        {
-            if (e.PropertyName == nameof(ViewModel.CurrentSelectedDiplomacyItem))
-            {
-                OnDiplomacyItemSelection(ViewModel!.CurrentSelectedDiplomacyItem);
-            }
         }
 
         public override void OnFinalize()
         {
-            Events.RemoveListeners(this);
-            ViewModel!.PropertyChangedWithValue -= _eventHandler;
+            DiplomacyEvents.RemoveListeners(this);
             CampaignEventDispatcher.Instance.RemoveListeners(this);
         }
 
@@ -162,18 +106,6 @@ namespace Diplomacy.ViewModelMixin
             ShowStats = false;
         }
 
-        public void ExecuteShowStatComparison()
-        {
-            ViewModel!.IsDisplayingStatComparisons = true;
-            ViewModel!.IsDisplayingWarLogs = false;
-        }
-
-        private void OnDiplomacyItemSelection(KingdomDiplomacyItemVM item)
-        {
-            OnDiplomacyItemSelectionMethod.Invoke(ViewModel, new object[] { item });
-            ExecuteShowStatComparison();
-        }
-
         public override void OnRefresh()
         {
             ExecuteShowOverview();
@@ -181,7 +113,7 @@ namespace Diplomacy.ViewModelMixin
             RemoveRebelKingdoms(ViewModel!.PlayerWars);
 
             var alliances = ViewModel!.PlayerTruces.Where(item => item.Faction1.IsAlliedWith(item.Faction2)).ToList();
-            foreach (KingdomTruceItemVM alliance in alliances) ViewModel!.PlayerTruces.Remove(alliance);
+            foreach (var alliance in alliances) ViewModel!.PlayerTruces.Remove(alliance);
 
             foreach (var truce in ViewModel!.PlayerTruces.ToList())
             {
@@ -195,8 +127,6 @@ namespace Diplomacy.ViewModelMixin
             ViewModel!.NumOfPlayerTrucesText = GameTexts.FindText("str_STR_in_parentheses").ToString();
             GameTexts.SetVariable("STR", ViewModel!.PlayerWars.Count);
             ViewModel!.NumOfPlayerWarsText = GameTexts.FindText("str_STR_in_parentheses").ToString();
-
-            SetDefaultSelectedItemMethod.Invoke(ViewModel!, new object[] { });
         }
 
         private void RemoveRebelKingdoms<T>(MBBindingList<T> items) where T : KingdomDiplomacyItemVM

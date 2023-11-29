@@ -2,30 +2,30 @@
 
     <!--Module Version-->
     <PropertyGroup>
-        <Version>1.1.14</Version>
+        <Version>1.2.8</Version>
         <GameVersion>1.0.0</GameVersion>
     </PropertyGroup>
 
     <!-- Versions of Major Dependencies (For Package References & SubModule.xml Substitution) -->
     <PropertyGroup>
         <!--BuildResources Version-->
-        <BuildResourcesVersion>1.0.1.68</BuildResourcesVersion>
+        <BuildResourcesVersion>1.1.0.102</BuildResourcesVersion>
         <!--Harmony Version-->
         <HarmonyVersion>2.2.2</HarmonyVersion>
         <!--ButterLib Version-->
-        <ButterLibVersion>2.3.2</ButterLibVersion>
+        <ButterLibVersion>2.8.11</ButterLibVersion>
         <!--MCM Version-->
-        <MCMVersion>5.0.1</MCMVersion>
+        <MCMVersion>5.9.1</MCMVersion>
         <!--UIExtenderEx Version-->
-        <UIExtenderExVersion>2.3.1</UIExtenderExVersion>
+        <UIExtenderExVersion>2.8.0</UIExtenderExVersion>
         <!--BUTRShared Version-->
-        <BUTRSharedVersion>2.0.0.101</BUTRSharedVersion>
+        <BUTRSharedVersion>3.0.0.137</BUTRSharedVersion>
         <!--BUTRModuleManager Version-->
-        <BUTRModuleManagerVersion>4.0.149</BUTRModuleManagerVersion>
+        <BUTRModuleManagerVersion>5.0.209</BUTRModuleManagerVersion>
         <!--ModuleLoader Version-->
-        <BUTRModuleLoaderVersion>1.0.1.42</BUTRModuleLoaderVersion>
+        <BUTRModuleLoaderVersion>1.0.1.44</BUTRModuleLoaderVersion>
         <!--Harmony Extensions Version-->
-        <HarmonyExtensionsVersion>3.1.0.61</HarmonyExtensionsVersion>
+        <HarmonyExtensionsVersion>3.2.0.77</HarmonyExtensionsVersion>
     </PropertyGroup>
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
@@ -78,7 +78,7 @@
         <GameStableVersion>$(SecondLine)</GameStableVersion>
         <GameMinimalVersion>$(LastLine)</GameMinimalVersion>
         <!-- -->
-        <GameVersionWithPrefix>e1.1.0</GameVersionWithPrefix>
+        <GameVersionWithPrefix>v1.0.0</GameVersionWithPrefix>
         <GameVersionWithPrefix Condition="$(IsMinimal)">$(GameMinimalVersion)</GameVersionWithPrefix>
         <GameVersionWithPrefix Condition="$(IsStable)">$(GameStableVersion)</GameVersionWithPrefix>
         <GameVersionWithPrefix Condition="$(IsBeta)">$(GameBetaVersion)</GameVersionWithPrefix>

@@ -1,50 +1,189 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.8
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.0,v1.2.1,v1.2.2,v1.2.3.v1.2.4
+* Add support for v1.2.4
+---------------------------------------------------------------------------------------------------
+Version: 1.2.7
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.0,v1.2.1,v1.2.2,v1.2.3
+* Add support for v1.1.6
+---------------------------------------------------------------------------------------------------
+Version: 1.2.6
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1,v1.2.2,v1.2.3
+* Adapted for latest game versions.
+* Reworked Diplomacy Kingdom Elimination option description and implementation for v1.2.X game versions.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Fixed a crash on making peace when War Exhaustion is disabled.
+* Fixed a crash after loading a save when attempting to fix any faulty factions (again).
+* Fixed a bug due to which kingdoms were sometimes not destroyed when they should have been.
+* Fixed a bug due to which War Exhaustion breakdowns were sometimes showing wrong values (unaffected by rates).
+* Making peace should now use all of the mod's enabled mechanics, no matter what interface option was used for it.
+* Adjusted the calculation of war reparations to make it even more lenient.
+* Adjusted the way war reparations are gathered by the paying kingdom to make it less stressful.
+* Adjusted the way war reparations are distributed among the winning faction.
+* Adjusted the calculation and default values for some of the War Exhaustion entries.
+* Adjusted War Exhaustion rates calculation.
+* Adjusted descriptions of some settings for clarity.
+* Added an option to disable the elimination of fiefless kingdoms.
+* Added an option to disable fief repatriation after losing a war.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Fixed a crash after loading a save when attempting to fix any faulty factions.
+* Fixed a bug due to which the factions checkup did not always work as intended.
+* Fixed a bug where war exhaustion was still not initialized properly when declaring a war.
+* Fixed a bug due to which NAPs and Alliances were evaluated for the wrong side of the agreement.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Fixed a bug where war exhaustion was not reseted when making peace and not initialized properly when declaring wars.
+* Fixed a crash that happened sometimes when sponsor clan was removed from a faction.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Added a way to add casualties that are not related to map events.
+* Adjusted war reparations calculation and related setting defaults to be considerably more mild.
+* Adjusted default settings for Kingdom Diplomacy.
+* Gold and Influence costs are joined under a single Costs heading for better usability.
+* Made sure that the settings are reset to default when you first start the game after updating from previous versions of the mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Fixed rare crash that happened when War Exhaustion event precedes the war.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Adapted for v1.1.0
+* Diplomacy events should now be ready to be a part of the public API, if we ever have one.
+* Changed some setting hints to make them clearer.
+* Fixed excessive UI overlap when repeatedly pressing the Factions button in the Encyclopedia.
+* Better compatibility with other Encyclopedia mods for Faction page.
+* Diplomacy console commands should no longer cause crashes when executed from the main menu.
+* Added diplomacy.form_non_aggression_pact console command.
+* Added diplomacy.break_non_aggression_pact console command.
+* Added diplomacy.legitimize_rebel_kingdom console command to help fix broken civil wars.
+* Fixed diplomacy.set_war_exhaustion console command.
+* Fixed some cost calculations using wrong settings.
+* Added Kingdom Wallet costs. They are used to pay war reparations and other interstate payments.
+* Diplomatic actions now include up to 3 different costs: a gold cost (usually representing organizational expenses and benefiting no one), an influence cost, and a kingdom wallet cost (used for interstate payments when required).
+* Added settings for proper calculating of gold and kingdom wallet costs.
+* Adjusted kingdom scaling factor calculation for kingdoms with mercenary clans.
+* Adjusted kingdom scaling factor calculation to be more notable for larger kingdoms.
+* Donating gold to a clan now affects character traits.
+* Fixed a bug preventing faction to consolidate when its demands are fulfilled.
+* Fixed a bug where eliminated clans were not removed from factions.
+* Fixed several crashes related to factions and Civil Wars.
+* Made some overall stability improvements.
+* Added a checkup on game load to fix the most common issues with current factions and civil wars from older saves.
+* Fixed a bug due to which messengers did not move if the game was not saved and reloaded after sending the messenger.
+* Resticted sending messengers only to the people you personally met or at least likely to know of, in order to keep intended game pace.
+* Added a chance of messengers not reaching their target (road accidents).
+* Added new mod settings to regulate new changes to messengers.
+* Making peace without an election, whether it be from Kingdom Management or due to War Exhaustion, now imposes a tribute as usual.
+* Making peace while on Critical War Exhaustion may result in war reparations being paid, if the other side is winning the War Exhaustion race.
+* Losing a war due to War Exhaustion may result in some or even all of the territories captured by the defeated side being returned to the victor.
+* A faction without fiefs is now destroyed if it loses the last ongoing war due to War Exhaustion.
+* Fixed an issue where War Exhaustion report showed incorrect breakdown numbers if Exhaustion gain settings were changed during the war.
+* Added War Exhaustion numbers to the campaign map indicator.
+* Optimized the performance of the War Exhaustion map indicator.
+* Added UI notification and explanation when War Exhaustion is critical.
+* Critical War Exhaustion now affects Kingdom Management.
+* Added UI notification when War Exhaustion can not be fully applied due to a campaign questline.
+* Active questline now prevents War Exhaustion raising above the critical threshold, rather than capping it at 100%.
+* Losing all fiefs no longer instantly raises War Exhaustion to its cap, but moderately increases it and effectively puts a fiefless faction on a timer, greatly increasing its daily Exhaustion gain.
+* Some War Exhaustion events now can optionally be accounted for with diminishing returns, preventing rapid and meaningless Exhaustion accumulation when, for example, a single settlement is repeatedly recaptured by the belligerents.
+* Added a setting allowing for War Exhaustion multipliers to be set differently for every side of the conflict, depending on the factions individual power scores.
+* Added new War Exhaustion entries: heroes imprisoned and heroes perished. Both take into account hero significance for the faction.
+* Added new War Exhaustion entry: caravans raided.
+* Successful castle sieges now add half as much War Exhaustion as towns.
+* Added detailed tooltips to War Exhaustion breakdown numbers in the report.
+* War Exhaustion for all ongoing conflicts will be recalculated on first save load according to current mod settings.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.19
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed a crash that occurred for some users on mod loading.
+* Fixed a crash that occurred when pressing the "Grant fief" button multiple times in a row in Encyclopedia.
+* Granting a fief to a clan would no longer worsen relations with mercenary clans or clans that own considerably more land.
+* Granting fief interface now includes the name of the clan you are granting a fief to.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.18
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed a crash that occurred when sending a Messenger to a hero in the field.
+* Fixed a rare crash that sometimes occurred in Kingdom Management.
+* Fixed a rare crash that occurred on Encyclopedia Hero page when the hero was imprisoned by leaderless party.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.17
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Recompiled for v1.0.2.
+* Fixed several issues with the Diplomacy panel in Kingdom Management.
+* Fixed several issues with peace and war restrictions not applying properly.
+* Fixed a crash that occurred when sending a Messenger to a factionless hero.
+* Fixed a crash that occurred when trying to create a caravan using a Messenger.
+* Messengers now use correct scene for the conversation.
+* Messengers can no longer freely access highborn locations unless you can.
+* The speed of Messengers now depends on the maximum arrival time.
+* Added an explanation for why some characters may not be available to send Messengers to.
+* Made some adjustments to setting hints related to Messengers to make them clearer.
+* Added a separate option to show/hide war exhaustion indicator on the campaign map.
+* Fixed an issue where the detailed war exhaustion report would sometimes have odd formatting.
+* Peace treaties no longer force NAPs, but the war cooldowns are intact.
+* Adjusted the cost of declaring war and making peace without holding elections.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.16
+Game Versions: v1.0.0,v1.0.1
+* Fixed more issues with eliminated factions.
+* Better compatibility with other Encyclopedia mods for Hero page.
+* Fixed some inaccurate setting descriptions.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.15
-Game Versions: 1.0.0
-* Bump dependencies (mainly for Steam Workshop)
+Game Versions: v1.0.0
+* Bumped dependencies (mainly for Steam Workshop).
+* Fixed some issues with eliminated factions.
+* Changes to peace offering price calculations.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.14
-Game Versions: 1.0.0
-* Recompiled for 1.0.0
+Game Versions: v1.0.0
+* Recompiled for 1.0.0.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.13
 Game Versions: e1.8.0,e1.8.1,e1.9.0
-* Recompiled for e1.9.0
+* Recompiled for e1.9.0.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.12
 Game Versions: e1.8.0,e1.8.1
-* Update dependencies to fix 1.8.0 hotfix crash
-* Fix faction selection issue in the kingdom diplomacy view
-* Fix messenger teleportation issue
+* Update dependencies to fix 1.8.0 hotfix crash.
+* Fix faction selection issue in the kingdom diplomacy view.
+* Fix messenger teleportation issue.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.11
 Game Versions: e1.8.0
-* Compatibility with e1.8.0
+* Compatibility with e1.8.0.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.10
 Game Versions: e1.7.2
-* Compatibility with e1.7.2
+* Compatibility with e1.7.2.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.9
 Game Versions: e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0
-* Compatibility with e1.7.0
-* Messengers fix
+* Compatibility with e1.7.0.
+* Messengers fix.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8.3
 Game Versions: e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5
-* Messengers fix
+* Messengers fix.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8.2
 Game Versions: e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5
-* Compatibility with e1.6.5
+* Compatibility with e1.6.5.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8.1
 Game Versions: e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5
-* Compatibility with e1.6.5 (still not working though)
+* Compatibility with e1.6.5 (still not working though).
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8
 Game Versions: e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2
 * Allow players to change kingdom banner background color when they are the ruling clan.
 * Added a console command to change the banner colors of a kingdom.
-* Some buggixes
+* Some buggixes.
 ---------------------------------------------------------------------------------------------------

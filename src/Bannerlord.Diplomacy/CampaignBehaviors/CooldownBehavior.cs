@@ -1,12 +1,10 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.DiplomaticAction.NonAggressionPact;
-using Diplomacy.Event;
-using Diplomacy.Extensions;
+﻿using Diplomacy.DiplomaticAction.Alliance;
+using Diplomacy.Events;
 
 using Microsoft.Extensions.Logging;
 
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.Actions;
 
 namespace Diplomacy.CampaignBehaviors
 {
@@ -22,8 +20,8 @@ namespace Diplomacy.CampaignBehaviors
         public override void RegisterEvents()
         {
             CampaignEvents.MakePeace.AddNonSerializedListener(this, RegisterDeclareWarCooldown);
-            Events.PeaceProposalSent.AddNonSerializedListener(this, RegisterPeaceProposalCooldown);
-            Events.AllianceFormed.AddNonSerializedListener(this, RegisterAllianceFormedCooldown);
+            DiplomacyEvents.PeaceProposalSent.AddNonSerializedListener(this, RegisterPeaceProposalCooldown);
+            DiplomacyEvents.AllianceFormed.AddNonSerializedListener(this, RegisterAllianceFormedCooldown);
         }
 
         private void RegisterAllianceFormedCooldown(AllianceEvent allianceFormedEvent)
@@ -34,22 +32,15 @@ namespace Diplomacy.CampaignBehaviors
             _cooldownManager.UpdateLastAllianceFormedTime(allianceFormedEvent.Kingdom, allianceFormedEvent.OtherKingdom, CampaignTime.Now);
         }
 
+#if v100 || v101 || v102 || v103
         private void RegisterDeclareWarCooldown(IFaction faction1, IFaction faction2)
+#else
+        private void RegisterDeclareWarCooldown(IFaction faction1, IFaction faction2, MakePeaceAction.MakePeaceDetail makePeaceDetail)
+#endif
         {
             if (faction1 is Kingdom kingdom1 && faction2 is Kingdom kingdom2)
             {
-                LogFactory.Get<CooldownBehavior>()
-                    .LogTrace($"[{CampaignTime.Now}] {kingdom1.Name} got a war declaration cooldown with {kingdom2.Name}.");
-
-                // if loser is rebel kingdom or winner is rebel kingdom and is now dissolved
-                if (kingdom1.IsRebelKingdom() || (kingdom2.IsRebelKingdom() && RebelFactionManager.Instance!.DeadRebelKingdoms.Contains(kingdom2)))
-                    return;
-
-                FormNonAggressionPactAction.Apply(kingdom1,
-                                                  kingdom2,
-                                                  bypassCosts: true,
-                                                  customDurationInDays: Settings.Instance!.DeclareWarCooldownInDays,
-                                                  queryPlayer: false);
+                LogFactory.Get<CooldownBehavior>().LogTrace($"[{CampaignTime.Now}] {kingdom1.Name} got a war declaration cooldown with {kingdom2.Name}.");
             }
         }
 

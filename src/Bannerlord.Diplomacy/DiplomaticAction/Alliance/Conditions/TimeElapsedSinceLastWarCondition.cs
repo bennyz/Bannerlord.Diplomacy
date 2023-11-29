@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-using TaleWorlds.CampaignSystem;
+﻿using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.LogEntries;
 using TaleWorlds.Localization;
 
@@ -14,7 +12,7 @@ namespace Diplomacy.DiplomaticAction.Alliance.Conditions
         public bool ApplyCondition(Kingdom kingdom, Kingdom otherKingdom, out TextObject? textObject, bool forcePlayerCharacterCosts = false, bool bypassCosts = false)
         {
             textObject = null;
-            IEnumerable<LogEntry> gameActionLogs = Campaign.Current.LogEntryHistory.GameActionLogs;
+            var gameActionLogs = Campaign.Current.LogEntryHistory.GameActionLogs;
 
             var lastPeaceTime = CampaignTime.Never;
             foreach (var logEntry in gameActionLogs)

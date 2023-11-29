@@ -19,7 +19,7 @@ namespace Diplomacy.DiplomaticAction
 
         protected AbstractScoringModel(IDiplomacyScores scores) => Scores = scores;
 
-        public virtual ExplainedNumber GetScore(Kingdom otherKingdom, Kingdom ourKingdom, bool includeDesc = false)
+        public virtual ExplainedNumber GetScore(Kingdom ourKingdom, Kingdom otherKingdom, bool includeDesc = false)
         {
             var explainedNum = new ExplainedNumber(Scores.Base, includeDesc);
 
@@ -41,7 +41,7 @@ namespace Diplomacy.DiplomaticAction
 
             // Their Alliances with Enemies
 
-            var alliedEnemies = Kingdom.All
+            var alliedEnemies = KingdomExtensions.AllActiveKingdoms
                 .Where(k => k != ourKingdom
                          && k != otherKingdom
                          && FactionManager.IsAlliedWithFaction(otherKingdom, k)
@@ -52,7 +52,7 @@ namespace Diplomacy.DiplomaticAction
 
             // Their Alliances with Neutrals
 
-            var alliedNeutrals = Kingdom.All
+            var alliedNeutrals = KingdomExtensions.AllActiveKingdoms
                 .Where(k => k != ourKingdom
                          && k != otherKingdom
                          && FactionManager.IsAlliedWithFaction(otherKingdom, k)
@@ -63,7 +63,7 @@ namespace Diplomacy.DiplomaticAction
             foreach (var alliedNeutral in alliedNeutrals)
                 explainedNum.Add(Scores.ExistingAllianceWithNeutral, CreateTextWithKingdom(SAlliedToNeutral, alliedNeutral));
 
-            var pactEnemies = Kingdom.All
+            var pactEnemies = KingdomExtensions.AllActiveKingdoms
                 .Where(k => k != ourKingdom
              && k != otherKingdom
              && DiplomaticAgreementManager.HasNonAggressionPact(otherKingdom, k, out _)
@@ -74,7 +74,7 @@ namespace Diplomacy.DiplomaticAction
 
             // Their Alliances with Neutrals
 
-            var pactNeutrals = Kingdom.All
+            var pactNeutrals = KingdomExtensions.AllActiveKingdoms
                 .Where(k => k != ourKingdom
                          && k != otherKingdom
                          && DiplomaticAgreementManager.HasNonAggressionPact(otherKingdom, k, out _)
@@ -84,11 +84,12 @@ namespace Diplomacy.DiplomaticAction
                 explainedNum.Add(Scores.NonAggressionPactWithNeutral, CreateTextWithKingdom(SPactWithNeutral, pactNeutral));
 
             // Relationship
-
-            var relationMult = MBMath.ClampFloat((float) Math.Log((ourKingdom.Leader.GetRelation(otherKingdom.Leader) + 100f) / 100f, 1.5),
-                                                 -1f,
-                                                 +1f);
-
+            float relationMult;
+            //FIXME: Should introduce a proper logic for such situations across the mod. It should only be a temporary condition, but can mess things up for good.
+            if (ourKingdom.Leader is null || otherKingdom.Leader is null)
+                relationMult = 0;
+            else
+                relationMult = MBMath.ClampFloat((float) Math.Log((ourKingdom.Leader.GetRelation(otherKingdom.Leader) + 100f) / 100f, 1.5), -1f, +1f);
             explainedNum.Add(Scores.Relationship * relationMult, _TRelationship);
 
             // Expansionism (Them)
