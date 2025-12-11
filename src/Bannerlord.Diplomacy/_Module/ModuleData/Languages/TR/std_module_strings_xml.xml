@@ -45,7 +45,7 @@
     <string id="HHgTlyyt" text="Söylentilere göre {HERO_NAME} şu an denizde. Karaya çıkana kadar beklemek en iyisi."/>
 
     <string id="vhsHDMil" text="{HERO_NAME} öldü. "/>
-    <string id="CusN2JMb" text="{HERO_NAME}, {DETENTION_PLACE} {?IS_MOBILE}tarafından{?}içinde{\?} tutsak. "/>
+    <string id="CusN2JMb" text="{HERO_NAME}, {DETENTION_PLACE}{?IS_MOBILE}'{.nin} birliğinde{?}'{.nin} zindanında{\?} tutsak. "/>
     <string id="1BISlFYx" text="{HERO_NAME} kaçak ve bulunmak istemiyor. "/>
     <string id="ze8KJ1oL" text="{HERO_NAME} gözetimden yeni serbest bırakıldı ve henüz görüşmelere hazır değil. "/>
     <string id="N5T6IXWJ" text="{HERO_NAME} kimliğini gizleyerek seyahat ediyor. "/>
