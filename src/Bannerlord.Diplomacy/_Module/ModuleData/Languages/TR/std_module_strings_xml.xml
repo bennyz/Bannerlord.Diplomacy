@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
   <tags>
-    <tag language="Turkish"/>
+    <tag language="Türkçe"/>
   </tags>
   <strings>
     <string id="MYz8nKqq" text="Diplomasi"/>
     <string id="hPERH3u4" text="Diplomasi Yüklendi"/>
 
-    <string id="TS1iV2pO" text="Yeterli nüfuz yok!"/>
+    <string id="TS1iV2pO" text="Yeterli Nüfuz Yok!"/>
     <string id="XQFxDr11" text="Bunu engelleyen aktif bir görev var!"/>
-    <string id="ONNcmltF" text="Bu savaş barışı düşünmek için yeterince uzun sürmedi! Gerekli {REQUIRED_DAYS} günün sadece {ELAPSED_DAYS} günü geçti."/>
-    <string id="GuPOCNNZ" text="Ateşkes şimdi bozmayı düşünmek için çok yeni! Gerekli {REQUIRED_DAYS} günün sadece {ELAPSED_DAYS} günü geçti."/>
+    <string id="ONNcmltF" text="Savaşın üzerinden yalnızca {ELAPSED_DAYS} gün geçti. Barış yapabilmek için en az {REQUIRED_DAYS} gün geçmeli."/>
+    <string id="GuPOCNNZ" text="Barışın üzerinden yalnızca {ELAPSED_DAYS} gün geçti. Savaş yapabilmek için en az {REQUIRED_DAYS} gün geçmeli."/>
 
-    <string id="v0cDMIcl" text="Bu krallığa savaş ilan edilemez. "/>
-    <string id="Pqk3WuGz" text="Bu krallıkla barış yapılamaz. "/>
-    <string id="9aaZ8Ed4" text="Savaş ilan edilemez, krallık liderleri arkadaş."/>
-    <string id="Zimavbgw" text="Savaş ilan edilemez, krallık liderlerinin kişisel ilişkileri mükemmel."/>
-    <string id="pXD8Uf2e" text="Savaş ilan edilemez, krallık lideri klanların yakın aile evlilikleri var."/>
+    <string id="v0cDMIcl" text="Bu krallığa savaş ilan edemezsiniz. "/>
+    <string id="Pqk3WuGz" text="Bu krallıkla barış yapamazsınız. "/>
+    <string id="9aaZ8Ed4" text="Savaş ilan edemezsiniz, krallar dost."/>
+    <string id="Zimavbgw" text="Savaş ilan edemezsiniz, kralların arası çok iyi."/>
+    <string id="pXD8Uf2e" text="Savaş ilan edemezsiniz, klanlar arasında yakın akrabalık var."/>
       
-    <string id="zv12jjyW" text="Ulak Gönderildi"/>
-    <string id="uy86VZX2" text="Ulak Vardı"/>
+    <string id="zv12jjyW" text="Ulak gönderildi"/>
+    <string id="uy86VZX2" text="Ulak vardı"/>
 
-    <string id="JmgAuONd" text="Olamaz. Ulak, {HERO_NAME} kişisine ulaşmaya çalışırken tuzağa düşürüldü ve bir Grue tarafından yendi!"/>
-    <string id="YnRmSele" text="{FACTION1_NAME} tarafından gönderilen ulak {ADDRESSEE_TEXT} konumuna vardı.{BRIBE_TEXT}"/>
-    <string id="C7XPJZAM" text="{FACTION1_NAME} tarafından gönderilen ulak {ADDRESSEE_TEXT} konumuna bir saatten kısa sürede varacak."/>
-    <string id="k5i2F6UD" text="{FACTION1_NAME} tarafından gönderilen ulak {ADDRESSEE_TEXT} konumuna {TRAVEL_TIME} gün içinde varacak."/>
-    <string id="qNWMZP0z" text="{FACTION1_NAME} tarafından gönderilen ulak {ADDRESSEE_TEXT} konumuna {TRAVEL_TIME} gün içinde varacak."/>
-    <string id="G2NMbFDb" text="{FACTION1_NAME} tarafından gönderilen ulak {ADDRESSEE_TEXT} konumuna {TRAVEL_TIME} saat içinde varacak."/>
-    <string id="gfZgMSYD" text="{FACTION1_NAME} tarafından gönderilen ulak {ADDRESSEE_TEXT} konumuna {TRAVEL_TIME} saat içinde varacak."/>
-    <string id="nYrezEOX" text="Ulak öldürüldü"/>
-    <string id="A5lug0JY" text="Ulağınız {HERO NAME} kişisine ulaşmaya çalışırken haydutlar tarafından tuzağa düşürüldü ve öldürüldü!"/>
-    <string id="1rYSIMfX" text="Ulağınız {HERO NAME} kişisine ulaşmaya çalışırken bir Grue tarafından tuzağa düşürüldü ve yendi!"/>
-    <string id="J2T97gNx" text="Ulağınız yolunu kaybetti ve şimdi dünyada amaçsızca dolaşıyor."/>
-    <string id="hOOW2DMD" text="Ulağınız bir hazine haritası buldu ve mesajı iletmek yerine hazineyi arıyor."/>
-    <string id="hc52yW8O" text="Ulağınız mesajı unuttu, onu tekrar göndermeniz gerekecek."/>
-    <string id="2rJDoi7N" text="Ulağınız çok içti ve şimdi sızıp kaldı."/>
-    <string id="VKqC9dl0" text="Ulağınız parayı aldı ve kaçtı."/>
-    <string id="vGyBQeEk" text="{HERO_NAME}{?HAS_FACTION}, {FACTION2_NAME} mensubu{?}{\?}"/>
-    <string id="sQxAljGF" text="{NEW_LINE} {NEW_LINE}Ne yazık ki, ulak kaleye giremiyor, ancak muhafızlara rüşvet vermeyi deneyebilir. Bu {?IS_FEMALE}ona{?}ona{\?} {GOLD_COST}{GOLD_ICON} altına mal olacak ve masrafları karşılamanız gerekecek{?CAN_AFFORD}.{?}, ki şu anda bunu karşılayamazsınız.{\?}"/>
+    <string id="JmgAuONd" text="Eyvah... Ulak, {HERO_NAME} adlı kişiye giderken pusuya düşürülüp öldürüldü!"/>
+    <string id="YnRmSele" text="{FACTION1_NAME} krallığından gelen ulak, {ADDRESSEE_TEXT} adlı kişiye vardı.{BRIBE_TEXT}"/>
+    <string id="C7XPJZAM" text="{FACTION1_NAME} krallığından gelen ulak, bir saatten kısa bir süre içinde {ADDRESSEE_TEXT} adlı kişiye varacak."/>
+    <string id="k5i2F6UD" text="{FACTION1_NAME} krallığından gelen ulak, {TRAVEL_TIME} gün içinde {ADDRESSEE_TEXT} adlı kişiye varacak."/>
+    <string id="qNWMZP0z" text="{FACTION1_NAME} krallığından gelen ulak, {TRAVEL_TIME} gün içinde {ADDRESSEE_TEXT} adlı kişiye varacak."/>
+    <string id="G2NMbFDb" text="{FACTION1_NAME} krallığından gelen ulak, {TRAVEL_TIME} saat içinde {ADDRESSEE_TEXT} adlı kişiye varacak."/>
+    <string id="gfZgMSYD" text="{FACTION1_NAME} krallığından gelen ulak, {TRAVEL_TIME} saat içinde {ADDRESSEE_TEXT} adlı kişiye varacak."/>
+    <string id="nYrezEOX" text="Ulak Öldürüldü"/>
+    <string id="A5lug0JY" text="Ulak, {HERO NAME} adlı kişiye giderken haydutlar tarafından pusuya düşürülüp öldürüldü!"/>
+    <string id="1rYSIMfX" text="Ulak, {HERO NAME} adlı kişiye giderken pusuya düşürülüp öldürüldü!"/>
+    <string id="J2T97gNx" text="Ulak yolunu kaybetti ve şimdi ortalıkta amaçsızca dolaşıyor."/>
+    <string id="hOOW2DMD" text="Ulak bir hazine haritası buldu ve mesajı iletmek yerine hazinenin peşine düştü."/>
+    <string id="hc52yW8O" text="Ulak mesajı unuttu, onu yeniden göndermeniz gerekecek."/>
+    <string id="2rJDoi7N" text="Ulak çok fazla içti ve şu an sızmış durumda."/>
+    <string id="VKqC9dl0" text="Ulak parayı alıp kaçtı."/>
+    <string id="vGyBQeEk" text="{HERO_NAME}{?HAS_FACTION}, {FACTION2_NAME} krallığından{?}{\?}"/>
+    <string id="sQxAljGF" text="{NEW_LINE} {NEW_LINE}Maalesef ulağın kaleye girmesine izin verilmiyor, ama nöbetçilere rüşvet vermeyi deneyebilir. Bunun ona maliyeti {GOLD_COST}{GOLD_ICON} olur ve masrafı sizin karşılamanız gerekir{?CAN_AFFORD}.{?}, ama şu anda bunu karşılayamazsınız.{\?}"/>
 
-    <string id="bLR91Eob" text="{REASON}Ulak alıcıya ulaşamayacak."/>
-    <string id="hPra5uwZ" text="Ulak şakanızı ya anlamadı ya da beğenmedi ve görevi reddediyor."/>
-    <string id="1mlXBnSs" text="{HERO_NAME} hakkında ulak gönderecek kadar bilginiz yok."/>
-    <string id="HHgTlyyt" text="Söylentilere göre {HERO_NAME} şu an denizde. Karaya çıkana kadar beklemek en iyisi."/>
+    <string id="bLR91Eob" text="{REASON}Ulak, alıcıya varamayacak."/>
+    <string id="hPra5uwZ" text="Ulak ya şakanızı anlamıyor ya da beğenmiyor ve görevi reddediyor."/>
+    <string id="1mlXBnSs" text="{HERO_NAME} hakkında ulağa tarif edebilecek kadar bilginiz yok."/>
+    <string id="HHgTlyyt" text="Söylentilere göre {HERO_NAME} şu anda denizde. Karaya çıkmasını beklemek en iyisi."/>
 
-    <string id="vhsHDMil" text="{HERO_NAME} öldü. "/>
-    <string id="CusN2JMb" text="{HERO_NAME}, {DETENTION_PLACE}{?IS_MOBILE}'{.nin} birliğinde{?}'{.nin} zindanında{\?} tutsak. "/>
-    <string id="1BISlFYx" text="{HERO_NAME} kaçak ve bulunmak istemiyor. "/>
-    <string id="ze8KJ1oL" text="{HERO_NAME} gözetimden yeni serbest bırakıldı ve henüz görüşmelere hazır değil. "/>
-    <string id="N5T6IXWJ" text="{HERO_NAME} kimliğini gizleyerek seyahat ediyor. "/>
-    <string id="3lknR86H" text="{HERO_NAME} resmi görüşmelere katılmak için çok tecrübesiz. "/>
+    <string id="vhsHDMil" text="{HERO_NAME} Öldü. "/>
+    <string id="CusN2JMb" text="{HERO_NAME} {DETENTION_PLACE}{?IS_MOBILE} birliğinde{?} zindanında{\?} tutsak. "/>
+    <string id="1BISlFYx" text="{HERO_NAME} Kaçak ve bulunmak istemiyor. "/>
+    <string id="ze8KJ1oL" text="{HERO_NAME} tutsaklıktan yeni kurtuldu ve henüz görüşmeye hazır değil. "/>
+    <string id="N5T6IXWJ" text="{HERO_NAME} gizlice seyahat ediyor. "/>
+    <string id="3lknR86H" text="{HERO_NAME} soyluların toplantılarına katılmak için fazla tecrübesiz. "/>
 
     <string id="BkGSVccZ" text="Barış Teklifi"/>
     <string id="3fTqLwkC" text="Kabul Et"/>
@@ -58,80 +58,80 @@
     <string id="cXfcwzPp" text="Ulak Gönder"/>
 
     <string id="N06wk0dB" text="Yerleşke Ele Geçirildi"/>
-    <string id="Zy0yjTha" text="{SETTLEMENT_NAME} fatihi olarak, ilk reddetme hakkına sahipsiniz. Bu mülkü talep etmek ister misiniz?"/>
+    <string id="Zy0yjTha" text="{SETTLEMENT_NAME} fatihi olarak, ilk söz hakkına sahipsiniz. Bu tımar üzerinde hak iddia etmek ister misiniz?"/>
 
     <string id="IWZ91JVk" text="Yeterli altın yok!"/>
 
-    <string id="LpoyhORp" text="Mülk Bağışla"/>
-    <string id="h3b1S5Wq" text="{CLAN_NAME} klanına Mülk Bağışla"/>
-    <string id="jznJfkfU" text="Mülk Bağışlandı"/>
-    <string id="cXbgaPSm" text="{SETTLEMENT_NAME}, {CLAN_NAME} klanına bağışlandı."/>
+    <string id="LpoyhORp" text="Tımar ver"/>
+    <string id="h3b1S5Wq" text="Tımarı {CLAN_NAME} klanına ver"/>
+    <string id="jznJfkfU" text="Tımar verildi"/>
+    <string id="cXbgaPSm" text="{SETTLEMENT_NAME}, {CLAN_NAME} klanına verildi."/>
 
-    <string id="FqeN0fmR" text="Kendi klanınıza mülk bağışlayamazsınız."/>
-    <string id="zdSYUnZQ" text="Krallığınızın lideri değilsiniz."/>
-    <string id="D61vzEC7" text="Bağışlayacak mülkünüz yok."/>
-    <string id="98hwXUTp" text="Krallığınızdaki klanlara mülk bağışlayın"/>
-    <string id="Q7jRqnez" text="Paralı asker klanlarına mülk bağışlayamazsınız."/>
+    <string id="FqeN0fmR" text="Kendi klanına tımar veremezsin."/>
+    <string id="zdSYUnZQ" text="Krallığının hükümdarı değilsin."/>
+    <string id="D61vzEC7" text="Verebileceğiniz tımar yok."/>
+    <string id="98hwXUTp" text="Krallığındaki klanlara tımar ver"/>
+    <string id="Q7jRqnez" text="Paralı asker klanlara tımar veremezsiniz."/>
 
-    <string id="DrnXprup" text="İttifak düşünmek için çok yakın zamanda savaştaydınız. Gerekli {REQUIRED_DAYS} günün sadece {ELAPSED_DAYS} günü geçti."/>
-    <string id="KHJyWj9H" text="İttifakta olunamaz."/>
-    <string id="UQZmdLzc" text="Savaşta olunamaz."/>
-    <string id="qIa19an4" text="İttifak Kuruldu"/>
-    <string id="3pbwc8sh" text="İttifak Teklifi"/>
-    <string id="QbOqatd7" text="{KINGDOM}, {PLAYER_KINGDOM} ile ittifak öneriyor."/>
+    <string id="DrnXprup" text="Savaşın üzerinden yalnızca {ELAPSED_DAYS} gün geçti. İttifak yapabilmek için en az {REQUIRED_DAYS} gün geçmeli."/>
+    <string id="KHJyWj9H" text="İttifakta iken olmaz."/>
+    <string id="UQZmdLzc" text="Savaşta iken olmaz."/>
+    <string id="qIa19an4" text="İttifak kuruldu"/>
+    <string id="3pbwc8sh" text="İttifak teklifi"/>
+    <string id="QbOqatd7" text="{KINGDOM}, {PLAYER_KINGDOM} ile bir ittifak kurmayı teklif etti."/>
 
-    <string id="384jX28Q" text="{KINGDOM}, {PLAYER_KINGDOM} ile ittifakı bozuyor."/>
-    <string id="D1ZQKZr1" text="İttifak Bozuldu"/>
+    <string id="384jX28Q" text="{KINGDOM}, {PLAYER_KINGDOM} ile olan ittifakı bozdu."/>
+    <string id="D1ZQKZr1" text="İttifak bozuldu"/>
 
-    <string id="0WPWbx70" text="İttifak Kur"/>
-    <string id="K4GraLTn" text="İttifakı Boz"/>
+    <string id="0WPWbx70" text="İttifak kur"/>
+    <string id="K4GraLTn" text="İttifakı boz"/>
 
-    <string id="VvTTrRpl" text="Bu hizip sizinle ittifak kurmakla ilgilenmiyor."/>
-    <string id="wst0lArp" text="Bu ittifak bozmayı düşünmek için yeterince uzun sürmedi! Gerekli {REQUIRED_DAYS} günün sadece {ELAPSED_DAYS} günü geçti."/>
+    <string id="VvTTrRpl" text="Bu krallık sizinle ittifak yapmak istemiyor."/>
+    <string id="wst0lArp" text="İttifakın üzerinden yalnızca {ELAPSED_DAYS} gün geçti. İttifakı bozabilmek için en az {REQUIRED_DAYS} gün geçmeli."/>
 
     <string id="KqfNSsBE" text="Müttefikler"/>
     <string id="Dirltd6Z" text="İttifaklar devre dışı."/>
 
-    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} kişisine öner{WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN}"/>
-    <string id="BC7823G2" text="{?REPARATIONS_PAY}, {REPARATIONS} savaş tazminatı ödeyerek{?TRIBUTE_PAY} ve günlük {TRIBUTE} haraç vererek.{?}{?TRIBUTE_GET}, ama günlük {TRIBUTE} haraç alarak.{?}{\?}{\?}{?}{?REPARATIONS_GET}, {REPARATIONS} savaş tazminatı alarak{?TRIBUTE_PAY}, ama günlük {TRIBUTE} haraç vererek.{?}{?TRIBUTE_GET} ve günlük {TRIBUTE} haraç alarak.{?}{\?}{\?}{?}{?TRIBUTE_PAY}, günlük {TRIBUTE} haraç ödeyerek.{?}{?TRIBUTE_GET}, günlük {TRIBUTE} haraç alarak.{?}.{\?}{\?}{\?}{\?}"/>
-    <string id="9CvcPwJA" text="{?FIEFS_ANY} Ele geçirilen bazı mülkleri geri vermek zorunda kalabilirsiniz!{?}{\?}"/>
+    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} hükümdarına {WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN} ile barış yapmayı teklif et"/>
+    <string id="BC7823G2" text="{?REPARATIONS_PAY}, {REPARATIONS} savaş tazminatı ödüyorsunuz{?TRIBUTE_PAY} ve günde {TRIBUTE} haraç veriyorsunuz.{?}{?TRIBUTE_GET}, ama günde {TRIBUTE} haraç alıyorsunuz.{?}{\?}{\?}{?}{?REPARATIONS_GET}, {REPARATIONS} savaş tazminatı alıyorsunuz{?TRIBUTE_PAY}, ama günde {TRIBUTE} haraç veriyorsunuz.{?}{?TRIBUTE_GET} ve günde {TRIBUTE} haraç alıyorsunuz.{?}{\?}{\?}{?}{?TRIBUTE_PAY}, günde {TRIBUTE} haraç veriyorsunuz.{?}{?TRIBUTE_GET}, günde {TRIBUTE} haraç alıyorsunuz.{?}.{\?}{\?}{\?}{\?}"/>
+    <string id="9CvcPwJA" text="{?FIEFS_ANY} Ele geçirdiğiniz bazı tımarları geri vermek zorunda kalabilirsiniz!{?}{\?}"/>
 
     <!--Millions and thousands-->
     <string id="6xcW68Tw" text="{VALUE}M"/>
     <string id="oD4fZ2tY" text="{VALUE}B"/>
 
-    <string id="XlL50Ha9" text="Aktif bir oyuncu kuşatması sırasında bir krallıkla barış yapılamaz."/>
+    <string id="XlL50Ha9" text="Aktif kuşatmanız varken bir krallıkla barış yapamazsınız."/>
 
-    <string id="bCOCjOQM" text="İlişki"/>
-    <string id="RxawrCjg" text="İmtiyaz Sahibi ile İlişki Kazancı"/>
+    <string id="bCOCjOQM" text="İlişki."/>
+    <string id="RxawrCjg" text="Tımar verilen kişiyle ilişki artışı"/>
 
-    <string id="fXcEtO29" text="Aktif bir saldırmazlık paktı olamaz."/>
+    <string id="fXcEtO29" text="Aktif bir saldırmazlık antlaşması varken olmaz."/>
 
     <string id="zpNalMeA" text="İttifaklar"/>
     <string id="y5tXjbLK" text="Savaşlar"/>
-    <string id="noWHMN1W" text="Saldırmazlık Paktları"/>
+    <string id="noWHMN1W" text="Saldırmazlık Antlaşmaları"/>
 
-    <string id="yj4XFa5T" text="Saldırmazlık Paktı Teklifi"/>
-    <string id="gyLjlpJB" text="{KINGDOM}, {PLAYER_KINGDOM} ile saldırmazlık paktı öneriyor."/>
+    <string id="yj4XFa5T" text="Saldırmazlık Antlaşması Teklifi"/>
+    <string id="gyLjlpJB" text="{KINGDOM}, {PLAYER_KINGDOM} ile bir saldırmazlık antlaşması yapmayı teklif ediyor."/>
 
-    <string id="9pY0NQrk" text="Pakt Kur"/>
-    <string id="9zlQNtlX" text="{DAYS} gün sürecek bir saldırmazlık paktı kur."/>
+    <string id="9pY0NQrk" text="Antlaşma Yap"/>
+    <string id="9zlQNtlX" text="{DAYS} gün sürecek bir saldırmazlık antlaşması yapın."/>
 
     <string id="1occw3EF" text="İstatistikler"/>
     <string id="OvbY5qxL" text="Genel Bakış"/>
 
-    <string id="UDC8eW7s" text="{ALLIED_KINGDOM}, {ENEMY_KINGDOM} ile savaşa müttefiki {KINGDOM} yanında katılıyor."/>
+    <string id="UDC8eW7s" text="{ALLIED_KINGDOM}, {ENEMY_KINGDOM} ile olan savaşta müttefiki {KINGDOM} safına katılıyor."/>
 
-    <string id="pdI7Tjtj" text="Saldırmazlık Paktı Sona Erdi"/>
-    <string id="uWY09LJb" text="{KINGDOM} ve {OTHER_KINGDOM} arasındaki saldırmazlık paktı sona erdi."/>
+    <string id="pdI7Tjtj" text="Saldırmazlık Antlaşması Bitti"/>
+    <string id="uWY09LJb" text="{KINGDOM} ile {OTHER_KINGDOM} arasındaki saldırmazlık antlaşması sona erdi."/>
 
-    <string id="dUCOV7km" text="Yozlaşma (çok fazla mülk)"/>
-    <string id="koTNaZUX" text="Nüfuz Erimesi (çok fazla nüfuz)"/>
+    <string id="dUCOV7km" text="Yolsuzluk (çok fazla tımar)"/>
+    <string id="koTNaZUX" text="Nüfuz kaybı (çok fazla nüfuz)"/>
     <string id="uZc8Hg01" text="Maksimum Nüfuz Kaybı"/>
 
-    <string id="kMjfN2fB" text="Ulağı İptal Et"/>
+    <string id="kMjfN2fB" text="Ulağı geri çağır"/>
 
-    <string id="q5qphBwi" text="Zayıf Hizip"/>
+    <string id="q5qphBwi" text="Zayıf Krallık"/>
     <string id="sygtLRqA" text="İlişki"/>
 
     <string id="cmOSpfyW" text="{ALLIED_KINGDOM} ile İttifak"/>
