@@ -136,38 +136,38 @@
 
     <string id="cmOSpfyW" text="{ALLIED_KINGDOM} ile İttifak"/>
     <string id="RqQ4oqvl" text="{ENEMY_KINGDOM} ile Savaş"/>
-    <string id="t6YhBLj7" text="{KINGDOM} ile Saldırmazlık Paktı"/>
-    <string id="BjkwaNot" text="{KINGDOM} lider klanı ile evlilik"/>
+    <string id="t6YhBLj7" text="{KINGDOM} ile Saldırmazlık Antlaşması"/>
+    <string id="BjkwaNot" text="{KINGDOM} ile yönetici klan evliliği"/>
 
-    <string id="M4SGjzQP" text="Bu hizip sizinle saldırmazlık paktı kurmakla ilgilenmiyor."/>
+    <string id="M4SGjzQP" text="Bu krallık sizinle saldırmazlık antlaşması yapmak istemiyor."/>
 
     <string id="Gzq6VHPt" text="Altın Bağışla"/>
     <string id="N7goPgiq" text="Tahtı Gasp Et"/>
-    <string id="WVe7QwhW" text="Bu krallığın tahtını gasp et\nKlan Desteği: {SUPPORTING_TIERS} / {OPPOSING_TIERS}"/>
+    <string id="WVe7QwhW" text="Bu krallığın tahtını ele geçirin\nKlan desteği: {SUPPORTING_TIERS} / {OPPOSING_TIERS}"/>
 
     <string id="CxdpR6w4" text="Yayılmacılık"/>
 
     <string id="ARNRwPrY" text="Koalisyon Kuruldu"/>
-    <string id="qbLPBlIv" text="Kalradya, {EXPANSIONIST_KINGDOM} krallığının durdurulamaz yayılmasından endişe duyuyor. Onlarla savaşmak için {COALITION_KINGDOM} liderliğinde bir koalisyon kuruldu!"/>
+    <string id="qbLPBlIv" text="KALRADYA, {EXPANSIONIST_KINGDOM} krallığının durdurulamayan yayılmasından rahatsız olmaya başladı. Onlara karşı savaşmak için {COALITION_KINGDOM} önderliğinde bir koalisyon kuruldu!"/>
 
-    <string id="vB3RrMNf" text="{KINGDOM}, {OTHER_KINGDOM} ile saldırmazlık paktı kurdu."/>
-    <string id="PdN5g5ub" text="{KINGDOM}, {OTHER_KINGDOM} ile ittifak kurdu!"/>
-    <string id="5r6fsHgm" text="Mevcut Skor"/>
-    <string id="XIBUWDlT" text="Gerekli Skor"/>
+    <string id="vB3RrMNf" text="{KINGDOM}, {OTHER_KINGDOM} ile bir saldırmazlık antlaşması yaptı."/>
+    <string id="PdN5g5ub" text="{KINGDOM}, {OTHER_KINGDOM} ile bir ittifak kurdu!"/>
+    <string id="5r6fsHgm" text="Mevcut Puan"/>
+    <string id="XIBUWDlT" text="Gerekli Puan"/>
 
     <string id="5znwaUVC" text="Kalan Gün: {DAYS_LEFT}"/>
 
-    <string id="Euy6Mwcq" text="Bu eylemin kilidini açmak için ana hikayede daha fazla ilerlemelisiniz. Mod seçeneklerinden hikaye korumasını devre dışı bırakabilirsiniz."/>
+    <string id="Euy6Mwcq" text="Bu eylemi açmak için ana görevde biraz daha ilerlemeniz gerekiyor. Ya da hikaye korumasını mod ayarlarından kapatabilirsiniz."/>
     <string id="fQxiCdBA" text="Ana Hikaye"/>
-    <string id="3wXqST66" text="Bu tahtı gasp ederek, ana hikayede imparatorluğu {STANCE} etmeyi taahhüt ediyorsunuz."/>
-    <string id="yAFwbD9B" text="birleştirmeyi"/>
-    <string id="IGJVx5XI" text="yok etmeyi"/>
+    <string id="3wXqST66" text="Bu tahtı ele geçirerek ana hikayedeki imparatorluğu {STANCE} yolunu seçmiş olursunuz."/>
+    <string id="yAFwbD9B" text="birleştirme"/>
+    <string id="IGJVx5XI" text="yıkma"/>
 
-    <string id="lQAaLeSy" text="Bu eylemi gerçekleştirmek için yetkiniz yok."/>
+    <string id="lQAaLeSy" text="Bu eylemi yapmak için yetkiniz yok."/>
 
-    <string id="7QvXkcxH" text="Krallığınızdaki klanlara altın bağışlayın"/>
-    <string id="e7uxH1jc" text="Altın Maliyeti: {GOLD_COST}"/>
-    <string id="4lG3JG2e" text="İlişki Kazancı: {RELATION_GAIN}+"/>
+    <string id="7QvXkcxH" text="Krallığındaki klanlara altın bağışla"/>
+    <string id="e7uxH1jc" text="Altın Bedeli: {GOLD_COST}"/>
+    <string id="4lG3JG2e" text="İlişki Artışı: +{RELATION_GAIN}"/>
 
     <string id="Q2vXbwvC" text="Diplomasi"/>
     
@@ -176,125 +176,125 @@
     -->
 
     <string id="sBw5Qzq3" text="Krallık Diplomasisi"/>
-    <string id="tis8Ddzn" text="Oyuncunun Kendi Aldığı Yerleşkeleri Talep Etmesine İzin Ver"/>
-    <string id="TfxLCxcD" text="Oyuncuya, seçime gitmesine izin vermek yerine aldığı bir yerleşkeyi talep etme seçeneği sunar."/>
-    <string id="8VKC3jtN" text="Mülksüz Krallık Elemeyi Etkinleştir"/>
-    <string id="TlymwwPZ" text="Etkinleştirilirse, hiç mülkü olmayan krallıklar, katıldıkları son savaşı bitiren bir barış antlaşması imzaladıklarında yok edilir. Varsayılan değer etkindir."/>
-    <string id="w8Hi9jJf" text="Mülksüz Krallık Elemeyi Geciktir"/>
-    <string id="GDctI4Kd" text="Etkinleştirilirse, hiç mülkü olmayan krallıklar, son mülklerini kaybettikleri anda değil, dahil oldukları son savaşı bitiren bir barış antlaşması imzaladıklarında yok edilir. Varsayılan değer etkindir."/>      
-    <string id="ZRlNvsev" text="Gün Olarak Minimum Savaş Süresi"/>
-    <string id="vuFT5ns8" text="Barış önermeden önce bir savaşın sürmesi gereken minimum süre (gün cinsinden). Varsayılan değer 21'dir (standart oyun yılının çeyreği)."/>
-    <string id="4MzQHMVj" text="Savaş İlanı Bekleme Süresi (Gün)"/>
-    <string id="q2duqN8d" text="Barış yaptıktan sonra aynı krallığa tekrar savaş ilan etmeden önce geçmesi gereken minimum süre (gün cinsinden). Varsayılan değer 21'dir (standart oyun yılının çeyreği)."/>
-    <string id="2XC8QHkl" text="İttifakları Etkinleştir"/>
-    <string id="5YJBZx28" text="Devre dışı bırakılırsa, hem oyuncu hem de yapay zeka krallıkları için ittifak kurma yeteneği devre dışı kalır. Varsayılan değer etkindir."/>
-    <string id="H6XMjwpF" text="Gün Olarak Minimum İttifak Süresi"/>
-    <string id="RrsWhIWi" text="Bir ittifakın bozulmadan önce süreceği minimum süre (gün cinsinden). Varsayılan değer 42'dir (standart oyun yılının yarısı)."/>
+    <string id="tis8Ddzn" text="Oyuncunun, ele geçirdiği yerleşkelerin üzerinde hak iddia etmesine izin ver"/>
+    <string id="TfxLCxcD" text="Oyuncuya, ele geçirdiği bir yerleşkeyi oylamaya gitmeden kendisi için talep etme seçeneği verir."/>
+    <string id="8VKC3jtN" text="Tımarsız Krallıkların Yok Edilmesini Etkinleştir"/>
+    <string id="TlymwwPZ" text="Etkinse, hiç tımarı olmayan krallıklar, dahil oldukları son savaşı bitiren bir barış antlaşması imzaladıklarında yok edilir. Varsayılan: etkin."/>
+    <string id="w8Hi9jJf" text="Tımarsız Krallıkların Yok Edilmesini Geciktir"/>
+    <string id="GDctI4Kd" text="Etkinse, tımarı kalmayan krallıklar, son katıldıkları savaş barışla bittikten sonra yok edilir; son tımarlarını kaybettikleri anda yok edilmezler. Varsayılan: etkin."/>      
+    <string id="ZRlNvsev" text="Minimum Savaş Süresi (gün)"/>
+    <string id="vuFT5ns8" text="Bir savaşa barış önerilmeden önce geçmesi gereken en az gün sayısı. Varsayılan: 21 (oyun yılının çeyreği)."/>
+    <string id="4MzQHMVj" text="Savaş İlanı Bekleme Süresi (gün)"/>
+    <string id="q2duqN8d" text="Barış yaptıktan sonra, Aynı krallığa yeniden savaş ilan edebilmek için geçmesi gereken minimum gün sayısı. Varsayılan: 21 (oyun yılının çeyreği)."/>
+    <string id="2XC8QHkl" text="İttifakları etkinleştir"/>
+    <string id="5YJBZx28" text="Devre dışı bırakılırsa hem oyuncu hem de yapay zeka için ittifak kurma imkanı kaldırılır. Varsayılan: etkin."/>
+    <string id="H6XMjwpF" text="Minimum İttifak Süresi (gün)"/>
+    <string id="RrsWhIWi" text="Bir ittifakın bozulabilmesi için geçmesi gereken minimum gün sayısı. Varsayılan: 42 (oyun yılının yarısı)."/>
     <string id="5a829TiT" text="İttifak Eğilimi"/>
-    <string id="7nSjs8UL" text="Krallıkların ittifak kurma eğilimini etkileyen skor çarpanı. Çarpanı artırmak, ittifakları yapay zeka krallıkları için daha cazip hale getirir. Varsayılan değer 0'dır."/>
-    <string id="V35hUfcc" text="Gün Olarak Saldırmazlık Paktı Süresi"/>
-    <string id="KXLGZEPh" text="Bir saldırmazlık paktının süreceği gün sayısı. Varsayılan değer 84'tür (bir standart oyun yılı)."/>
-    <string id="G8BhBnRG" text="Saldırmazlık Paktı Eğilimi"/>
-    <string id="907ER5u9" text="Krallıkların saldırmazlık paktı kurma eğilimini etkileyen skor çarpanı. Çarpanı artırmak, saldırmazlık paktlarını yapay zeka krallıkları için daha cazip hale getirir. Varsayılan değer 0'dır."/>
-    <string id="6m1SspFW" text="Oyuncu Krallık Diplomasi Kontrolünü Etkinleştir"/>
-    <string id="N5EouSSj" text="Oyuncuya, sadece bir vasal olsa ve krallığın lideri olmasa bile, ait olduğu krallıkta savaş ilan etme ve barış yapma konusunda tam kontrol verir. Varsayılan değer devre dışıdır."/>
+    <string id="7nSjs8UL" text="Krallıkların ittifak kurma eğilimini etkileyen puan çarpanı. Değeri arttırmak, yapay zeka için ittifakları daha cazip hale getirir. Varsayılan: 0."/>
+    <string id="V35hUfcc" text="Saldırmazlık Antlaşması Süresi (gün)"/>
+    <string id="KXLGZEPh" text="Bir saldırmazlık antlaşmasının süresi (gün). Varsayılan: 84 (bir oyun yılı)."/>
+    <string id="G8BhBnRG" text="Saldırmazlık Antlaşması Eğilimi"/>
+    <string id="907ER5u9" text="Krallıkların saldırmazlık antlaşması yapma eğilimini etkileyen puan çarpanı. Değeri arttırmak, yapay zeka için bu antlaşmaları daha cazip hale getirir. Varsayılan: 0."/>
+    <string id="6m1SspFW" text="Oyuncu Krallığının Diplomasi Kontrolünü Etkinleştir"/>
+    <string id="N5EouSSj" text="Oyuncuya, sadece bir vasal olsa bile ait olduğu krallıkta savaş ilanı ve barış üzerinde tam kontrol verir; krallığın hükümdarı olması gerekmez. Varsayılan: devre dışı."/>
     <string id="lhysZl9j" text="Eylem Eğilimi"/>
-    <string id="dRyU9E7Z" text="Arkadaşlar Arasında Savaş Yok"/>
-    <string id="XyXJSTKr" text="Etkinse, arkadaş olan krallık liderleri birbirleriyle savaş başlatmaz. Varsayılan değer etkindir."/>
-    <string id="pWoKQ6HO" text="İyi İlişkiler Varsa Savaş Yok"/>
-    <string id="bOuGhbPt" text="Etkinse, ilişkiler savaş başlangıç ilişkilerinin üzerindeyse krallık liderleri arasında savaşlara izin verilmez. Varsayılan değer etkindir."/>
-    <string id="x0Aoiomr" text="Savaş Yok İyi İlişki Eşiği"/>
-    <string id="aH6rpjt6" text="Krallıkların birbirleriyle savaş başlatmayacağı krallık lideri ilişki değeri. Varsayılan değer 30'dur."/>
-    <string id="jwNKk8P7" text="Evliyken Savaş Yok"/>
-    <string id="xcMzKH48" text="Etkinse, aralarında evlilik olan krallık lideri klanlar savaş başlatmaz. Varsayılan değer aktiftir."/>
-    <string id="xcMzKH48" text="Lider Klan Aile Evliliği İttifakı Etkiler"/>
-    <string id="xXKKRp99" text="Etkinse, lider klanlar arasında aile evliliği olduğunda ittifak eğilimine bonus verir. Varsayılan değer aktiftir."/>
-    <string id="BGS6mUID" text="Maliyetler"/>
+    <string id="dRyU9E7Z" text="Dostlar Arasında Savaş Yok"/>
+    <string id="XyXJSTKr" text="Etkinse, dost olan krallar birbirlerine savaş açmaz. Varsayılan: etkin."/>
+    <string id="pWoKQ6HO" text="İlişkiler İyiyse Savaş Yok"/>
+    <string id="bOuGhbPt" text="Etkinse, aralarındaki ilişki savaş eşiğinin üzerindeyse krallar birbirine savaş açamaz. Varsayılan: etkin."/>
+    <string id="x0Aoiomr" text="Savaşı Engelleyen Minimum İlişki Değeri"/>
+    <string id="aH6rpjt6" text="Krallar arasındaki ilişki değeri bu sayının üzerindeyse krallıklar birbirine savaş açmaz. Varsayılan: 30."/>
+    <string id="jwNKk8P7" text="Evlilik Bağı Varsa Savaş Yok"/>
+    <string id="xcMzKH48" text="Etkinse, aralarında evlilik bağı olan yönetici klanları birbirine savaş açmaz. Varsayılan: etkin."/>
+    <string id="xcMzKH48" text="Etkinse, aralarında evlilik bağı olan yönetici klanları birbirine savaş açmaz. Varsayılan: etkin."/>
+    <string id="xXKKRp99" text="Yönetici Klan Evlilikleri İttifakı Etkilesin"/>
+    <string id="BGS6mUID" text="Etkinse, aralarında evlilik bağı olan yönetici klanlar için ittifak eğilimine bonus verir. Varsayılan: etkin."/>
       
-    <string id="ldLFTs92" text="Altın Maliyetleri"/>      
-    <string id="Ckd1Lsoa" text="Ölçeklenen Altın Maliyetlerini Etkinleştir"/>
-    <string id="t4hNAoD7" text="Etkinleştirilirse, diplomatik eylemlerin ve savaş tazminatlarının altın maliyetlerini krallığınızın büyüklüğüne göre ölçeklendirir. Aksi takdirde, diplomatik eylemler için 100 ve savaş tazminatları için 1000 olan genel çarpanlar uygulanır. Varsayılan değer etkindir."/>
-    <string id="5MMIDE5A" text="Ölçeklenen Altın Maliyet Çarpanı"/>
-    <string id="vD270X6H" text="Ölçeklenen altın maliyetleri için çarpan. Varsayılan değer 5'tir."/>
-    <string id="Gd52NzBP" text="Ölçeklenen Savaş Tazminatı Altın Maliyet Çarpanı"/>
-    <string id="HFtZsD6v" text="Savaş tazminatı altın maliyetlerinin ölçeklendirilmesi için çarpan. Varsayılan değer 50'dir."/>
-    <string id="MIhbrqbr" text="Yenilgi Savaş Tazminatı Altın Maliyeti"/>
-    <string id="Cr6a5Jap" text="Bir başka krallığa karşı yıpratma savaşını kaybetmenin temel altın maliyeti. Ölçeklendirmeden etkilenir ve ölçeklendirme devre dışı bırakıldığında bin ile çarpılır. Varsayılan değer 200'dür."/>
-    <string id="NH4GNKva" text="Nüfuz Maliyetleri"/>
+    <string id="ldLFTs92" text="Maliyetler"/>      
+    <string id="Ckd1Lsoa" text="Altın Maliyetleri"/>
+    <string id="t4hNAoD7" text="Ölçeklenen Altın Maliyetlerini Etkinleştir"/>
+    <string id="5MMIDE5A" text="Etkinse, diplomasi eylemleri ve savaş tazminatlarının altın maliyetleri krallığınızın büyüklüğüne göre ölçeklenir. Aksi halde diplomasi için 100, savaş tazminatları için 1000 genel çarpanları kullanılır. Varsayılan: etkin."/>
+    <string id="vD270X6H" text="Ölçeklenen Altın Maliyeti Çarpanı"/>
+    <string id="Gd52NzBP" text="Ölçeklenen altın maliyetleri için çarpan. Varsayılan: 5."/>
+    <string id="HFtZsD6v" text="Ölçeklenen Savaş Tazminatı Altın Maliyeti Çarpanı"/>
+    <string id="MIhbrqbr" text="Savaş tazminatının ölçeklenen altın maliyeti için çarpan. Varsayılan: 50."/>
+    <string id="Cr6a5Jap" text="Kaybedilen Savaş Tazminatı Altın Maliyeti"/>
+    <string id="NH4GNKva" text="Bir başka krallığa karşı yıpratma savaşını kaybetmenin altın cinsinden taban maliyeti. Ölçeklemeden etkilenir; ölçekleme kapalıysa binle çarpılır. Varsayılan: 200."/>
 
-    <string id="SEViwYTl" text="Nüfuz Maliyetlerini Etkinleştir"/>
-    <string id="WbOKuWbQ" text="Devre dışı bırakılırsa, savaş ve barış ilanı eylemleri için nüfuz maliyetlerini kaldırır. Varsayılan değer etkindir."/>
-    <string id="K2vLGalN" text="Nüfuz Maliyetleri/Ölçeklendirme"/>
-    <string id="9PlT57Nl" text="Ölçeklenen Nüfuz Maliyetlerini Etkinleştir"/>
-    <string id="P1g6Ht1e" text="Etkinleştirilirse, nüfuz maliyetlerini krallığınızın büyüklüğüne göre ölçeklendirir. Aksi takdirde, sabit nüfuz maliyetleri kullanılır. Varsayılan değer etkindir."/>
-    <string id="xfVFBxfj" text="Ölçeklenen Nüfuz Maliyet Çarpanı"/>
-    <string id="TvAYJv5Q" text="Ölçeklenen nüfuz maliyetleri için çarpan. Varsayılan değer 5'tir."/>
-    <string id="AQ5gRYN6" text="Nüfuz Maliyetleri/Sabit"/>
-    <string id="BazjeCZw" text="Sabit Savaş İlanı Nüfuz Maliyeti"/>
-    <string id="OnTeAgin" text="Başka bir krallığa savaş ilan etmenin nüfuz maliyeti. Varsayılan değer 500'dür."/>
-    <string id="O5XvybTI" text="Sabit Barış Yapma Nüfuz Maliyeti"/>
-    <string id="iNsXQD2q" text="Başka bir krallıkla barış yapmanın nüfuz maliyeti. Varsayılan değer 500'dür."/>
-    <string id="WB5zdvdT" text="Ulaklar"/>
+    <string id="SEViwYTl" text="Nüfuz Maliyetleri"/>
+    <string id="WbOKuWbQ" text="Nüfuz Maliyetlerini Etkinleştir"/>
+    <string id="K2vLGalN" text="Devre dışı bırakılırsa savaş ve barış ilanı için nüfuz maliyetleri kaldırılır. Varsayılan: etkin."/>
+    <string id="9PlT57Nl" text="Nüfuz Maliyetleri/Ölçekleme"/>
+    <string id="P1g6Ht1e" text="Ölçeklenen Nüfuz Maliyetlerini Etkinleştir"/>
+    <string id="xfVFBxfj" text="Etkinse, nüfuz maliyetleri krallığınızın büyüklüğüne göre ölçeklenir. Aksi halde sabit nüfuz maliyetleri kullanılır. Varsayılan: etkin."/>
+    <string id="TvAYJv5Q" text="Ölçeklenen Nüfuz Maliyeti Çarpanı"/>
+    <string id="AQ5gRYN6" text="Ölçeklenen nüfuz maliyetleri için çarpan. Varsayılan: 5."/>
+    <string id="BazjeCZw" text="Nüfuz Maliyetleri/Sabit"/>
+    <string id="OnTeAgin" text="Sabit Savaş İlanı Nüfuz Maliyeti"/>
+    <string id="O5XvybTI" text="Başka bir krallığa savaş ilan etmenin nüfuz maliyeti. Varsayılan: 500."/>
+    <string id="iNsXQD2q" text="Sabit Barış Yapma Nüfuz Maliyeti"/>
+    <string id="WB5zdvdT" text="Başka bir krallıkla barış yapmanın nüfuz maliyeti. Varsayılan: 500."/>
 
-    <string id="nueOs6m9" text="Ulak Kazalarını Etkinleştir"/>
-    <string id="nwTyegdV" text="Etkinleştirilirse, ulaklar için küçük bir başarısızlık şansı ekler. Yolculuk ne kadar uzun olursa, yolda kaza olma şansı o kadar artar. Varsayılan değer etkindir."/>
-    <string id="T7yybpw3" text="Ulak Gönderimini Kısıtla"/>
-    <string id="ysYCYvwT" text="Etkinleştirilirse, yalnızca tanıştığınız veya bilme ihtimaliniz olan kişilere ulak gönderebilirsiniz. Aksi takdirde, alıcı hakkındaki bilginize bakılmaksızın bir kişiye ulak gönderebilirsiniz. Varsayılan değer etkindir."/>
-    <string id="5O87pSL3" text="Gün Olarak Ulak Seyahat Süresi"/>
-    <string id="nnXi6MmH" text="Ulağın alıcıya ulaşmasının alabileceği maksimum süre (gün cinsinden). Ulakların seyahat hızını doğrudan etkiler. Varsayılan değer 3'tür."/>
-    <string id="zkvCGLuK" text="Ulak Gönderme Altın Maliyeti"/>
-    <string id="nMwWHj4h" text="Başka bir karaktere ulak göndermenin altın maliyeti. Varsayılan değer 100'dür."/>
-    <string id="ehMf7xvE" text="Ulak Gönderme Minimum Altın Maliyeti"/>
-    <string id="YolJlw95" text="Başka bir karaktere ulak göndermenin minimum altın maliyeti. Varsayılan değer 75'tir."/>
-    <string id="P5NWxY6F" text="Saat Başına Ulak Gönderme Altın Maliyeti"/>
-    <string id="Hkv9Peqa" text="Ulağın başka bir karaktere ulaşması için gereken her saat için altın maliyeti. Varsayılan değer 1'dir."/>
-    <string id="ckYA36t8" text="İlişki"/>
+    <string id="nueOs6m9" text="Ulaklar"/>
+    <string id="nwTyegdV" text="Ulak Kazalarını Etkinleştir"/>
+    <string id="T7yybpw3" text="Etkinse, ulaklar için küçük bir başarısızlık ihtimali ekler. Yolculuk uzadıkça yolda bir kaza yaşama ihtimali artar. Varsayılan: etkin."/>
+    <string id="ysYCYvwT" text="Ulak Gönderimini Kısıtla"/>
+    <string id="5O87pSL3" text="Etkinse, yalnızca tanıştığınız ya da hakkında bilginiz olması muhtemel kişilere ulak gönderebilirsiniz. Aksi halde alıcıyı tanımasanız bile ulak gönderebilirsiniz. Varsayılan: etkin."/>
+    <string id="nnXi6MmH" text="Ulak Yolculuk Süresi (gün)"/>
+    <string id="zkvCGLuK" text="Ulağın alıcıya ulaşması için geçecek olan maksimum gün sayısı. Ulakların yolculuk hızını doğrudan etkiler. Varsayılan: 3."/>
+    <string id="nMwWHj4h" text="Ulak Gönderme Altın Maliyeti"/>
+    <string id="ehMf7xvE" text="Bir kişiye ulak göndermenin altın maliyeti. Varsayılan: 100."/>
+    <string id="YolJlw95" text="Minimum Ulak Gönderme Maliyeti"/>
+    <string id="P5NWxY6F" text="Bir kişiye ulak göndermenin en düşük altın maliyeti. Varsayılan: 75."/>
+    <string id="Hkv9Peqa" text="Saat Başına Ulak Gönderme Maliyeti"/>
+    <string id="ckYA36t8" text="Ulağın bir kişiye ulaşmasının her saati için eklenen altın maliyeti. Varsayılan: 1."/>
 
-    <string id="OfEMJWiR" text="Mülk Bağışlama Pozitif İlişki Çarpanı"/>
-    <string id="6l9QNMrB" text="Mülk bağışlarken ilişki kazancı için çarpan. Varsayılan değer 1'dir."/>
-    <string id="FQaghHo7" text="Mülk Bağışlama İlişki Cezası"/>
-    <string id="9qKclHq3" text="Başka bir klana mülk bağışlandığında uygulanan ilişki cezası. Varsayılan değer -2'dir."/>
-    <string id="fgc8Dvg0" text="Nüfuz Dengeleme"/>
+    <string id="OfEMJWiR" text="İlişki"/>
+    <string id="6l9QNMrB" text="Tımar Vermede Olumlu İlişki Çarpanı"/>
+    <string id="FQaghHo7" text="Tımar verdiğinizde alınan ilişki artışı için çarpan. Varsayılan: 1."/>
+    <string id="9qKclHq3" text="Tımar Vermede İlişki Cezası"/>
+    <string id="fgc8Dvg0" text="Başka bir klana tımar verdiğinizde uygulanan ilişki cezası. Varsayılan: -2."/>
 
-    <string id="8ZPKToTq" text="Nüfuz Dengelemeyi Etkinleştir"/>
-    <string id="4jlYRUdZ" text="Nüfuz Erimesi ve Yozlaşma hesaplamalarının aktif olup olmadığını kontrol eder. Mod uyumluluğu için devre dışı bırakılması gerekebilir."/>
-    <string id="tOMN9DQD" text="Nüfuz Erimesi"/>
+    <string id="8ZPKToTq" text="Nüfuz Dengesi"/>
+    <string id="4jlYRUdZ" text="Nüfuz Dengesini Etkinleştir"/>
+    <string id="tOMN9DQD" text="Nüfuz kaybı ve yolsuzluk hesaplamalarının etkin olup olmayacağını belirler. Bazı modlar ile uyum için kapatılması gerekebilir."/>
 
-    <string id="vzKRX2JA" text="Nüfuz Erimesini Etkinleştir"/>
-    <string id="szYr4OTG" text="Nüfuzu her gün yavaş yavaş eriten nüfuz erimesini etkinleştirir. Varsayılan değer etkindir."/>
-    <string id="rKS9z4Sz" text="Nüfuz Erimesi Eşiği"/>
+    <string id="vzKRX2JA" text="Nüfuz Kaybı"/>
+    <string id="szYr4OTG" text="Nüfuz Kaybını Etkinleştir"/>
+    <string id="rKS9z4Sz" text="Her gün nüfuzun yavaş yavaş azalmasını sağlayan sistemi etkinleştirir. Varsayılan: etkin."/>
 
-    <string id="pVE1yNlm" text="Nüfuz erimesinden muaf tutulan nüfuz miktarı. Varsayılan değer 1000'dir."/>
-    <string id="MnLk08uW" text="Günlük Maksimum Nüfuz Kaybı"/>
-    <string id="WTeM4Rba" text="Günlük maksimum nüfuz kaybı miktarı. Varsayılan değer 20'dir."/>
-    <string id="CGixJ6ng" text="Günlük Nüfuz Erimesi Yüzdesi"/>
-    <string id="yob5ZHtz" text="Günlük eriyen nüfuz yüzdesi. Varsayılan değer 2.0'dır."/>
-    <string id="IYFl4kJx" text="Yozlaşma"/>
+    <string id="pVE1yNlm" text="Nüfuz Kaybı Eşiği"/>
+    <string id="MnLk08uW" text="Nüfuz kaybından muaf tutulan nüfuz miktarı. Varsayılan: 1000."/>
+    <string id="WTeM4Rba" text="Günlük Maksimum Nüfuz Kaybı"/>
+    <string id="CGixJ6ng" text="Bir günde kaybedilebilecek maksimum nüfuz miktarı. Varsayılan: 20."/>
+    <string id="yob5ZHtz" text="Günlük Nüfuz Kaybı Yüzdesi"/>
+    <string id="IYFl4kJx" text="Her gün eksilen nüfuz yüzdesi. Varsayılan: 2.0."/>
 
-    <string id="e5fHDXgl" text="Yozlaşmayı Etkinleştir"/>
-    <string id="KWAH0S4h" text="Çok fazla mülk tutarken bir klanın nüfuzunu her gün yavaş yavaş eriten yozlaşmayı etkinleştirir. Varsayılan değer etkindir."/>
-    <string id="trgnZ0pn" text="Yayılmacılık"/>
+    <string id="e5fHDXgl" text="Yolsuzluk"/>
+    <string id="KWAH0S4h" text="Yolsuzluğu Etkinleştir"/>
+    <string id="trgnZ0pn" text="Bir klanın çok fazla tımar tuttuğu durumlarda, her gün nüfuzunun yavaş yavaş azalmasına neden olur. Varsayılan: etkin."/>
 
-    <string id="ZqQaUIil" text="Koalisyonlar"/>
-    <string id="2raR1ZHv" text="Mülk Başına Minimum Yayılmacılık"/>
-    <string id="Pr4dcRKm" text="Bir mülkün katkıda bulunduğu minimum yayılmacılık miktarı. Varsayılan değer 3'tür."/>
-    <string id="9qcAWjI7" text="Kuşatma Başına Yayılmacılık"/>
-    <string id="MnhMW8iq" text="Başarılı kuşatma başına eklenen yayılmacılık. Varsayılan değer 20'dir."/>
-    <string id="lCbie62E" text="Günlük Yayılmacılık Azalması"/>
-    <string id="mEXGC0h3" text="Her gün azalan yayılmacılık miktarı. Varsayılan değer 1'dir."/>
-    <string id="kgPeQvqE" text="Koalisyonları Etkinleştir"/>
-    <string id="ZIf1tRII" text="Güçlü, yayılmacı bir hizbe karşı hiziplerin birleşmesine izin veren koalisyonları etkinleştirir. Varsayılan değer etkindir."/>
-    <string id="8v8q0OGu" text="Yayılmacılık Eşiği"/>
-    <string id="1kSd88X5" text="Bir hizbe karşı koalisyon kurulmadan önce gereken yayılmacılık miktarı. Varsayılan değer 100'dür."/>
-    <string id="EUnASoee" text="Günlük Koalisyon Şansı Yüzdesi"/>
-    <string id="zwbL9BHe" text="Yayılmacılık eşiğinin üzerindeki bir hizbe karşı koalisyon oluşma şansı yüzdesi. Varsayılan değer 5'tir."/>
-    <string id="9ugCWA3v" text="Hikaye Koruması"/>
+    <string id="ZqQaUIil" text="Yayılmacılık"/>
+    <string id="2raR1ZHv" text="Koalisyonlar"/>
+    <string id="Pr4dcRKm" text="Tımar Başına Minimum Yayılmacılık"/>
+    <string id="9qcAWjI7" text="Bir tımarın eklediği minimum yayılmacılık miktarı. Varsayılan: 3."/>
+    <string id="MnhMW8iq" text="Kuşatma Başına Yayılmacılık"/>
+    <string id="lCbie62E" text="Başarılı her kuşatmanın eklediği yayılmacılık miktarı. Varsayılan: 20."/>
+    <string id="mEXGC0h3" text="Günlük Yayılmacılık Azalması"/>
+    <string id="kgPeQvqE" text="Her gün eksilen yayılmacılık miktarı. Varsayılan: 1."/>
+    <string id="ZIf1tRII" text="Koalisyonları Etkinleştir"/>
+    <string id="8v8q0OGu" text="Güçlü ve yayılmacı bir krallığa karşı, krallıkların birlikte hareket etmesini sağlayan koalisyon sistemini etkinleştirir. Varsayılan: etkin."/>
+    <string id="1kSd88X5" text="Yayılmacılık Eşiği"/>
+    <string id="EUnASoee" text="Hakkında koalisyon kurulmadan önce bir krallığın ulaşması gereken yayılmacılık miktarı. Varsayılan: 100."/>
+    <string id="zwbL9BHe" text="Günlük Koalisyon İhtimali Yüzdesi"/>
+    <string id="9ugCWA3v" text="Yayılmacılık eşiğinin üzerindeki bir krallığa karşı her gün koalisyon kurulma ihtimali yüzdesi. Varsayılan: 5."/>
 
-    <string id="lsyl0VSX" text="Etkinleştirildiğinde, oyuncunun ana hikayeyi bozmasını engeller. &quot;Just Let Me Play&quot; gibi modlar kullanırken devre dışı bırakın. Varsayılan değer etkindir."/>
-    <string id="EVrErrTR" text="Tamamlanmamış Özellikler"/>
+    <string id="lsyl0VSX" text="Hikaye Koruması"/>
+    <string id="EVrErrTR" text="Etkinse, oyuncunun ana hikayenin dışına çıkmasını engeller. Bazı modlarla uyumsuz olabilir. Varsayılan: etkin."/>
 
-    <string id="f6n2UAEC" text="Taht Gaspı Özelliğini Etkinleştir"/>
-    <string id="HSoZfvXH" text="Etkinleştirildiğinde, oyuncunun bir krallığın tahtını gasp etmesine izin verir. Bu özellik dengesizdir ve yeniden çalışma beklemektedir, bu nedenle önerilmez. Varsayılan değer yanlıştır."/>
-    <string id="ZIAo4er4" text="Etkinleştirildiğinde, bu özellik oyuncunun bir krallığın tahtını ele geçirmesine olanak tanır. Bu özellik dengesizdir ve yeniden düzenlenmeyi beklemektedir, bu nedenle kullanılması önerilmez. Varsayılan değer false'dir."/>
+    <string id="f6n2UAEC" text="Tamamlanmamış Özellikler"/>
+    <string id="HSoZfvXH" text="Tahtı Ele Geçirme Özelliğini Etkinleştir"/>
+    <string id="ZIAo4er4" text="Etkinse, oyuncunun bir krallığın tahtını ele geçirmesine izin verir. Bu özellik dengeli değildir, üzerinde yeniden çalışılacaktır ve bu yüzden önerilmez. Varsayılan: kapalı."/>
   </strings>
 </base>
