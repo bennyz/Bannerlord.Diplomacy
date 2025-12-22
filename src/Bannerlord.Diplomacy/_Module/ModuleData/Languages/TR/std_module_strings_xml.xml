@@ -39,7 +39,7 @@
     <string id="vGyBQeEk" text="{FACTION2_NAME} grubundan {HERO_NAME}{?HAS_FACTION}{?}{\?}"/>
     <string id="sQxAljGF" text="{NEW_LINE} {NEW_LINE}Maalesef, ulağın kaleye girişine izin verilmedi, ancak muhafızlara rüşvet vermeyi deneyebilir. Bu {?IS_FEMALE}ona{?}ona{\?} {GOLD_COST}{GOLD_ICON} altına mal olacak ve masrafları sizin karşılamanız gerekecek{?CAN_AFFORD}.{?}, ki şu anda bunu karşılayamazsınız.{\?}"/>
 
-    <string id="bLR91Eob" text="{REASON}Ulak, alıcıya varamayacak"/>
+    <string id="bLR91Eob" text="{REASON}Ulak, alıcıya varamayacak."/>
     <string id="hPra5uwZ" text="Ulak ya şakanızı anlamıyor ya da beğenmiyor ve görevi reddediyor."/>
     <string id="1mlXBnSs" text="{HERO_NAME} hakkında bir ulağa işaret edecek kadar bilginiz yok."/>
     <string id="HHgTlyyt" text="{HERO_NAME} kişisinin şu anda denizde olduğu söyleniyor. Karaya çıkana kadar beklemek en iyisi."/>
@@ -51,16 +51,16 @@
     <string id="N5T6IXWJ" text="{HERO_NAME} gizlice seyahat ediyor. "/>
     <string id="3lknR86H" text="{HERO_NAME} resmi toplantılara katılmak için çok tecrübesiz. "/>
 
-    <string id="BkGSVccZ" text="{HERO_NAME} kimliğini gizleyerek seyahat ediyor. "/>
-    <string id="3fTqLwkC" text="Kabul et"/>
-    <string id="dRoMejb0" text="Barış Teklifi"/>
+    <string id="BkGSVccZ" text="Barış Teklifi"/>
+    <string id="3fTqLwkC" text="Kabul Et"/>
+    <string id="dRoMejb0" text="Reddet"/>
 
-    <string id="cXfcwzPp" text="Kabul Et"/>
+    <string id="cXfcwzPp" text="Ulak Gönder"/>
 
-    <string id="N06wk0dB" text="Yerleşke ele geçirildi"/>
+    <string id="N06wk0dB" text="Yerleşke Ele Geçirildi"/>
     <string id="Zy0yjTha" text="{SETTLEMENT_NAME} yerleşkesini ele geçiren olarak, ilk reddetme hakkına sahipsiniz. Bu mülkü talep etmek ister misiniz?"/>
 
-    <string id="IWZ91JVk" text="Yerleşke Ele Geçirildi"/>
+    <string id="IWZ91JVk" text="Yeterli altın yok!"/>
 
     <string id="LpoyhORp" text="Mülk Bahşet"/>
     <string id="h3b1S5Wq" text="{CLAN_NAME} Klanına Mülk Bahşet"/>
@@ -86,19 +86,19 @@
     <string id="0WPWbx70" text="İttifak kur"/>
     <string id="K4GraLTn" text="İttifakı boz"/>
 
-    <string id="VvTTrRpl" text="Bu grup sizinle ittifak kurmakla ilgilenmiyor."/>
-    <string id="wst0lArp" text="İttifakın üzerinden yalnızca {ELAPSED_DAYS} gün geçti. İttifakı bozabilmek için en az {REQUIRED_DAYS} gün geçmeli. "/>
+    <string id="VvTTrRpl" text="Bu krallık sizinle ittifak yapmak istemiyor."/>
+    <string id="wst0lArp" text="İttifakın üzerinden yalnızca {ELAPSED_DAYS} gün geçti. İttifakı bozabilmek için en az {REQUIRED_DAYS} gün geçmeli."/>
 
     <string id="KqfNSsBE" text="Müttefikler"/>
     <string id="Dirltd6Z" text="İttifaklar devre dışı."/>
 
-    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} hükümdarına {WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN} ile barış yapmayı teklif et."/>
+    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} hükümdarına {WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN} ile barış yapmayı teklif et"/>
     <string id="BC7823G2" text="{?REPARATIONS_PAY}, {REPARATIONS} savaş tazminatı ödeyerek{?TRIBUTE_PAY} ve günlük {TRIBUTE} haraç.{?}{?TRIBUTE_GET}, ancak günlük {TRIBUTE} haraç alarak.{?}{\?}{\?}{?}{?REPARATIONS_GET}, {REPARATIONS} savaş tazminatı alarak{?TRIBUTE_PAY}, ancak günlük {TRIBUTE} haraç ödeyerek.{?}{?TRIBUTE_GET} ve günlük {TRIBUTE} haraç.{?}{\?}{\?}{?}{?TRIBUTE_PAY}, günlük {TRIBUTE} haraç ödeyerek.{?}{?TRIBUTE_GET}, günlük {TRIBUTE} haraç alarak.{?}.{\?}{\?}{\?}{\?}"/>
     <string id="9CvcPwJA" text="{?FIEFS_ANY} Ele geçirdiğiniz bazı tımarları geri vermek zorunda kalabilirsiniz!{?}{\?}"/>
 
     <!--Millions and thousands-->
-    <string id="6xcW68Tw" text="{VALUE}E"/>
-    <string id="oD4fZ2tY" text="{?FIEFS_ANY} Ele geçirilen bazı mülkleri geri vermek zorunda kalabilirsiniz!{?}{\?}"/>
+    <string id="6xcW68Tw" text="{VALUE}M"/>
+    <string id="oD4fZ2tY" text="{VALUE}B"/>
 
     <string id="XlL50Ha9" text="Aktif kuşatmanız varken bir krallıkla barış yapamazsınız."/>
 
