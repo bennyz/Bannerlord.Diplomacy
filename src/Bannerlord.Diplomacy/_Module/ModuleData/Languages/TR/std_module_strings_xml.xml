@@ -39,7 +39,7 @@
     <string id="vGyBQeEk" text="{FACTION2_NAME} grubundan {HERO_NAME}{?HAS_FACTION}{?}{\?}"/>
     <string id="sQxAljGF" text="{NEW_LINE} {NEW_LINE}Maalesef, ulağın kaleye girişine izin verilmedi, ancak muhafızlara rüşvet vermeyi deneyebilir. Bu {?IS_FEMALE}ona{?}ona{\?} {GOLD_COST}{GOLD_ICON} altına mal olacak ve masrafları sizin karşılamanız gerekecek{?CAN_AFFORD}.{?}, ki şu anda bunu karşılayamazsınız.{\?}"/>
 
-    <string id="bLR91Eob" text="{REASON}Ulak alıcıya ulaşamayacak."/>
+    <string id="bLR91Eob" text="{REASON}Ulak, alıcıya varamayacak"/>
     <string id="hPra5uwZ" text="Ulak ya şakanızı anlamıyor ya da beğenmiyor ve görevi reddediyor."/>
     <string id="1mlXBnSs" text="{HERO_NAME} hakkında bir ulağa işaret edecek kadar bilginiz yok."/>
     <string id="HHgTlyyt" text="{HERO_NAME} kişisinin şu anda denizde olduğu söyleniyor. Karaya çıkana kadar beklemek en iyisi."/>
@@ -52,12 +52,12 @@
     <string id="3lknR86H" text="{HERO_NAME} resmi toplantılara katılmak için çok tecrübesiz. "/>
 
     <string id="BkGSVccZ" text="{HERO_NAME} kimliğini gizleyerek seyahat ediyor. "/>
-    <string id="3fTqLwkC" text="{HERO_NAME} resmi toplantılara katılmak için çok tecrübesiz. "/>
+    <string id="3fTqLwkC" text="Kabul et"/>
     <string id="dRoMejb0" text="Barış Teklifi"/>
 
     <string id="cXfcwzPp" text="Kabul Et"/>
 
-    <string id="N06wk0dB" text="Reddet"/>
+    <string id="N06wk0dB" text="Yerleşke ele geçirildi"/>
     <string id="Zy0yjTha" text="{SETTLEMENT_NAME} yerleşkesini ele geçiren olarak, ilk reddetme hakkına sahipsiniz. Bu mülkü talep etmek ister misiniz?"/>
 
     <string id="IWZ91JVk" text="Yerleşke Ele Geçirildi"/>
@@ -67,11 +67,11 @@
     <string id="jznJfkfU" text="Mülk Bahşedildi"/>
     <string id="cXbgaPSm" text="{SETTLEMENT_NAME}, {CLAN_NAME} klanına bahşedildi."/>
 
-    <string id="FqeN0fmR" text="Kendi klanınıza mülk bahşedemezsiniz."/>
-    <string id="zdSYUnZQ" text="Krallığının hükümdarı değilsin."/>
-    <string id="D61vzEC7" text="Bahşedecek hiç mülkünüz yok."/>
-    <string id="98hwXUTp" text="Krallığınızdaki klanlara mülk bahşedin"/>
-    <string id="Q7jRqnez" text="Paralı asker klanlarına mülk bahşedemezsiniz."/>
+    <string id="FqeN0fmR" text="Kendi klanınıza tımar veremezsiniz."/>
+    <string id="zdSYUnZQ" text="Krallığınızın hükümdarı değilsiniz."/>
+    <string id="D61vzEC7" text="Verebileceğiniz tımarınız yok."/>
+    <string id="98hwXUTp" text="Krallığınızdaki klanlara tımar verin"/>
+    <string id="Q7jRqnez" text="Paralı asker klanlarına tımar veremezsiniz."/>
 
     <string id="DrnXprup" text="Bir ittifakı düşünmek için çok yakın zamanda savaştaydınız. Gerekli {REQUIRED_DAYS} günün sadece {ELAPSED_DAYS} günü geçti."/>
     <string id="KHJyWj9H" text="Bir ittifakta olunamaz."/>
@@ -87,12 +87,12 @@
     <string id="K4GraLTn" text="İttifakı boz"/>
 
     <string id="VvTTrRpl" text="Bu grup sizinle ittifak kurmakla ilgilenmiyor."/>
-    <string id="wst0lArp" text="Bu ittifak, bozulmayı düşünecek kadar uzun sürmedi! Gerekli {REQUIRED_DAYS} günün sadece {ELAPSED_DAYS} günü geçti."/>
+    <string id="wst0lArp" text="İttifakın üzerinden yalnızca {ELAPSED_DAYS} gün geçti. İttifakı bozabilmek için en az {REQUIRED_DAYS} gün geçmeli. "/>
 
     <string id="KqfNSsBE" text="Müttefikler"/>
     <string id="Dirltd6Z" text="İttifaklar devre dışı."/>
 
-    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} hükümdarına {WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN} ile barış yapmayı teklif et"/>
+    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} hükümdarına {WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN} ile barış yapmayı teklif et."/>
     <string id="BC7823G2" text="{?REPARATIONS_PAY}, {REPARATIONS} savaş tazminatı ödeyerek{?TRIBUTE_PAY} ve günlük {TRIBUTE} haraç.{?}{?TRIBUTE_GET}, ancak günlük {TRIBUTE} haraç alarak.{?}{\?}{\?}{?}{?REPARATIONS_GET}, {REPARATIONS} savaş tazminatı alarak{?TRIBUTE_PAY}, ancak günlük {TRIBUTE} haraç ödeyerek.{?}{?TRIBUTE_GET} ve günlük {TRIBUTE} haraç.{?}{\?}{\?}{?}{?TRIBUTE_PAY}, günlük {TRIBUTE} haraç ödeyerek.{?}{?TRIBUTE_GET}, günlük {TRIBUTE} haraç alarak.{?}.{\?}{\?}{\?}{\?}"/>
     <string id="9CvcPwJA" text="{?FIEFS_ANY} Ele geçirdiğiniz bazı tımarları geri vermek zorunda kalabilirsiniz!{?}{\?}"/>
 
@@ -105,7 +105,7 @@
     <string id="bCOCjOQM" text="İlişki."/>
     <string id="RxawrCjg" text="Mülk Sahibi ile İlişki Kazancı"/>
 
-    <string id="fXcEtO29" text="Aktif bir saldırmazlık antlaşması varken olmaz."/>
+    <string id="fXcEtO29" text="Aktif bir saldırmazlık antlaşmanız varken olmaz."/>
 
     <string id="zpNalMeA" text="İttifaklar"/>
     <string id="y5tXjbLK" text="Savaşlar"/>
@@ -118,7 +118,7 @@
     <string id="9zlQNtlX" text="{DAYS} gün sürecek bir saldırmazlık paktı oluştur."/>
 
     <string id="1occw3EF" text="İstatistikler"/>
-    <string id="OvbY5qxL" text="Genel Bakış"/>
+    <string id="OvbY5qxL" text="Genel bakış"/>
 
     <string id="UDC8eW7s" text="{ALLIED_KINGDOM}, {ENEMY_KINGDOM} krallığına karşı savaşta müttefiki {KINGDOM} tarafına katılıyor."/>
 
@@ -142,13 +142,13 @@
     <string id="M4SGjzQP" text="Bu grup sizinle saldırmazlık paktı oluşturmakla ilgilenmiyor."/>
 
     <string id="Gzq6VHPt" text="Altın Bağışla"/>
-    <string id="N7goPgiq" text="Tahtı Gasp Et"/>
+    <string id="N7goPgiq" text="Tahtı Ele Geçir"/>
     <string id="WVe7QwhW" text="Bu krallığın tahtını ele geçirin\nKlan desteği: {SUPPORTING_TIERS} / {OPPOSING_TIERS}"/>
 
     <string id="CxdpR6w4" text="Yayılmacılık"/>
 
     <string id="ARNRwPrY" text="Koalisyon Kuruldu"/>
-    <string id="qbLPBlIv" text="Kalradya, {EXPANSIONIST_KINGDOM} krallığının durdurulamaz yayılmasından endişe duyuyor. Onlarla savaşmak için {COALITION_KINGDOM} önderliğinde bir koalisyon kuruldu!"/>
+    <string id="qbLPBlIv" text="Kalradya, {EXPANSIONIST_KINGDOM} krallığının durdurulamayan yayılmasından rahatsız olmaya başladı. Onlara karşı savaşmak için {COALITION_KINGDOM} önderliğinde bir koalisyon kuruldu!"/>
 
     <string id="vB3RrMNf" text="{KINGDOM}, {OTHER_KINGDOM} ile bir saldırmazlık paktı oluşturdu."/>
     <string id="PdN5g5ub" text="{KINGDOM}, {OTHER_KINGDOM} ile bir ittifak kurdu!"/>
@@ -157,7 +157,7 @@
 
     <string id="5znwaUVC" text="Kalan Gün: {DAYS_LEFT}"/>
 
-    <string id="Euy6Mwcq" text="Bu eylemin kilidini açmak için ana görevde daha fazla ilerlemelisiniz. Mod seçeneklerinden hikaye korumasını devre dışı bırakabilirsiniz."/>
+    <string id="Euy6Mwcq" text="Bu eylemi açmak için ana görevde biraz daha ilerlemeniz gerekiyor. Ya da Hikaye korumasını mod ayarlarından kapatabilirsiniz."/>
     <string id="fQxiCdBA" text="Ana Hikaye"/>
     <string id="3wXqST66" text="Bu tahtı gasp ederek, ana hikayede imparatorluğu {STANCE} taahhüdünde bulunuyorsunuz."/>
     <string id="yAFwbD9B" text="birleştirme"/>
