@@ -176,14 +176,14 @@
     -->
 
     <string id="sBw5Qzq3" text="Krallık Diplomasisi"/>
-    <string id="tis8Ddzn" text="Oyuncunun Oyuncu Tarafından Alınan Yerleşkeleri Talep Etmesine İzin Ver"/>
+    <string id="tis8Ddzn" text="Oyuncunun, Ele Geçirdiği Yerleşkelerin Üzerinde Hak İddia Etmesine İzin Ver"/>
     <string id="TfxLCxcD" text="Oyuncuya aldığı bir yerleşkeyi seçime bırakmak yerine talep etme seçeneği sunar."/>
     <string id="8VKC3jtN" text="Mülksüz Krallık Yıkımını Etkinleştir"/>
     <string id="TlymwwPZ" text="Etkinleştirilirse, hiç mülkü olmayan krallıklar, katıldıkları son devam eden savaşı bitiren bir barış antlaşması imzaladıklarında yıkılırlar. Varsayılan değer etkindir."/>
     <string id="w8Hi9jJf" text="Mülksüz Krallık Yıkımını Geciktir"/>
     <string id="GDctI4Kd" text="Etkinleştirilirse, hiç mülkü olmayan krallıklar, son mülklerini kaybettikten hemen sonra değil, yalnızca dahil oldukları son savaşı bitiren bir barış antlaşması imzaladıklarında yıkılırlar. Varsayılan değer etkindir."/>      
-    <string id="ZRlNvsev" text="Minimum Savaş Süresi (gün)"/>
-    <string id="vuFT5ns8" text="Barış önermeden önce bir savaşın sürebileceği minimum süre (gün olarak). Varsayılan değer 21'dir (standart bir oyun yılının çeyreği)."/>
+    <string id="ZRlNvsev" text="Gün Olarak Minimum Savaş Süresi"/>
+    <string id="vuFT5ns8" text="Barış teklif edilmeden önce savaşın sürebileceği minimum süre (gün olarak). Varsayılan değer 21 (oyun yılının çeyreği)."/>
     <string id="4MzQHMVj" text="Gün Olarak Savaş İlanı Bekleme Süresi"/>
     <string id="q2duqN8d" text="Aynı krallığa barış yaptıktan sonra tekrar savaş ilan etmeden önceki minimum süre (gün olarak). Varsayılan değer 21'dir (standart bir oyun yılının çeyreği)."/>
     <string id="2XC8QHkl" text="İttifakları etkinleştir"/>
