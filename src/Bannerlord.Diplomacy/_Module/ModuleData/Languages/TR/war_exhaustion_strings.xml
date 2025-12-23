@@ -107,11 +107,11 @@
     <string id="mCEa773h" text="Bir krallık bir yerleşkesini kaybettiğinde eklenen savaş yorgunluğu miktarı. Kale kayıpları bu miktarın yarısı kadar ekler. Azalan getiri etkisine girebilir. Varsayılan: 10,0%."/>
     <string id="JmUPtZdw" text="Tam İşgalde Savaş Yorgunluğu"/>
     <string id="541jGrpb" text="Bir krallık tüm topraklarını kaybettiğinde eklenen savaş yorgunluğu miktarı. Savaş yorgunluğu oranından etkilenmez; azalan getiri etkisine girebilir. Varsayılan: 15,0%."/>
-    <string id="pPHLRIml" text="Ayrıntı İpucundaki Azami Kayıt"/>
+    <string id="pPHLRIml" text="Ayrıntılar Bölümündeki Maksimum Kayıt"/>
     <string id="YMf0mSqy" text="Savaş yorgunluğu raporundaki ayrıntılar bölümünde gösterilecek en fazla kayıt sayısı. Görünüm için uygun bulduğunuz bir değere ayarlayabilirsiniz. Varsayılan: 35."/>
     <string id="F4iFH6un" text="Sefer Haritası Göstergesi"/>
     <string id="zTvbZ8Br" text="Sefer haritası ekranının üstünde, her devam eden savaş için ayrı bir savaş yorgunluğu göstergesi açar. Varsayılan: etkin."/>
-    <string id="jI9NSxtz" text="Savaş Yorgunluğu Mesajlarını Etkinleştir"/>
+    <string id="jI9NSxtz" text="Savaş Yorgunluğu Mesajlarını Aktifleştir"/>
     <string id="LYyNbQds" text="Oyuncu krallığına eklenen savaş yorgunluğu için ayrıntılı bilgi kayıtlarını etkinleştirir. Varsayılan: devre dışı."/>
 
   </strings>
