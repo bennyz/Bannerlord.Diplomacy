@@ -183,16 +183,16 @@
     <string id="w8Hi9jJf" text="Mülksüz Krallık Yıkımını Geciktir"/>
     <string id="GDctI4Kd" text="Etkinleştirilirse, hiç mülkü olmayan krallıklar, son mülklerini kaybettikten hemen sonra değil, yalnızca dahil oldukları son savaşı bitiren bir barış antlaşması imzaladıklarında yıkılırlar. Varsayılan değer etkindir."/>      
     <string id="ZRlNvsev" text="Gün Olarak Minimum Savaş Süresi"/>
-    <string id="vuFT5ns8" text="Barış teklif edilmeden önce savaşın sürebileceği minimum süre (gün olarak). Varsayılan değer 21 (oyun yılının çeyreği)."/>
+    <string id="vuFT5ns8" text="Barış teklif edilmeden önce bir savaşın süreceği minimum (gün) sayısı. Varsayılan 21 (oyun yılının çeyreği)."/>
     <string id="4MzQHMVj" text="Gün Olarak Savaş İlanı Bekleme Süresi"/>
-    <string id="q2duqN8d" text="Aynı krallığa barış yaptıktan sonra tekrar savaş ilan etmeden önceki minimum süre (gün olarak). Varsayılan değer 21'dir (standart bir oyun yılının çeyreği)."/>
-    <string id="2XC8QHkl" text="İttifakları etkinleştir"/>
-    <string id="5YJBZx28" text="Devre dışı bırakılırsa, hem oyuncu hem de yapay zeka krallıkları için ittifak kurma yeteneği devre dışı bırakılır. Varsayılan değer etkindir."/>
-    <string id="H6XMjwpF" text="Minimum İttifak Süresi (gün)"/>
-    <string id="RrsWhIWi" text="Bir ittifakın bozulmadan önce süreceği minimum süre (gün olarak). Varsayılan değer 42'dir (standart bir oyun yılının yarısı)."/>
+    <string id="q2duqN8d" text="Barış yaptıktan sonra, Aynı krallığa yeniden savaş ilan edebilmek için geçmesi gereken minimum (gün) sayısı. Varsayılan 21 (oyun yılının çeyreği)."/>
+    <string id="2XC8QHkl" text="İttifakları Etkinleştir"/>
+    <string id="5YJBZx28" text="Devre dışı bırakılırsa, hem oyuncu hem de yapay zeka için ittifak kurma imkanı kaldırılır. Varsayılan olarak etkindir."/>
+    <string id="H6XMjwpF" text="Gün Olarak Minimum İttifak Süresi"/>
+    <string id="RrsWhIWi" text="Bir ittifakın bozulabilmesi için geçmesi gereken minimum (gün) sayısı. Varsayılan 42 (oyun yılının yarısı)."/>
     <string id="5a829TiT" text="İttifak Eğilimi"/>
     <string id="7nSjs8UL" text="Krallıkların ittifak kurma eğilimini etkileyen puan çarpanı. Değeri arttırmak, yapay zeka için ittifakları daha cazip hale getirir. Varsayılan: 0."/>
-    <string id="V35hUfcc" text="Saldırmazlık Antlaşması Süresi (gün)"/>
+    <string id="V35hUfcc" text="Gün Olarak Saldırmazlık Paktı Süresi"/>
     <string id="KXLGZEPh" text="Bir saldırmazlık paktının süreceği süre (gün olarak). Varsayılan değer 84'tür (bir standart oyun yılı)."/>
     <string id="G8BhBnRG" text="Saldırmazlık Antlaşması Eğilimi"/>
     <string id="907ER5u9" text="Krallıkların saldırmazlık paktı oluşturma eğilimini etkileyen skor çarpanı. Çarpanı artırmak, saldırmazlık paktlarını yapay zeka krallıkları için daha cazip hale getirir. Varsayılan değer 0'dır."/>
