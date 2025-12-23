@@ -257,11 +257,11 @@
     <string id="fgc8Dvg0" text="Başka bir klana tımar verdiğinizde uygulanan ilişki cezası. Varsayılan: -2."/>
 
     <string id="8ZPKToTq" text="Nüfuz Dengesi"/>
-    <string id="4jlYRUdZ" text="Nüfuz Dengesini Etkinleştir"/>
+    <string id="4jlYRUdZ" text="Nüfuz Dengesini Aktifleştir"/>
     <string id="tOMN9DQD" text="Nüfuz kaybı ve yolsuzluk hesaplamalarının etkin olup olmayacağını belirler. Uyumluluk için kapatılması gerekebilir."/>
 
     <string id="vzKRX2JA" text="Nüfuz Kaybı"/>
-    <string id="szYr4OTG" text="Nüfuz Kaybını Etkinleştir"/>
+    <string id="szYr4OTG" text="Nüfuz Kaybını Aktifleştir"/>
     <string id="rKS9z4Sz" text="Her gün nüfuzun yavaş yavaş azalmasını sağlayan sistemi etkinleştirir. Varsayılan: etkin."/>
 
     <string id="pVE1yNlm" text="Nüfuz Kaybı Eşiği"/>
