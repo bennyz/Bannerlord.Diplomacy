@@ -92,7 +92,7 @@
     <string id="KqfNSsBE" text="Müttefikler"/>
     <string id="Dirltd6Z" text="İttifaklar devre dışı."/>
 
-    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} ile {WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN} barış yapmayı değerlendir"/>
+    <string id="Q8ItogIP" text="Doğrudan {ENEMY_LEADER} ile barış yapmayı değerlendir {WAR_REPARATIONS_AND_TRIBUTE}{FIEFS_TO_RETURN}"/>
     <string id="BC7823G2" text="{?REPARATIONS_PAY}, {REPARATIONS} savaş tazminatı ödüyorsunuz{?TRIBUTE_PAY} ve günde {TRIBUTE} haraç veriyorsunuz.{?}{?TRIBUTE_GET}, ama günde {TRIBUTE} haraç alıyorsunuz.{?}{\?}{\?}{?}{?REPARATIONS_GET}, {REPARATIONS} savaş tazminatı alıyorsunuz{?TRIBUTE_PAY}, ama günde {TRIBUTE} haraç veriyorsunuz.{?}{?TRIBUTE_GET} ve günde {TRIBUTE} haraç alıyorsunuz.{?}{\?}{\?}{?}{?TRIBUTE_PAY}, günde {TRIBUTE} haraç veriyorsunuz.{?}{?TRIBUTE_GET}, günde {TRIBUTE} haraç alıyorsunuz.{?}.{\?}{\?}{\?}{\?}"/>
     <string id="9CvcPwJA" text="{?FIEFS_ANY} Ele geçirdiğiniz bazı tımarları geri vermek zorunda kalabilirsiniz!{?}{\?}"/>
 
