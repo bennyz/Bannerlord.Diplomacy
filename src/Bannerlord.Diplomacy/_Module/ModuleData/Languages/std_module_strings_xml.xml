@@ -207,7 +207,6 @@
     <string id="aH6rpjt6" text="The relation value of kingdom leaders after which kingdoms will not start wars with each other. Default value is 30." />
     <string id="jwNKk8P7" text="No Wars When Married" />
     <string id="xcMzKH48" text="If active, kingdom leader clans that have a marriage between each other will not start wars. Default value is active." />
-    <string id="xcMzKH48" text="If active, kingdom leader clans that have a marriage between each other will not start wars. Default value is active." />
     <string id="xXKKRp99" text="Leader Clan Family Marriage Affects Alliance" />
     <string id="BGS6mUID" text="If active, will grant a bonus to alliance tendency when leader clans have a family marriage between them. Default value is active." />
       
