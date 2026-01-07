@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Korean"/>
+  </tags>
+  <strings>
+    <string id="0WVHMfN8" text="반란이 무너지다"/>
+    <string id="BVNGIAMM" text="{PARENT_KINGDOM} 왕국을 황폐화시킨 반란군을 진압했습니다. {PLAYER_PARTICIPATION}"/>
+    <string id="x5ThZR5A" text="새로운 왕국의 등장"/>
+    <string id="nRxyMIEE" text="{PARENT_KINGDOM} 이 내전에서 패배하여 왕국을 통합하는 데 실패했습니다. {KINGDOM} 이 등장했습니다. {PLAYER_PARTICIPATION}"/>
+    <string id="1OQGJkqb" text="반란군 진영의 등장"/>
+    <string id="pqjZ6wck" text="{KINGDOM} 에 반군 세력이 등장했습니다. 클랜 {CLAN_NAME} 이 이끌고 있습니다. {DEMAND}"/>
+    <string id="ZAfNviVS" text="탈퇴"/>
+    <string id="wUspUo1y" text="퇴위"/>
+    <string id="LF19GulH" text="왕국에서 탈퇴합니다. 이 부족은 새로운 왕국을 설립합니다. 티어 4 이상의 부족만 탈퇴 세력을 시작할 수 있습니다."/>
+    <string id="GK1seKeJ" text="왕국의 지도자를 강제로 물러나게 하세요. 선거를 통해 왕국의 새로운 지도자가 결정됩니다."/>
+    <string id="brEXAKDb" text="반란군은 자신들의 영토를 왕국으로부터 분리할 수 있게 해달라고 요구합니다."/>
+    <string id="8A6JPMWp" text="반란군은 {LEADER} 가 왕좌에서 물러날 것을 요구합니다."/>
+    <string id="ChzQncc0" text="반란"/>
+    <string id="WUAv0u4U" text="병집"/>
+    <string id="fw0k1KFl" text="요구: {DEMAND_NAME}"/>
+    <string id="FajeZClv" text="{REBELS} ({KINGDOM} 반란군)"/>
+    <string id="nAvLFv5Q" text="남북 전쟁 발발"/>
+    <string id="2PpZkBOB" text="{KINGDOM} 에서 내전이 발발했습니다. {REBEL_KINGDOM} 은 {CLAN_NAME} 클랜이 이끌고 있습니다. {DEMAND}"/>
+    <string id="o0HIAHqg" text="반란군 왕국은 외교적 행동의 대상이 될 수 없습니다."/>
+    <string id="GKSaZESx" text="새 군주가 선출되고 목표가 완료되면 {PARENT_KINGDOM} 의 {REBELS} 은 해산합니다."/>
+    
+    <string id="BPcKHP0D" text="반란군의 지도자로서 {INFLUENCE} 영향력을 얻었습니다."/>
+    <string id="UoMvwnTb" text="반란군의 지도자로서 {INFLUENCE} 영향력을 잃었습니다."/>
+    <string id="QiX6m5cp" text="반란군의 일원으로서 {INFLUENCE} 영향력을 얻었습니다."/>
+    <string id="yrz8GMUb" text="반란군의 일원으로서 {INFLUENCE} 영향력을 잃었습니다."/>
+
+    <string id="SNLviWvc" text="충성파의 수장으로서 {INFLUENCE} 영향력을 잃었습니다."/>
+    <string id="2I1X5fAC" text="충성파의 수장으로서 {INFLUENCE} 영향력을 얻었습니다."/>
+    <string id="4FfA8RL4" text="충성파의 일원으로서 {INFLUENCE} 영향력을 잃었습니다."/>
+    <string id="uUu7DEDU" text="충성파의 일원으로서 {INFLUENCE} 영향력을 얻었습니다."/>
+    
+    <string id="f66sNaiz" text="당신은 반란군에 참여할 수 없습니다"/>
+
+    <string id="DZ6dpEn3" text="파벌 가입"/>
+    <string id="uTCw0WiH" text="파벌 탈퇴"/>
+    <string id="1OUDq7Ul" text="힘의 균형"/>
+    <string id="5q7TvMGL" text="반란 선포"/>
+    <string id="Ysrttgis" text="선포 날짜: {CAMPAIGN_TIME}"/>
+    <string id="o3w3jNzZ" text="요구사항: {DEMAND_NAME}"/>
+    <string id="hbPiVQVK" text="현재상태: {STATUS}"/>
+    <string id="TvSHYACm" text="규모: {STRENGTH}"/>
+    <string id="dlANhHUd" text="파벌"/>
+    <string id="hBSo0Ziq" text="파벌 설립"/>
+    <string id="2PglxF8k" text="파벌의 요구사항 선택"/>
+    <string id="gypPPxUJ" text="파벌"/>
+    <string id="aWWzFITw" text="현 국가 지도자의 퇴위"/>
+    <string id="2Pv3DsVm" text="{PARENT_KINGDOM} 는 {REBELS} 상대로 내전에서 패배했습니다. {LEADER}는 현 지도자의 퇴위를 선언했습니다. {PLAYER_PARTICIPATION}"/>
+    <string id="GkhKppOk" text="영지가 너무 적음"/>
+    <string id="Jc1mCVuY" text="성격: 계산적"/>
+    <string id="cjbVV7E3" text="클랜 등급이 너무 낮음"/>
+    <string id="Vp9EcnuC" text="파벌 성향"/>
+    <string id="dr1OCcmL" text="국가 지도자와의 관계"/>
+    <string id="mouJZAAy" text="파벌 지도자와의 관계"/>
+    <string id="FtX4LPXF" text="왕국 규모"/>
+    <string id="VFwDRHc7" text="참여자"/>
+    <string id="IYO5TNTg" text="지배 정당성"/>
+    <string id="YLUocN5e" text="파벌 지도자가 지배 정당성을 가지고 있음"/>
+    <string id="qAcR4Yee" text="파벌에 친밀한 클랜이 있음"/>
+    <string id="1AZK0UVJ" text="국가 지도자가 지배 정당성이 없음"/>
+
+    <string id="ovgs58sT" text="이미 반란이 일어난 상태에서는 파벌을 만들 수 없습니다."/>
+    <string id="VbpiW2bd" text="내전이 일어난 직후에는 파벌을 만들 수 없습니다."/>
+    <string id="JDk8ustS" text="용병은 파벌을 만들 수 없습니다."/>
+    <string id="quo5erz6" text="국가 지도자는 파벌을 만들 수 없습니다."/>
+    <string id="luvsD6Zn" text="반란군 왕국에서는 파벌을 만들 수 없습니다."/>
+    <string id="iXMeCmj0" text="클랜 등급이 4 이상이어야 합니다."/>
+    <string id="Xu3rnEEa" text="{KINGDOM_NAME}에 파벌을 만드려면 {KINGDOM_NAME}에 소속되어야 합니다."/>
+    <string id="DxJH7ciY" text="한 왕국에는 퇴위 목적의 파벌이 하나만 존재할 수 있습니다."/>
+    <string id="zTZWwJfN" text="당신은 두 개의 파벌을 이끌 수 없습니다."/>
+    
+    <!-- <string id="" text="" /> -->
+
+    <string id="EYB5Uggd" text="파벌 지도자가 {TRAIT}임"/>
+    <string id="E00ywbqb" text="국가 지도자가 {TRAIT}임"/>
+
+    <string id="GeevRiNR" text="{LABEL}{newline} {newline}{REASON}"/>
+    <string id="ALSuNVzE" text="{EXCEPTION}{newline} {newline}{DEMAND_HINT}"/>
+
+    <!-- Settings -->
+    <string id="eDZeFUTH" text="내전"/>
+    <string id="VB97zQeJ" text="내전이 다시 일어날 수 있는 최소 기간"/>
+    <string id="5cUqaLk4" text="내전을 일으키고 반란군 파벌이 왕국을 건설할 수 있는 최소한의 기간입니다. 기본값은 240입니다."/>
+    <string id="UdadyqpN" text="반란군 파벌이 만들어질 수 있는 일간 확률"/>
+    <string id="yznXCi1d" text="클랜이 반란군 파벌을 만들 일간 확률. 기본값은 100%."/>
+    <string id="r312b3Of" text="반란군 파벌에 가입할 일간 확률"/>
+    <string id="06oPGRj0" text="클랜이 반란군 파벌에 가입하고 파벌을 지원하게 될 일간 확률입니다. 기본값은 100%."/>
+    <string id="lIbUuQB1" text="내전 발생 일간 확률"/>
+    <string id="zr10ZS3L" text="내전이 발생하게 될 일간 확률입니다. 기본값은 50%."/>
+    <string id="VNILqmoY" text="파벌이 존속할 수 있는 최대 일 수"/>
+    <string id="rNJIvaSm" text="파벌이 내전을 일으키지 않고 존속할 수 있는 최대 기간입니다. 기본값은 120일."/>
+    <string id="6kNmdLxZ" text="파벌을 만드는데 필요한 영향력"/>
+    <string id="EwbXg3va" text="파벌을 만드는데 필요한 영향력입니다. 기본값은 100."/>
+    <string id="7wK0mmw1" text="파벌 참여도"/>
+    <string id="aqvIdG7w" text="클랜이 파벌을 생성하거나 가입하는 경향에 영향을 끼치는 수치입니다. 수치를 높이면 파벌에 참여할 가능성이 높아집니다. 기본값은 0."/>
+    
+  </strings>
+</base>
