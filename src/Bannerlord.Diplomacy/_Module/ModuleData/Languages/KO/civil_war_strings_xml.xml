@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
   <tags>
-    <tag language="Korean"/>
+    <tag language="한국어"/>
   </tags>
   <strings>
-    <string id="0WVHMfN8" text="반란이 무너지다"/>
+    <string id="0WVHMfN8" text="반란군 와해"/>
     <string id="BVNGIAMM" text="{PARENT_KINGDOM} 왕국을 황폐화시킨 반란군을 진압했습니다. {PLAYER_PARTICIPATION}"/>
     <string id="x5ThZR5A" text="새로운 왕국의 등장"/>
     <string id="nRxyMIEE" text="{PARENT_KINGDOM} 이 내전에서 패배하여 왕국을 통합하는 데 실패했습니다. {KINGDOM} 이 등장했습니다. {PLAYER_PARTICIPATION}"/>
-    <string id="1OQGJkqb" text="반란군 진영의 등장"/>
-    <string id="pqjZ6wck" text="{KINGDOM} 에 반군 세력이 등장했습니다. 클랜 {CLAN_NAME} 이 이끌고 있습니다. {DEMAND}"/>
-    <string id="ZAfNviVS" text="탈퇴"/>
+    <string id="1OQGJkqb" text="반란군 파벌의 등장"/>
+    <string id="pqjZ6wck" text="{KINGDOM} 에 반군 파벌이 등장했습니다. 클랜 {CLAN_NAME} 이 이끌고 있습니다. {DEMAND}"/>
+    <string id="ZAfNviVS" text="독립"/>
     <string id="wUspUo1y" text="퇴위"/>
-    <string id="LF19GulH" text="왕국에서 탈퇴합니다. 이 부족은 새로운 왕국을 설립합니다. 티어 4 이상의 부족만 탈퇴 세력을 시작할 수 있습니다."/>
+    <string id="LF19GulH" text="왕국에서 탈퇴합니다. 이 부족은 새로운 왕국을 설립합니다. 티어 4 이상의 부족만 독립 파벌을 만들 수 있습니다."/>
     <string id="GK1seKeJ" text="왕국의 지도자를 강제로 물러나게 하세요. 선거를 통해 왕국의 새로운 지도자가 결정됩니다."/>
-    <string id="brEXAKDb" text="반란군은 자신들의 영토를 왕국으로부터 분리할 수 있게 해달라고 요구합니다."/>
+    <string id="brEXAKDb" text="반란군은 자신들의 영토를 왕국으로부터 분리하여 독립할 수 있게 해달라고 요구합니다."/>
     <string id="8A6JPMWp" text="반란군은 {LEADER} 가 왕좌에서 물러날 것을 요구합니다."/>
     <string id="ChzQncc0" text="반란"/>
-    <string id="WUAv0u4U" text="병집"/>
+    <string id="WUAv0u4U" text="지지자 모집"/>
     <string id="fw0k1KFl" text="요구: {DEMAND_NAME}"/>
     <string id="FajeZClv" text="{REBELS} ({KINGDOM} 반란군)"/>
-    <string id="nAvLFv5Q" text="남북 전쟁 발발"/>
+    <string id="nAvLFv5Q" text="내전 발발"/>
     <string id="2PpZkBOB" text="{KINGDOM} 에서 내전이 발발했습니다. {REBEL_KINGDOM} 은 {CLAN_NAME} 클랜이 이끌고 있습니다. {DEMAND}"/>
     <string id="o0HIAHqg" text="반란군 왕국은 외교적 행동의 대상이 될 수 없습니다."/>
     <string id="GKSaZESx" text="새 군주가 선출되고 목표가 완료되면 {PARENT_KINGDOM} 의 {REBELS} 은 해산합니다."/>
