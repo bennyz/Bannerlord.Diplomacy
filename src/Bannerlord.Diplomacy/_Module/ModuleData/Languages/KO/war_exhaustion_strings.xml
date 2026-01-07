@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="한국어"/>
+  </tags>
+  <strings>
+    <!--<string id="" text="" />-->
+    <string id="XmVTQ0bH" text="전쟁 피로도"/>
+
+    <string id="BXluvRnJ" text="쓰라린 패배"/>
+    <string id="0aZCy0at" text="강요된 평화"/>
+
+    <string id="vLfbqXjq" text="당신의 군대와 백성들은 {ENEMY_KINGDOM}과의 전쟁에 지쳤으며, 싸움을 포기했습니다. 당신은 항복 문서에 서명할 수 밖에 없었으며, {REPARATIONS}{GOLD_ICON}의 전쟁배상금을 내야합니다. 이 비용은 왕국의 모든 클랜이 공평하게 나눠 낼 것입니다. {?ADD_TRIBUTE}또한 당신은 매일 {TRIBUTE}{GOLD_ICON}의 공물을 내야합니다.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE}{NEW_LINE} 게다가, 당신은 {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL}, {?}{\?}{FIEFS_TO_RETURN_LIST.END} 영지를 {ENEMY_KINGDOM}에게 반환해야 합니다.{NEW_LINE}{NEW_LINE}{?} {\?}패배의 불명예로 당신은 {INFLUENCE} 영향력을 잃었습니다."/>
+    <string id="ghZCj7hb" text="당신의 마지막 요새가 함락되면서, 당신은 더이상 {ENEMY_KINGDOM}과 싸울 수 없게 되었습니다. 당신은 항복 문서에 서명해야만 합니다{?TO_BE_DESTROYED}. 영토나 생산 수단 없이는 당신의 왕국은 존재할 수 없습니다.{?} 그리고 당신은 전쟁 보상금을 {REPARATIONS}{GOLD_ICON} 만큼 내야합니다. 이 비용은 왕국 소속의 모든 영주들이 공평하게 나눠 낼 것입니다. {?ADD_TRIBUTE}또한 당신은 매일 {TRIBUTE}{GOLD_ICON} 만큼의 공물을 내야합니다. {?}{\?} 패배의 불명예로 당신은 {INFLUENCE} 영향력을 잃습니다.{\?}"/>
+    <string id="cKV5Jded" text="{KINGDOM.NAME}의 군대와 백성들은 {ENEMY_KINGDOM}과의 전쟁에 지쳤으며, 싸움을 포기했습니다. {KINGDOM_LEADER.NAME}는 패배를 받아들이고 {REPARATIONS}{GOLD_ICON} 만큼의 전쟁 배상금을 내야 합니다. (이 비용은 왕국의 모든 클랜이 나눠낼 것입니다.) {?ADD_TRIBUTE}{?KINGDOM_LEADER.GENDER}그녀{?}그{\?}는 또 매일 {TRIBUTE}{GOLD_ICON}의 공물을 내야합니다.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE} 게다가, {KINGDOM_LEADER.NAME}는 {FIEFS_TO_RETURN_LIST.START} {?FIEFS_TO_RETURN_LIST.IS_PLURAL}, {?}{\?}{FIEFS_TO_RETURN_LIST.END} 영지를 {ENEMY_KINGDOM}에게 반환해야 합니다. {NEW_LINE}{NEW_LINE}{?} {\?}전쟁의 패배는 {?KINGDOM_LEADER.GENDER}그녀{?}그{\?}의 영향력을 {INFLUENCE} 감소시켰습니다."/>
+    <string id="idAcjzXB" text="마지막 요새마저 적에게 함락되면서, {ENEMY_KINGDOM}과의 싸움을 더 이상 계속할 수 없게 되었습니다. {KINGDOM_LEADER.NAME}은 패배의 조건을 받아들여야 합니다{?TO_BE_DESTROYED}토지와 생계 수단을 잃은 당신의 왕국은 이제 존재하지 않습니다.{?} 그리고 {REPARATIONS}{GOLD_ICON}의 전쟁 배상금을 지불해야 합니다 (이 비용은 왕국의 모든 씨족에게 분배될 것입니다). {?ADD_TRIBUTE}{?KINGDOM_LEADER. GENDER}그녀{?}그{\?}는 또한 매일 {TRIBUTE}{GOLD_ICON}의 공물을 바치기로 약속합니다. {?}{\?}패배의 수치로 인해 {?KINGDOM_LEADER.GENDER}그녀{?}그{\?}는 {INFLUENCE}의 영향력을 잃게 됩니다.{\?}"/>
+    <string id="a3W5zKQr" text="{KINGDOM.NAME}과 {ENEMY_KINGDOM} 양측의 군대와 백성들은 전쟁으로 지쳐 싸움을 포기했습니다. 평화{?TO_BE_DESTROYED}를 맺는 것 외에는 다른 선택지가 없지만, 땅도 생계도 없는 {?IS_REBELLION}당신의 반란은 끝났습니다{?}당신의 왕국은 더 이상 존재하지 않습니다{\?}{?}{\?}."/>
+
+    <string id="6eTtSKO4" text="최근 사태를 고려할 때, {REBEL_KINGDOM}이라 불리는 반란이 성공했으며 더 이상의 저항은 무의미함이 명백합니다. 비록 땅과 생계 수단이 사라져 왕국이 더 이상 존재하지 않을지라도{?} 패배를 인정할 때가 되었습니다{?TO_BE_DESTROYED}. 분열되고 전쟁으로 황폐해진 왕국이 평화롭게 살아갈 기회를 주십시오{\?}."/>
+    <string id="2ptArJem" text="최근 사건들을 고려할 때, 당신의 반란이 실패했음이 분명합니다. 패배를 인정하고 분열되고 전쟁에 지친 {ORIGINAL_KINGDOM}이 재결합할 기회를 줄 때가 되었습니다."/>
+
+    <string id="HWiDa4R1" text="{KINGDOM.NAME}의 군대와 백성들은 {PLAYER_KINGDOM}과의 전쟁으로 지쳐 싸움을 포기했습니다.{NEW_LINE} {NEW_LINE}{KINGDOM_LEADER.NAME}은 평화 조약을 제안하며 {REPARATIONS}{GOLD_ICON}의 전쟁 배상금을 지불할 의사가 있습니다.{?ADD_TRIBUTE}{?KINGDOM_LEADER. GENDER}그녀{?}그{\?}는 또한 매일 {TRIBUTE}{GOLD_ICON}의 조공을 바치기로 약속합니다.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE} 그에 더해, {KINGDOM_LEADER.NAME}은 {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL}과 {?}{\?}{FIEFS_TO_RETURN_LIST.END}을 {PLAYER_KINGDOM}.{?}{\?}에게 반환해야 합니다"/>
+    <string id="t0ZS9maD" text="최후의 거점이 함락되면서 {KINGDOM.LINK}는 더 이상 {PLAYER_KINGDOM}과의 싸움을 지속할 수 없게 되었습니다.{NEW_LINE} {NEW_LINE} {KINGDOM_LEADER.NAME}은 땅과 생계 수단이 없으면 왕국이 존속할 수 없다는 사실에도 불구하고 평화 조약을 제안합니다{?TO_BE_DESTROYED}.{?} 그리고 {REPARATIONS}{GOLD_ICON}의 전쟁 배상금을 지불할 용의가 있습니다.{?ADD_TRIBUTE} {?KINGDOM_LEADER. GENDER}그녀{?}그{\?}는 또한 매일 {TRIBUTE}{GOLD_ICON}의 공물을 바치겠다고 약속합니다.{?}{\?}{\?}"/>
+    <string id="ZrwszZww" text=" {KINGDOM.NAME}과 {PLAYER_KINGDOM} 양측의 군대와 백성들은 전쟁으로 지쳐 싸움을 포기했습니다. {NEW_LINE} {NEW_LINE}{KINGDOM_LEADER.NAME}은 평화 조약을 제안하고 있습니다{?TO_BE_DESTROYED}, 비록 땅도 생계도 없지만, {?IS_REBELLION}그들의 반란은 사실상 끝났습니다{?}그들의 왕국은 더 이상 존재하지 않을 것입니다{\?}{?} 어떤 조건도 제시하지 않은 채{\?}."/>
+    <string id="q02T8cyI" text="최근 사건들을 고려할 때, {REBEL_KINGDOM}이라 불리는 반란이 실패했음이 분명합니다. 이제 그들의 평화와 용서를 구하는 간청을 받아들여, 분열되고 전쟁에 지친 왕국을 재통합할 기회를 줄 때가 된 것입니까?"/>
+    <string id="PC5GdgKA" text="최근 사건들을 고려할 때, {ORIGINAL_KINGDOM.NAME}에 대한 당신의 반란이 성공적임을 분명히 알 수 있습니다. 심지어 {ORIGINAL_KINGDOM_LEADER.NAME}조차 이를 인정했습니다! 이제 그들의 평화 요청을 받아들여 목표를 달성할 때가 된 것입니까?"/>
+    <string id="13G0c8RE" text="전쟁으로 인해 당신의 왕국이 얼마나 심하게 황폐화되었는지 고려할 때, 평화 조약을 받아들일 수밖에 없습니다."/>
+
+    <!-- Report -->
+    <string id="mCue7aFc" text="전쟁 보고서"/>
+    <string id="hfa8LLqD" text="{EXHAUSTED_FACTION}은 {OTHER_FACTION}과의 전쟁으로 치명적인 타격을 입었습니다. 이 전쟁을 지속할 수 있는 능력은 한계에 다다랐으며, {?IS_CIVIL_WAR}전쟁 피로도가 극한에 가까워질수록 평화의 불가피성에 대한 그들의 인식이 점점 더 확고해지고 있습니다{?}이는 평화 가능성에 대한 그들의 태도를 점점 더 개방적으로 만들고 있습니다{\?}."/>
+    <string id="k0Dnf6cU" text="활성화된 퀘스트와 연계됨!"/>
+    <string id="xPHDtsC1" text="이 전쟁이 조기에 종결되는 것을 막는 활성 퀘스트가 존재합니다. 안정성을 보장하기 위해, 양측 모두의 전쟁 피로도는 어떠한 경우에도 {CRITICAL_THRESHOLD}%를 초과하지 않습니다."/>
+    <string id="xoY6cYDK" text="활성화된 퀘스트와 연계됨!"/>
+    <string id="UvjMFpHs" text="이 전쟁이 조기에 종결되는 것을 막는 활성 퀘스트가 존재합니다. 그 결과, 보고서의 세부 수치가 전체적인 전쟁 피로도 수치와 일치하지 않을 수 있습니다."/>
+    <string id="hAoIC2Iq" text="시작일: {START_DATE}"/>
+    <string id="qHrihV27" text="전쟁 기간: {WAR_DURATION} 일"/>
+    <!-- Report breakdowns -->
+    <string id="IlFEeNkY" text="전쟁 피로도 보고서"/>
+    <string id="zYVH0xYa" text="사상자 수"/>
+    <string id="y7XY860U" text="습격당한 캐러밴 수"/>
+    <string id="elRjo1ab" text="약탈당한 마을 수"/>
+    <string id="DrNBDhx3" text="상실한 영지 수"/>
+    <string id="X1MIWYzy" text="포획된 영웅 수"/>
+    <string id="6FLtWxSp" text="사망한 영웅 수"/>
+    <string id="sCRuliNO" text="완전 점령"/>
+    <string id="XIPMI3gR" text="전쟁 기간"/>
+    <string id="FVyFJShW" text="신의 간섭"/>
+    <string id="1kGleqyk" text="누적된 전쟁 피로도"/>
+    <string id="i5VSEDE3" text="{START_DATE} - {END_DATE}: {?COUNT.PLURAL_FORM} 총 {COUNT} 개의 이전 항목{?}{COUNT} 개의 이전 항목{\?}"/>
+
+    <string id="fnPa5bas" text="주둔군"/>
+    <string id="rwFeQWky" text="{KINGDOM_NAME}의 캐러밴"/>
+
+    <!-- Event records -->
+    <string id="Toa6V7RL" text="{START_DATE} - {END_DATE}: {PER_DAY_VALUE}% 하루당 {VALUE} 전체 {?VALUE.PLURAL_FORM}일{?}일{\?}"/>
+    <string id="wMVdLssJ" text="{START_DATE} - {END_DATE}: {PER_DAY_VALUE}% 하루당 {VALUE} 전체 {?VALUE.PLURAL_FORM}일{?}일{\?} 동안 영지를 소유하지 않은 상태"/>
+    <string id="0nTpub9S" text="{START_DATE} - {END_DATE}: {VALUE} {?VALUE.PLURAL_FORM}명{?}명{\?}의 전쟁 사상자"/>
+    <string id="SeWNvf1N" text="{DATE_STR}: {VALUE} {?VALUE.PLURAL_FORM}명{?}명{\?}의 사상자가 {FACTION_PARTY}과 {OTHER_FACTION_PARTY} 사이의 전투에서 발생"/>
+    <string id="9V6S05X3" text="{DATE_STR}: {VALUE} {?VALUE.PLURAL_FORM}명의 사상자{?}사상자{\?}가 {SETTLEMENT} 전투에서 발생했습니다. 이 전투는 {FACTION_PARTY}와 {OTHER_FACTION_PARTY} 사이에 벌어졌습니다"/>
+    <string id="vhBKtne1" text="{DATE_STR}: {RAIDED_CARAVAN}가 {OTHER_FACTION_PARTY}에 의해 습격당했습니다"/>
+    <string id="Hnxf9Ox3" text="{DATE_STR}: {RAIDED_VILLAGE}가 {OTHER_FACTION_PARTY}에 의해 약탈당했습니다"/>
+    <string id="SXhzqm2N" text="{DATE_STR}: {RAIDED_VILLAGE}가 {OTHER_FACTION_PARTY}에 의해 약탈당했습니다 (감소하는 수익 효과 적용)"/>
+    <string id="6cSuGG87" text="{DATE_STR}: {SETTLEMENT.NAME}{?SETTLEMENT.IS_CASTLE} 성{?}{\?}은 {FACTION_PARTY}가 방어하던 중 {OTHER_FACTION_PARTY}에게 점령당했습니다"/>
+    <string id="fuaTMWpt" text="{DATE_STR}: {SETTLEMENT.NAME}{?SETTLEMENT.IS_CASTLE} 성{?}{\?}은 {FACTION_PARTY}가 방어하던 중 {OTHER_FACTION_PARTY}에 의해 재정복되었습니다 (감소하는 수익 효과 적용)"/>
+    <string id="yRvZ37cx" text="{DATE_STR}: {HERO}가 {OTHER_FACTION_PARTY}에게 포로로 잡혔다"/>
+    <string id="i2Moqprl" text="{DATE_STR}: {HERO}가 {OTHER_FACTION_PARTY}에게 포로로 잡혔습니다 (감소하는 수익 효과 적용)"/>
+    <string id="QkSVPgDF" text="{DATE_STR}: {HERO}는 자연사했습니다{?YIELDS_DIMINISHING_RETURNS} (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="S0lkYB5P" text="{DATE_STR}: {HERO}는 {OTHER_FACTION_PARTY}{?YIELDS_DIMINISHING_RETURNS}에 의해 암살당했습니다 (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="f6OIFaSj" text="{DATE_STR}: {HERO}는 출산 중 사망했습니다{?YIELDS_DIMINISHING_RETURNS} (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="PmOPed8Y" text="{DATE_STR}: {HERO}는 노환으로 사망했습니다{?YIELDS_DIMINISHING_RETURNS} (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="Pp6wYS5m" text="{DATE_STR}: {HERO}가 {OTHER_FACTION_PARTY}와의 전투에서 전사했습니다. (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="QvGjUrmL" text="{DATE_STR}: {HERO}는 {OTHER_FACTION_PARTY}{?YIELDS_DIMINISHING_RETURNS}와의 전투 후 전쟁 부상으로 사망했습니다 (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="5tBkM1O4" text="{DATE_STR}: {HERO}는 {OTHER_FACTION_PARTY}{?YIELDS_DIMINISHING_RETURNS}에 의해 처형당했습니다 (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="moeUCyaq" text="{DATE_STR}: {HERO}가 {OTHER_FACTION_PARTY}{?YIELDS_DIMINISHING_RETURNS}와의 전투 중 실종되었습니다 (감소하는 수익의 영향을 받음){?}{\?}"/>
+    <string id="VB1xpuMA" text="{DATE_STR}: {FACTION}이(가) {OTHER_FACTION}에 의해 완전히 점령되었습니다"/>
+    <string id="X9wHA6q3" text="{DATE_STR}: {FACTION}이(가) {OTHER_FACTION}에 의해 완전히 점령되었습니다 (감소하는 수익의 영향을 받음)"/>
+    <string id="9vOZJpPu" text="{DATE_STR}: {FACTION}의 전쟁 피로도가 기적적으로 감소했습니다(일부는 신의 개입이라고 말합니다)"/>
+    <string id="S5tDXkgK" text="{DATE_STR}: 어떤 신비한 세력이 {FACTION}의 전쟁 수행에 영향을 미치려 했다는 소문이 돌고 있지만, 아무런 변화도 없는 듯하다"/>
+    <string id="fJE6Y9mB" text="{DATE_STR}: {FACTION}의 백성들이 갑자기 싸울 의지를 잃었다 (어떤 이들은 신의 개입이라고 말한다)"/>
+
+    <!-- Settings -->
+    <string id="V542tneW" text="전쟁 피로도"/>
+    <string id="lSttctYC" text="전쟁 피로도 활성화"/>
+    <string id="Cxyn9ROT" text="전쟁 피로도 시스템을 활성화 합니다. 기본값은 활성화."/>
+    <string id="Yc2YUIva" text="감소하는 수익 활성화"/>
+    <string id="CaxxEEdC" text="전쟁 피로도 계산 시 일부 이벤트에 대해 감소하는 수익을 적용합니다. 기본값은 활성화 상태입니다."/>
+    <string id="HPFINWrc" text="개별 전쟁 피로도"/>
+    <string id="LFVkLcIp" text="진영별로 각각 전쟁 소모율을 활성화합니다. 비활성화 시, 모든 전쟁에 대해 상대 진영의 합산 전투력을 기준으로 단일 소모율이 계산됩니다. 기본값은 활성화 상태입니다."/>
+    <string id="gW3eVr5E" text="영지 반환 활성화"/>
+    <string id="KEi0UykN" text="이 기능이 활성화된 경우, 왕국은 전쟁에서 크게 패배할 경우 정복한 영지 일부를 원래 소유자에게 반환해야 할 수 있습니다. 기본값은 활성화 상태입니다."/>
+    <string id="8TFQWL55" text="일일 전쟁 피로도"/>
+    <string id="lgza5wDq" text="전쟁이 지속되는 동안 하루마다 추가되는 전쟁 피로도 양. 전쟁 피로도 증가율의 영향을 받지 않음. 기본값은 0.25%입니다."/>
+    <string id="PAmPVWgD" text="영지 없음 배율"/>
+    <string id="SdjYeYM5" text="영지를 보유하지 않은 세력이 영지를 보유한 세력에 비해 하루에 추가되는 전쟁 피로도 양에 대한 배율. 기본값은 10입니다."/>
+    <string id="s6dNpM6M" text="사상자당 전쟁 피로도"/>
+    <string id="NcJtGeM7" text="파벌이 전투 사상자를 낼 때 추가되는 전쟁 피로도 증가량. 기본값은 0.02%입니다."/>
+    <string id="kr5zAufg" text="캐러밴 습격 당 전쟁 피로도"/>
+    <string id="PinVMCUE" text="파벌의 캐러밴이 습격당할 때 추가되는 전쟁 피로도 증가량. 기본값은 2.0%입니다."/>
+    <string id="qFJ23KxQ" text="포획된 영웅 당 전쟁 피로도"/>
+    <string id="wctCn9uO" text="진영의 귀족 영웅이 포로로 잡혔을 때 추가되는 전쟁 피로도의 기본량. 해당 진영에 대한 영웅의 중요도에 영향을 받음. 감소하는 수익의 법칙이 적용될 수 있음. 기본값은 1.0%입니다."/>
+    <string id="4vTzbsXD" text="전사한 영웅당 전쟁 피로도"/>
+    <string id="w80tUaVd" text="파벌의 귀족 영웅이 사망할 때 추가되는 전쟁 피로도의 기본량. 해당 파벌에 대한 영웅의 중요도에 영향을 받음. 동일 가문의 영웅이 다수 사망할 경우 감소 효과가 발생할 수 있음. 기본값은 5.0%입니다."/>
+    <string id="eWVGwf2m" text="약탈 횟수 당 전투 피로도"/>
+    <string id="ufHDJt8H" text="파벌의 마을이 습격당할 때 추가되는 전쟁 피로도 양. 감소하는 수익의 법칙이 적용될 수 있음. 기본값은 3.0%입니다."/>
+    <string id="gGIaLKHk" text="공성전 당 전쟁 피로도"/>
+    <string id="mCEa773h" text="진영이 도시를 잃을 때 추가되는 전쟁 피로도 양. 성을 잃을 경우 절반만큼 추가됩니다. 감소하는 수익의 법칙이 적용될 수 있습니다. 기본값은 10.0%입니다."/>
+    <string id="JmUPtZdw" text="모든 영지를 잃었을 때 전쟁 피로도"/>
+    <string id="541jGrpb" text="한 세력이 모든 영지를 잃었을 때 추가되는 전쟁 피로도 양. 전쟁 피로도 감소율의 영향을 받지 않음. 감소 효과가 적용될 수 있음. 기본값은 15.0%입니다."/>
+    <string id="pPHLRIml" text="세부 설명 창의 최대 항목 수"/>
+    <string id="YMf0mSqy" text="전쟁 소진 보고서 내 특정 세부 정보 툴팁에 표시되는 항목의 최대 개수. 보기 편한 값으로 설정하세요. 기본값은 35입니다."/>
+    <string id="F4iFH6un" text="캠페인 지도 위젯"/>
+    <string id="zTvbZ8Br" text="진행 중인 각 전쟁마다 캠페인 지도 화면 상단에 전용 전쟁 소모 위젯을 활성화합니다. 기본값은 활성화 상태입니다."/>
+    <string id="jI9NSxtz" text="플레이어 전쟁 피로도 디버그 메시지 활성화"/>
+    <string id="LYyNbQds" text="플레이어 왕국에 추가된 전쟁 소진에 대한 디버그 메시지를 활성화합니다. 기본값은 비활성화입니다."/>
+
+  </strings>
+</base>
