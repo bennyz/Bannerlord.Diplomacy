@@ -20,13 +20,11 @@ namespace DiplomacyNavalDLCPatch
         protected override void OnSubModuleUnloaded()
         {
             base.OnSubModuleUnloaded();
-
         }
 
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             base.OnBeforeInitialModuleScreenSetAsRoot();
-
         }
     }
 }
