@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)"/>
+  </tags>
+  <strings>
+    <string id="bAkTqxmf" text="Una facción es un grupo de clanes dentro de un reino con un objetivo común. Si una facción obtiene suficiente apoyo, iniciará una guerra civil. Si los rebeldes ganan la guerra, su demanda será cumplida. Si los leales ganan, los clanes rebeldes regresarán al reino. Los clanes victoriosos ganarán influencia y relaciones con sus compañeros de victoria. Los clanes derrotados perderán influencia. Los clanes pueden iniciar una facción gastando influencia."/>
+	
+	<string id="XXUwW6TM" text="El agotamiento de guerra mide qué tan cerca está un reino de rendirse. Una vez que el agotamiento de guerra alcanza el 100%, el reino se rendirá. Las bajas, los feudos perdidos, las aldeas saqueadas y la duración de la guerra contribuyen al agotamiento de guerra.&#10;&#10;Cuando un reino pierde su último feudo, ya no puede sostener su esfuerzo bélico de manera efectiva, lo que no solo incrementa inmediatamente su agotamiento de guerra actual, sino que también aumenta drásticamente la cantidad diaria de agotamiento de guerra que recibe, hasta que el reino se rinda o recupere al menos un feudo."/>
+	
+	<string id="dh2NE8Of" text="La tasa de agotamiento de guerra es la velocidad a la que el agotamiento de guerra se acumula durante una guerra. El agotamiento de guerra se acumula más lentamente en las guerras entre reinos más grandes."/>
+  </strings>
+</base>

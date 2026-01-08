@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="한국어"/>
+  </tags>
+  <strings>
+    <!-- Faction Titles -->
+    <string id="MXAsjFdI" text="{CLAN_NAME}의 음모"/>
+    <string id="LUzfk4tb" text="{CLAN_NAME} 동맹맹"/>
+
+    <!-- Aserai Titles -->
+    <string id="iLMqCvmk" text="{CLAN_NAME} 술탄국"/>
+    <string id="EnpnMNRH" text="{CLAN_NAME} 에미르국"/>
+    <string id="uzd9mxIC" text="바누 {CLAN_NAME}"/>
+    <string id="NTFz3B56" text="{CLAN_NAME} 샤리프국"/>
+
+    <!-- Battania Titles -->
+    <string id="kaU24WXu" text="{CLAN_NAME} 연맹"/>
+
+    <!-- Khuzait Titles -->
+    <string id="mEHufuep" text="{CLAN_NAME} 카간국"/>
+    <string id="DTBaowBi" text="{CLAN_NAME} 카간국"/>
+    <string id="pRgQF4WY" text="{CLAN_NAME} 왕조"/>
+
+    <!-- Sturgia Titles -->
+    <string id="z5VPFrfh" text="{CLAN_NAME} 백작령"/>
+
+    <!-- Vlandia Titles -->
+    <string id="A4zT7H5g" text="{CLAN_NAME} 대공령"/>
+
+
+    <!-- Generic Titles -->
+    <string id="kToqhmHh" text="{CLAN_NAME} 공작령"/>
+    <string id="WjB3SM1f" text="{CLAN_NAME} 왕국"/>
+    <string id="E63n30UM" text="{CLAN_NAME} 제국"/>
+    <string id="lSQeaVfw" text="{CLAN_NAME} 제국"/>
+
+
+
+    <!-- Aserai -->
+    <string id="j3bEr6n5" text="아흐메라드"/>
+    <string id="QBJk3ymm" text="바리예"/>
+    <string id="qWmWT0xA" text="두르쿠바"/>
+    <string id="X75ITMUL" text="샤리즈"/>
+    <string id="K7udl5FQ" text="바르다크"/>
+    <string id="OGwXFmDB" text="차라프"/>
+    <string id="I7c8WNxV" text="두린"/>
+    <string id="M4UquaBO" text="자메예드"/>
+    <string id="NndCJIzP" text="사마라"/>
+    <string id="tDQzTgry" text="샤르와"/>
+    <string id="FSWiNAyj" text="테라마"/>
+    <string id="PEd8JgL2" text="웨야"/>
+    <string id="ma2FmIjQ" text="아브"/>
+    <string id="1lNXlUvm" text="아인 아수아디"/>
+    <string id="i8y3UunL" text="디브바인"/>
+    <string id="uOld11Db" text="피샤라"/>
+    <string id="FZQG8HZ0" text="하바"/>
+    <string id="cD8ZseSp" text="하와하"/>
+    <string id="rvsefzHq" text="이크바일"/>
+    <string id="OOGTpFKw" text="마위티"/>
+    <string id="wSlwO5jG" text="마지흐"/>
+    <string id="TU4Itb6v" text="미자예트"/>
+    <string id="SmIIc4YA" text="미트 눈"/>
+    <string id="mAT6Zajm" text="콸유트"/>
+    <string id="7C8DXcNT" text="루쉬디흐"/>
+    <string id="T9VemCVx" text="세크템"/>
+    <string id="zTJ3Oaki" text="쉬발 줌르"/>
+    <string id="seBpcqnW" text="탐누"/>
+    <string id="U6enpew6" text="타즈주나트"/>
+    <string id="AB8kd1kQ" text="틸림살"/>
+    <string id="Ug4D9NN0" text="운리야"/>
+    <string id="lsMTtqa4" text="우즈하"/>
+
+    <!-- Battania -->
+    <string id="qAuhdK0v" text="크로비아"/>
+    <string id="o1ORogYL" text="하키아"/>
+    <string id="rfgjbrvw" text="우베아기아"/>
+    <string id="STzd8avo" text="테올레스"/>
+    <string id="22NuLUbK" text="아키아네"/>
+    <string id="AFlVSUFu" text="롤라슈타인"/>
+    <string id="AIKEX745" text="프라이나크"/>
+    <string id="RJczxlW4" text="도르카드"/>
+    <string id="wGO3G6yy" text="위니스티르"/>
+    <string id="q7wUF854" text="우라달"/>
+    <string id="aAZMAMx6" text="두네리체"/>
+    <string id="qe9NrPHL" text="바르토린담"/>
+    <string id="x67QSESS" text="라니릭"/>
+    <string id="YzLeuoSR" text="이메아넬"/>
+    <string id="OoVKShKC" text="비르세난"/>
+
+    <!-- Khuzait -->
+    <string id="59uhOyuZ" text="쿠나이트"/>
+    <string id="KKgoCDJZ" text="이브루카"/>
+    <string id="Z141AJ5X" text="불란"/>
+    <string id="wOrNq16t" text="할마르"/>
+    <string id="HtX8KdgW" text="이카무르"/>
+    <string id="zpmMniuA" text="나라"/>
+    <string id="xDWNd4sN" text="툴가"/>
+    <string id="DLfwRFh1" text="아수간"/>
+    <string id="UxASxuob" text="디스타"/>
+    <string id="4stgAKam" text="말라유르그"/>
+    <string id="04dkhDAi" text="순게트체"/>
+    <string id="ZOIt9Lb6" text="툴부크"/>
+    <string id="MzHLDXdO" text="운훈"/>
+    <string id="XjbYmG6p" text="우누즈다크"/>
+    <string id="vY8f12Qd" text="아다 쿨룬"/>
+    <string id="Blar1tNW" text="아마쉬케"/>
+    <string id="k3pz8N53" text="불라반"/>
+    <string id="K7WMsExR" text="불루구르"/>
+    <string id="6xB2dREA" text="다쉬비하"/>
+    <string id="cEL50k9K" text="디리흐 아반"/>
+    <string id="AJyY3SwF" text="두간"/>
+    <string id="54CFY7Y7" text="두스투릴"/>
+    <string id="XExpkOg8" text="케델케"/>
+    <string id="sp4R5ttP" text="페쉬미"/>
+    <string id="OSSt9yPb" text="타쉬 쿨룬"/>
+    <string id="uAySGYSA" text="티스미르"/>
+    <string id="0Ex3esLT" text="툴부크"/>
+    <string id="7h6VTRli" text="운훈"/>
+    <string id="n0GNLDVS" text="자구쉬"/>
+
+    <!-- Sturgia -->
+    <string id="78HmDOmh" text="트라갈라"/>
+    <string id="2gxRtC4M" text="티르"/>
+    <string id="1QRisNZ8" text="베르체그"/>
+    <string id="mciKWCXz" text="알부르크"/>
+    <string id="wquHRX1a" text="찰베크"/>
+    <string id="uOnd5NOi" text="쿠린"/>
+    <string id="eb1lTxcg" text="흐루스"/>
+    <string id="Dvs5IlpE" text="젤베기"/>
+    <string id="C0Lxqtaa" text="크누다르"/>
+    <string id="LwGSxemg" text="텔로그"/>
+    <string id="QniO32gk" text="알델렌"/>
+    <string id="SPWVORXL" text="암베안"/>
+    <string id="ggpOsqyQ" text="부일린"/>
+    <string id="HVMKm9TL" text="페아리첸"/>
+    <string id="vAsQx5yo" text="페나다"/>
+    <string id="XUmidhIJ" text="기심"/>
+    <string id="IkMHxdfH" text="하엔"/>
+    <string id="nGAYbe0Z" text="자예크"/>
+    <string id="i3QpFo60" text="젤베기"/>
+    <string id="cckFsFjh" text="쿨룸"/>
+    <string id="0sU6mK84" text="크윈"/>
+    <string id="5hFwgLgJ" text="메킨"/>
+    <string id="aMbbajXx" text="오다산"/>
+    <string id="SeEJ2zuw" text="리지"/>
+    <string id="MLvw1Pxt" text="루바르"/>
+    <string id="IrIFkrHZ" text="우딘야드"/>
+    <string id="LHE0xjg1" text="바예제그"/>
+
+    <!-- Vlandia -->
+    <string id="FD8sniLW" text="에체나드"/>
+    <string id="8NkMfWHn" text="라에디아"/>
+    <string id="piyHeKyM" text="디림"/>
+    <string id="8Y3wgpLi" text="프라벤"/>
+    <string id="yQlAJYuA" text="수노"/>
+    <string id="HUUOh35g" text="욱스할"/>
+    <string id="e7h8mCpf" text="데르키오스"/>
+    <string id="V9wYAqHZ" text="하린고트"/>
+    <string id="5CVj9I06" text="켈레단"/>
+    <string id="uLOFze6g" text="라인디"/>
+    <string id="QQA4T9vg" text="린디야르"/>
+    <string id="xpLcu6bR" text="라이벨렛"/>
+    <string id="I0FOtfwt" text="세누즈그다"/>
+    <string id="BKyLwpjT" text="테바린"/>
+    <string id="t1flBIrH" text="틸바우트"/>
+    <string id="udQOxzOj" text="파인코르트"/>
+    <string id="JNVa1azk" text="아메레"/>
+    <string id="rFJC0mXH" text="아즈가드"/>
+    <string id="1zlQk8RB" text="발라늘리"/>
+    <string id="V5T0fzsG" text="부르글렌"/>
+    <string id="bVjU79Tn" text="키데"/>
+    <string id="dFxvU13H" text="엘베를"/>
+    <string id="7kLsltIf" text="엘레르다"/>
+    <string id="XJJ3nxkF" text="에미린"/>
+    <string id="9fgZRhiC" text="기심"/>
+    <string id="WPnVGzk8" text="이비란"/>
+    <string id="WKyofVcP" text="리인다"/>
+    <string id="lz5Xr4F1" text="네메자"/>
+    <string id="ZkXPCZUE" text="노마르"/>
+    <string id="9jAc6grT" text="르두나"/>
+    <string id="94L2s8cH" text="룰룬즈"/>
+    <string id="kX4NIQxU" text="라이벨렛"/>
+    <string id="h2SaSr4e" text="타드사메쉬"/>
+    <string id="SZLdfWI9" text="타흘베를"/>
+    <string id="GiWgcvib" text="토즈하르"/>
+    <string id="BzUpDzL0" text="트쉽틴"/>
+    <string id="qDzxntWH" text="우쉬쿠루"/>
+    <string id="6OPt8ox0" text="바이다르"/>
+    <string id="nZqhwdTJ" text="얄리베"/>
+    <string id="8xTh5udH" text="야라가르"/>
+
+
+    <!-- Empire -->
+    <string id="LGqYPQQD" text="라몬노스"/>
+    <string id="KJPW3yb4" text="나수스"/>
+    <string id="OyLkibYo" text="틸라마호스"/>
+    <string id="gNbGiI9p" text="라세소스"/>
+    <string id="ty1393cd" text="자크리오스"/>
+    <string id="xJPv0Tzj" text="사미소스"/>
+    <string id="AiHcQH4G" text="토로스"/>
+    <string id="VuShnNy1" text="올림페일"/>
+    <string id="WLGUwy9g" text="디오코니아"/>
+    <string id="XQzaMWsl" text="잔클라카"/>
+    <string id="s5p2LcPn" text="리사다"/>
+    <string id="htjATdi1" text="아르틸로스"/>
+    <string id="1cBpuRVl" text="바시리"/>
+    <string id="YC1VI5Vs" text="카메스티아스"/>
+    <string id="6dTpjXIG" text="에로스테나"/>
+    <string id="pzHthnN3" text="카마라자"/>
+    <string id="ITwLbhNa" text="피드니피아"/>
+    <string id="qnRyyhx6" text="압오카에아"/>
+    <string id="cIGCqXYr" text="아이타네스"/>
+    <string id="G375MfCN" text="테르메돈"/>
+    <string id="I4LbIJpd" text="비자마호스"/>
+    <string id="6QtcERL6" text="아사폴리스"/>
+    <string id="eYehtDrU" text="크노사포스"/>
+    <string id="ax8cYBtr" text="에피디시온"/>
+    <string id="V3K7oVtB" text="솔라스트로"/>
+    <string id="KYas1WAV" text="피세르나"/>
+    <string id="opwrHv6z" text="코르코니아"/>
+    <string id="zPkDoxkU" text="케르코스"/>
+    <string id="mpnSLYUt" text="아시콘"/>
+    <string id="PiblnoTV" text="구르나포스"/>
+  </strings>
+</base>
