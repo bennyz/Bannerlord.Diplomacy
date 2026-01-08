@@ -29,18 +29,21 @@ namespace Diplomacy.Costs
             return new InfluenceCost(clanPayingInfluence, GetKingdomScalingFactorForInfluence(kingdom) * WarFactor);
         }
 
-        public static HybridCost DetermineCostForMakingPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, bool forcePlayerCharacterCosts = false)
+        public static HybridCost DetermineCostForMakingPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, bool forcePlayerCharacterCosts = false, bool skipBasicCosts = false)
         {
             return new(
-                DetermineInfluenceCostForMakingPeace(kingdomMakingPeace, otherKingdom, forcePlayerCharacterCosts),
-                DetermineGoldCostForMakingPeace(kingdomMakingPeace, otherKingdom, forcePlayerCharacterCosts),
+                DetermineInfluenceCostForMakingPeace(kingdomMakingPeace, otherKingdom, forcePlayerCharacterCosts, skipBasicCosts),
+                DetermineGoldCostForMakingPeace(kingdomMakingPeace, otherKingdom, forcePlayerCharacterCosts, skipBasicCosts),
                 DetermineReparationsForMakingPeace(kingdomMakingPeace, otherKingdom, forcePlayerCharacterCosts));
         }
 
-        internal static InfluenceCost DetermineInfluenceCostForMakingPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, bool forcePlayerCharacterCosts)
+        internal static InfluenceCost DetermineInfluenceCostForMakingPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, bool forcePlayerCharacterCosts, bool skipCost = false)
         {
             var clanPayingInfluence = forcePlayerCharacterCosts ? Clan.PlayerClan : kingdomMakingPeace.Leader.Clan;
             if (!Settings.Instance!.EnableInfluenceCostsForDiplomacyActions)
+                return new InfluenceCost(clanPayingInfluence, 0f);
+
+            if (skipCost)
                 return new InfluenceCost(clanPayingInfluence, 0f);
 
             //Making peace is free for critically exhausted factions that not yet lost
@@ -53,11 +56,11 @@ namespace Diplomacy.Costs
             return new InfluenceCost(clanPayingInfluence, GetKingdomScalingFactorForInfluence(kingdomMakingPeace) * PeaceFactor);
         }
 
-        internal static GoldCost DetermineGoldCostForMakingPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, bool forcePlayerCharacterCosts = false)
+        internal static GoldCost DetermineGoldCostForMakingPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, bool forcePlayerCharacterCosts = false, bool skipCost = false)
         {
             var giver = forcePlayerCharacterCosts ? Hero.MainHero : kingdomMakingPeace.Leader;
 
-            var baseGoldCost = 500;
+            var baseGoldCost = skipCost ? 0 : 500;
             int goldCost = Math.Min(baseGoldCost, kingdomMakingPeace.Leader.Gold);
             goldCost = 10 * (goldCost / 10);
 

@@ -7,8 +7,6 @@ using TaleWorlds.CampaignSystem.ComponentInterfaces;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Localization;
 
-using static Diplomacy.WarExhaustion.WarExhaustionManager;
-
 namespace Diplomacy.Models
 {
     public class DiplomacyKingdomDecisionPermissionModel : KingdomDecisionPermissionModel

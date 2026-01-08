@@ -52,13 +52,21 @@ namespace Diplomacy.ViewModelMixin
             DiplomacyText = _TDiplomacy.ToString();
 
             // No refresh needed on NAP because it doesn't move the item from one diplomacy group (At War / Alliances / At Peace) to another
-            CampaignEvents.MakePeace.AddNonSerializedListener(this, (_, _, _) => ViewModel!.RefreshValues());
+            CampaignEvents.MakePeace.AddNonSerializedListener(this, (_, _, _) =>
+            {
+                if (Hero.MainHero.MapFaction is Kingdom)
+                    ViewModel!.RefreshValues();
+            });
             CampaignEvents.WarDeclared.AddNonSerializedListener(this, (_, _, _) =>
             {
                 if (Hero.MainHero.MapFaction is Kingdom)
                     ViewModel!.RefreshValues();
             });
-            CampaignEvents.OnAllianceEndedEvent.AddNonSerializedListener(this, (_, _) => ViewModel!.RefreshValues());
+            CampaignEvents.OnAllianceEndedEvent.AddNonSerializedListener(this, (_, _) =>
+            {
+                if (Hero.MainHero.MapFaction is Kingdom)
+                    ViewModel!.RefreshValues();
+            });
 
             OnRefresh();
         }

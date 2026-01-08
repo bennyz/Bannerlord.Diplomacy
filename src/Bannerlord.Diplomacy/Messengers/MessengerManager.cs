@@ -248,7 +248,7 @@ namespace Diplomacy.Messengers
         {
             return PartyBase.MainParty is not null
                    && PlayerEncounter.Current is null
-                   && GameStateManager.Current.ActiveState is MapState { AtMenu: false }
+                   && GameStateManager.Current.ActiveState is MapState mapState && !mapState.AtMenu && !mapState.MapConversationActive && !mapState.IsSimulationActive
                    && PartyBase.MainParty.Position.IsOnLand;
         }
 

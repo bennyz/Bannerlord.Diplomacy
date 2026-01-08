@@ -23,7 +23,7 @@ namespace Diplomacy.Patches
             if (!____applyResults || !((MakePeaceKingdomDecision.MakePeaceDecisionOutcome) chosenOutcome).ShouldPeaceBeDeclared)
                 return false;
 
-            KingdomPeaceAction.ApplyPeace(__instance.Kingdom, kingdomToMakePeaceWith, dailyTribute: __instance.DailyTributeToBePaid, skipPlayerPrompts: true);
+            KingdomPeaceAction.ApplyPeace(__instance.Kingdom, kingdomToMakePeaceWith, dailyTribute: __instance.DailyTributeToBePaid, skipPlayerPrompts: true, skipBasicCosts: true);
             return false;
         }
     }
