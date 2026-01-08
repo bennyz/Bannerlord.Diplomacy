@@ -40,13 +40,11 @@ jobs:
 
         $implFX = $PWD.Path + '/bannerlord-implementationsFX';
         $implCore = $PWD.Path + '/bannerlord-implementationsCore';
-
         $implFXNavalPatch = $PWD.Path + '/NavalDLCPatch/bannerlord-implementationsFX';
         $implCoreNavalPatch = $PWD.Path + '/NavalDLCPatch/bannerlord-implementationsCore';
 
         $finalFX = $path + '/Modules/Bannerlord.Diplomacy/bin/Win64_Shipping_Client/';
         $finalCore = $path + '/Modules/Bannerlord.Diplomacy/bin/Gaming.Desktop.x64_Shipping_Client/';
-
         $finalFXNavalPatch = $path + '/Modules/Bannerlord.DiplomacyNavalDLCPatch/bin/Win64_Shipping_Client/';
         $finalCoreNavalPatch = $path + '/Modules/Bannerlord.DiplomacyNavalDLCPatch/bin/Gaming.Desktop.x64_Shipping_Client/';
 
