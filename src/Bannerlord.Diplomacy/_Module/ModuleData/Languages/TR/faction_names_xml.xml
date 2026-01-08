@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
   <tags>
     <tag language="Türkçe"/>
   </tags>
   <strings>
     <!-- Faction Titles -->
-    <string id="MXAsjFdI" text="{CLAN_NAME} Kumpası"/>
+    <string id="MXAsjFdI" text="{CLAN_NAME} Komplosu"/>
     <string id="LUzfk4tb" text="{CLAN_NAME} Birliği"/>
 
     <!-- Aserai Titles -->
@@ -19,14 +19,14 @@
 
     <!-- Khuzait Titles -->
     <string id="mEHufuep" text="{CLAN_NAME} Kağanlığı"/>
-    <string id="DTBaowBi" text="{CLAN_NAME} Kağanlığı"/>
+    <string id="DTBaowBi" text="{CLAN_NAME} Kağanı"/>
     <string id="pRgQF4WY" text="{CLAN_NAME} Hanedanı"/>
 
     <!-- Sturgia Titles -->
     <string id="z5VPFrfh" text="{CLAN_NAME} Kontluğu"/>
 
     <!-- Vlandia Titles -->
-    <string id="A4zT7H5g" text="{CLAN_NAME} Büyük Dukalığı"/>
+    <string id="A4zT7H5g" text="{CLAN_NAME} Büyük Dükalığı"/>
 
 
     <!-- Generic Titles -->
