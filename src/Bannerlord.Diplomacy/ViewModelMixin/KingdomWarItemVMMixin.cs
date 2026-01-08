@@ -35,7 +35,7 @@ namespace Diplomacy.ViewModelMixin
             "{?}{?TRIBUTE_PAY}, paying {TRIBUTE} tribute/day.{?}{?TRIBUTE_GET}, receiving {TRIBUTE} tribute/day.{?}.{\\?}{\\?}{\\?}{\\?}";
         private const string _TFiefs = "{=9CvcPwJA}{?FIEFS_ANY} You may have to return some of the captured fiefs back!{?}{\\?}";
 
-        private static readonly TextObject _TMakePeace = new("{=}Make Peace");
+        private static readonly TextObject _TMakePeace = new("{=5R7twvD2}Make Peace");
 
         private readonly Kingdom _faction1;
         private readonly Kingdom _faction2;

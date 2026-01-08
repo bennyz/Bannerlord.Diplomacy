@@ -33,13 +33,13 @@ namespace Diplomacy.ViewModelMixin
         private static readonly TextObject _TAlliances = new("{=zpNalMeA}Alliances");
         private static readonly TextObject _TPacts = new(StringConstants.NonAggressionPacts);
 
-        private static readonly TextObject _TDirectActionExplanation = new("{=}Impose your will without calling a council");
+        private static readonly TextObject _TDirectActionExplanation = new("{=tsY4iHnO}Impose your will without calling a council");
 
         private static readonly TextObject _TNapHelpText = new("{=9zlQNtlX}Form a non-aggression pact lasting {DAYS} days.");
         private static readonly TextObject _TWarExhaustion = new("{=XmVTQ0bH}War Exhaustion");
 
         private static readonly TextObject _TBreakAlliance = new("{=K4GraLTn}Break Alliance");
-        private static readonly TextObject _TDeclareWar = new("{=}Declare War");
+        private static readonly TextObject _TDeclareWar = new("{=nkOVblQ4}Declare War");
 
         private static readonly TextObject _TRequiredScore = new("{=XIBUWDlT}Required Score");
         private static readonly TextObject _TCurrentScore = new("{=5r6fsHgm}Current Score");
