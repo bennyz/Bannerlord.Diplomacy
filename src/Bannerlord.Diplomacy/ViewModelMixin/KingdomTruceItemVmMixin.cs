@@ -39,7 +39,7 @@ namespace Diplomacy.ViewModelMixin
         private static readonly TextObject _TWarExhaustion = new("{=XmVTQ0bH}War Exhaustion");
 
         private static readonly TextObject _TBreakAlliance = new("{=K4GraLTn}Break Alliance");
-        private static readonly TextObject _TDeclareWar= new("{=}Declare War");
+        private static readonly TextObject _TDeclareWar = new("{=}Declare War");
 
         private static readonly TextObject _TRequiredScore = new("{=XIBUWDlT}Required Score");
         private static readonly TextObject _TCurrentScore = new("{=5r6fsHgm}Current Score");
