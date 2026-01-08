@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Game Versions: v1.3.x
+* Adapted for newer game versions.
+* Added a patch for the War Sails DLC (as a separate module).
+* Fixed a crash when leaving kingdom as a Mercenary.
+* Fixed a bug where making peace via council vote still required influence as if it were a direct action.
+* Hopefully fixed an issue with messengers in conversations.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.2
 Game Versions: v1.3.x
 * Adapted for newer game versions.

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
   <tags>
     <tag language="Türkçe"/>
@@ -10,21 +10,21 @@
     <string id="BXluvRnJ" text="Ağır Yenilgi"/>
     <string id="0aZCy0at" text="Zorunlu Barış"/>
 
-    <string id="vLfbqXjq" text="Ordularınız ve halkınız {ENEMY_KINGDOM} ile savaşmaktan yorgun düştü ve savaşmayı bıraktı. Yenilgi şartlarını kabul etmeli ve {REPARATIONS}{GOLD_ICON} savaş tazminatı ödemelisiniz. Bu masraf krallıktaki tüm klanlar arasında paylaştırılacak.{?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyorsunuz.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE}Üstelik, {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL} ve {?}{\?}{FIEFS_TO_RETURN_LIST.END} topraklarını {ENEMY_KINGDOM} krallığına geri vermek zorundasınız.{NEW_LINE} {NEW_LINE}{?} {\?}Bu yenilginin utancı size {INFLUENCE} nüfuz kaybettirecek."/>
+    <string id="vLfbqXjq" text="Ordularınız ve halkınız {ENEMY_KINGDOM} ile savaşmaktan yorgun düştü ve savaşmayı bıraktı. Yenilgi şartlarını kabul etmeli ve {REPARATIONS}{GOLD_ICON} savaş tazminatı ödemelisiniz. Bu masraf krallıktaki tüm klanlar arasında paylaştırılacak.{?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyorsunuz.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE}Üstelik, {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL} ve {?}{\?}{FIEFS_TO_RETURN_LIST.END} tımarlarını {ENEMY_KINGDOM} krallığına geri vermek zorundasınız.{NEW_LINE} {NEW_LINE}{?} {\?}Bu yenilginin utancı size {INFLUENCE} nüfuz kaybettirecek."/>
     <string id="ghZCj7hb" text="Son kaleniz de düştüğü için, artık {ENEMY_KINGDOM} ile savaşa devam edemezsiniz.{?TO_BE_DESTROYED}Toprak ve geçim kaynağı kalmayan krallığınız dağıldı.{?}Yenilgi şartlarını kabul edip {REPARATIONS}{GOLD_ICON} savaş tazminatı ödemek zorundasınız. Bu masraf krallıktaki tüm klanlar arasında paylaştırılacak. {?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyorsunuz. {?}{\?}Bu yenilginin utancı size {INFLUENCE} nüfuz kaybettirecek.{\?}"/>
-    <string id="cKV5Jded" text="{KINGDOM.NAME} orduları ve halkı {ENEMY_KINGDOM} ile savaşmaktan yorgun düştü ve savaşmayı bıraktı. {KINGDOM_LEADER.NAME} yenilgi şartlarını kabul ediyor ve {REPARATIONS}{GOLD_ICON} savaş tazminatı ödüyor (bu masraf krallıktaki tüm klanlar arasında paylaştırılacak).{?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyor.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE}Üstelik, {KINGDOM_LEADER.NAME} {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL} ve {?}{\?}{FIEFS_TO_RETURN_LIST.END} topraklarını {ENEMY_KINGDOM} krallığına geri veriyor.{NEW_LINE} {NEW_LINE}{?} {\?}Bu yenilginin utancı ona {INFLUENCE} nüfuz kaybettirdi."/>
-    <string id="idAcjzXB" text="Son kaleniz de düştüğü için, artık {ENEMY_KINGDOM} ile savaşa devam edemezsiniz.{?TO_BE_DESTROYED}Toprak ve geçim kaynağı kalmayan krallığınız dağıldı.{?} {KINGDOM_LEADER.NAME} yenilgi şartlarını kabul edip {REPARATIONS}{GOLD_ICON} savaş tazminatı ödüyor (bu masraf krallıktaki tüm klanlar arasında paylaştırılacak). {?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyor. {?}{\?}Bu yenilginin utancı ona {INFLUENCE} nüfuz kaybettirdi.{\?}"/>
+    <string id="cKV5Jded" text="{KINGDOM.NAME} orduları ve halkı {ENEMY_KINGDOM} ile savaşmaktan yorgun düştü ve savaşmayı bıraktı. {KINGDOM_LEADER.NAME} yenilgi şartlarını kabul ediyor ve {REPARATIONS}{GOLD_ICON} savaş tazminatı ödüyor (bu masraf krallıktaki tüm klanlar arasında paylaştırılacak).{?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyor.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE}Üstelik, {KINGDOM_LEADER.NAME} {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL} ve {?}{\?}{FIEFS_TO_RETURN_LIST.END} tımarlarını {ENEMY_KINGDOM} krallığına geri veriyor.{NEW_LINE} {NEW_LINE}{?} {\?}Bu yenilginin utancı ona {INFLUENCE} nüfuz kaybettirdi."/>
+    <string id="idAcjzXB" text="Son kalesi de düşünce, {KINGDOM_LEADER.NAME} artık {ENEMY_KINGDOM} ile savaşa devam edemez hale geldi.{?TO_BE_DESTROYED}Toprak ve geçim kaynağı kalmayan krallığı dağıldı.{?} {KINGDOM_LEADER.NAME} yenilgi şartlarını kabul edip {REPARATIONS}{GOLD_ICON} savaş tazminatı ödüyor (bu masraf krallıktaki tüm klanlar arasında paylaştırılacak). {?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyor. {?}{\?}Bu yenilginin utancı ona {INFLUENCE} nüfuz kaybettirdi.{\?}"/>
     <string id="a3W5zKQr" text="{KINGDOM.NAME} ile {ENEMY_KINGDOM} krallıklarının orduları ve halkı savaşmaktan yorgun düştü ve savaşmayı bıraktı. Barış yapmaktan başka bir çare yok{?TO_BE_DESTROYED}, toprak ve geçim kaynağı kalmayan, {?IS_REBELLION}isyanınız bitti{?}krallığınız dağıldı{\?}{?}{\?}."/>
 
-    <string id="6eTtSKO4" text="Son gelişmeler, {REBEL_KINGDOM} isyanının başarıya ulaştığını ve daha fazla direnişin boşuna olduğunu gösteriyor. Yenilgiyi kabul etmenin vakti geldi{?TO_BE_DESTROYED}, her ne kadar toprak ve geçim kaynağı olmadan krallığınız ayakta kalamayacak olsa da{?} bölünmüş ve savaştan yorulmuş krallığına barış içinde yaşama şansı vermelisin{\?}."/>
-    <string id="2ptArJem" text="Son gelişmeler, isyanının başarısız olduğunu açıkça gösteriyor. Yenilgiyi kabul edip bölünmüş ve savaştan yorulmuş {ORIGINAL_KINGDOM} krallığına yeniden birleşme şansı vermenin zamanı geldi."/>
+    <string id="6eTtSKO4" text="Son gelişmeler, {REBEL_KINGDOM} isyanının başarıya ulaştığını ve daha fazla direnişin boşuna olduğunu gösteriyor. Yenilgiyi kabul etmenin vakti geldi{?TO_BE_DESTROYED}, her ne kadar toprak ve geçim kaynağı olmadan krallığınız ayakta kalamayacak olsa da{?} bölünmüş ve savaştan yorulmuş krallığınıza barış içinde yaşama şansı vermelisiniz{\?}."/>
+    <string id="2ptArJem" text="Son gelişmeler, isyanınızın başarısız olduğunu açıkça gösteriyor. Yenilgiyi kabul edip bölünmüş ve savaştan yorulmuş {ORIGINAL_KINGDOM} krallığına yeniden birleşme şansı vermenin zamanı geldi."/>
 
-    <string id="HWiDa4R1" text="{KINGDOM.NAME} orduları ve halkı {PLAYER_KINGDOM} ile savaşmaktan yorgun düştü ve savaşmayı bıraktı.{NEW_LINE} {NEW_LINE}{KINGDOM_LEADER.NAME} bir barış antlaşması öneriyor ve {REPARATIONS}{GOLD_ICON} savaş tazminatı ödemeye hazır.{?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyor.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE}Üstelik, {KINGDOM_LEADER.NAME} {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL} ve {?}{\?}{FIEFS_TO_RETURN_LIST.END} topraklarını {PLAYER_KINGDOM} krallığına geri veriyor.{?}{\?}"/>
+    <string id="HWiDa4R1" text="{KINGDOM.NAME} orduları ve halkı {PLAYER_KINGDOM} ile savaşmaktan yorgun düştü ve savaşmayı bıraktı.{NEW_LINE} {NEW_LINE}{KINGDOM_LEADER.NAME} bir barış antlaşması öneriyor ve {REPARATIONS}{GOLD_ICON} savaş tazminatı ödemeye hazır.{?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyor.{?}{\?}{?FIEFS_TO_RETURN_LIST.ANY}{NEW_LINE} {NEW_LINE}Üstelik, {KINGDOM_LEADER.NAME} {FIEFS_TO_RETURN_LIST.START}{?FIEFS_TO_RETURN_LIST.IS_PLURAL} ve {?}{\?}{FIEFS_TO_RETURN_LIST.END} tımarlarını {PLAYER_KINGDOM} krallığına geri veriyor.{?}{\?}"/>
     <string id="t0ZS9maD" text="Son kalesi de düşünce, {KINGDOM.LINK} artık {PLAYER_KINGDOM} ile savaşa devam edemez hale geldi.{NEW_LINE} {NEW_LINE}{KINGDOM_LEADER.NAME} bir barış antlaşması öneriyor{?TO_BE_DESTROYED}, her ne kadar toprak ve geçim kaynağı olmadan krallıkları ayakta kalamayacak olsa da{?} {REPARATIONS}{GOLD_ICON} savaş tazminatı ödemeye hazır.{?ADD_TRIBUTE}Ayrıca günde {TRIBUTE}{GOLD_ICON} haraç ödemeyi de kabul ediyor.{?}{\?}{\?}"/>
-    <string id="ZrwszZww" text=" {KINGDOM.NAME} ile {PLAYER_KINGDOM} krallıklarının orduları ve halkı savaşmaktan yorgun düştü ve savaşmayı bıraktı. {NEW_LINE} {NEW_LINE}{KINGDOM_LEADER.NAME} bir barış antlaşması öneriyor{?TO_BE_DESTROYED}, toprak ve geçim kaynağı kalmadan, {?IS_REBELLION}isyanın bittiğini{?}krallığın dağıldığını{\?}{?} hiçbir şart öne sürmeden{\?}."/>
-    <string id="q02T8cyI" text="Son gelişmeler, {REBEL_KINGDOM} isyanının başarısız olduğunu açıkça gösteriyor. Bölünmüş ve savaştan yorulmuş krallığına yeniden birleşme şansı vermek için onların barış ve af dileklerini kabul etmenin zamanı gelmedi mi?"/>
-    <string id="PC5GdgKA" text="Son gelişmeler, {ORIGINAL_KINGDOM.NAME} krallığına karşı isyanının başarılı olduğunu gösteriyor - hatta {ORIGINAL_KINGDOM_LEADER.NAME} bile bunu kabul etti! Hedeflerine ulaşmak için onların barış isteğini kabul etmenin zamanı gelmedi mi?"/>
-    <string id="13G0c8RE" text="Savaş krallığını bu kadar harap etmişken barışı kabul etmekten başka çaren yok."/>
+    <string id="ZrwszZww" text="{KINGDOM.NAME} ile {PLAYER_KINGDOM} krallıklarının orduları ve halkı savaşmaktan yorgun düştü ve savaşmayı bıraktı. {NEW_LINE} {NEW_LINE}{KINGDOM_LEADER.NAME} bir barış antlaşması öneriyor{?TO_BE_DESTROYED}, toprak ve geçim kaynağı kalmadan, {?IS_REBELLION}isyanın bittiğini{?}krallığın dağıldığını{\?}{?} hiçbir şart öne sürmeden{\?}. "/>
+    <string id="q02T8cyI" text="Son gelişmeler, {REBEL_KINGDOM} isyanının başarısız olduğunu açıkça gösteriyor. Bölünmüş ve savaştan yorulmuş krallığınıza yeniden birleşme şansı vermek için onların barış ve af dileklerini kabul etmenin zamanı gelmedi mi?"/>
+    <string id="PC5GdgKA" text="Son gelişmeler, {ORIGINAL_KINGDOM.NAME} krallığına karşı isyanınızın başarılı olduğunu gösteriyor - hatta {ORIGINAL_KINGDOM_LEADER.NAME} bile bunu kabul etti! Hedeflerinize ulaşmak için onların barış isteğini kabul etmenin zamanı gelmedi mi?"/>
+    <string id="13G0c8RE" text="Savaş krallığınızı bu kadar harap etmişken barışı kabul etmekten başka çareniz yok."/>
 
     <!-- Report -->
     <string id="mCue7aFc" text="Savaş Raporu"/>
@@ -47,14 +47,14 @@
     <string id="XIPMI3gR" text="Savaş Süresi"/>
     <string id="FVyFJShW" text="İlahi Müdahaleler"/>
     <string id="1kGleqyk" text="Savaş Yorgunluğu Sonucu"/>
-    <string id="i5VSEDE3" text="{START_DATE} - {END_DATE}: {?COUNT.PLURAL_FORM}Toplam {COUNT} önceki girdi{?}{COUNT} önceki girdi{\?}"/>
+    <string id="i5VSEDE3" text="{START_DATE} - {END_DATE}: {?COUNT.PLURAL_FORM}Toplam {COUNT} önceki kayıt{?}{COUNT} önceki kayıt{\?}"/>
 
     <string id="fnPa5bas" text="garnizon askerleri"/>
     <string id="rwFeQWky" text="{KINGDOM_NAME} krallığından bir kervan"/>
 
     <!-- Event records -->
     <string id="Toa6V7RL" text="{START_DATE} - {END_DATE}: {VALUE} tam {?VALUE.PLURAL_FORM}gün{?}gün{\?} boyunca günlük {PER_DAY_VALUE}%"/>
-    <string id="wMVdLssJ" text="{START_DATE} - {END_DATE}: topraksız geçen {VALUE} tam {?VALUE.PLURAL_FORM}gün{?}gün{\?} boyunca günlük {PER_DAY_VALUE}% yorgunluk birikti"/>
+    <string id="wMVdLssJ" text="{START_DATE} - {END_DATE}: tımarsız geçen {VALUE} tam {?VALUE.PLURAL_FORM}gün{?}gün{\?} boyunca günlük {PER_DAY_VALUE}% yorgunluk birikti"/>
     <string id="0nTpub9S" text="{START_DATE} - {END_DATE}: savaşa bağlı {VALUE} {?VALUE.PLURAL_FORM}kayıp{?}kayıp{\?}"/>
     <string id="SeWNvf1N" text="{DATE_STR}: {FACTION_PARTY} ile {OTHER_FACTION_PARTY} arasındaki savaşta {VALUE} {?VALUE.PLURAL_FORM}kayıp{?}kayıp{\?}"/>
     <string id="9V6S05X3" text="{DATE_STR}: {SETTLEMENT} için {FACTION_PARTY} ile {OTHER_FACTION_PARTY} arasındaki savaşta {VALUE} {?VALUE.PLURAL_FORM}kayıp{?}kayıp{\?}"/>
@@ -81,37 +81,37 @@
 
     <!-- Settings -->
     <string id="V542tneW" text="Savaş Yorgunluğu"/>
-    <string id="lSttctYC" text="Savaş Yorgunluğunu Aktifleştir"/>
+    <string id="lSttctYC" text="Savaş Yorgunluğunu Etkinleştir"/>
     <string id="Cxyn9ROT" text="Savaş yorgunluğu mekaniğini etkinleştirir. Varsayılan: etkin."/>
-    <string id="Yc2YUIva" text="Azalan Getiriyi Aktifleştir"/>
+    <string id="Yc2YUIva" text="Azalan Getiriyi Etkinleştir"/>
     <string id="CaxxEEdC" text="Savaş yorgunluğu hesaplanırken bazı olayların savaş yorgunluğunu daha az etkilemesini sağlar. Varsayılan: etkin."/>
     <string id="HPFINWrc" text="Bireysel Savaş Yorgunluğu Oranları"/>
     <string id="LFVkLcIp" text="Krallıklar için savaş yorgunluğu hesaplamalarının bireysel olarak yapılmasını sağlar. Devre dışı bırakılırsa, her savaş için karşıt krallıkların toplam gücüne göre tek bir oran hesaplanır. Varsayılan: etkin."/>
-    <string id="gW3eVr5E" text="Tımar İadesini Aktifleştir"/>
+    <string id="gW3eVr5E" text="Tımar İadesini Etkinleştir"/>
     <string id="KEi0UykN" text="Etkinse, krallıklar savaşta ağır yenilgi aldıklarında ele geçirdikleri bazı tımarları asıl sahibine geri vermek zorunda kalabilir. Varsayılan: etkin."/>
     <string id="8TFQWL55" text="Günlük Savaş Yorgunluğu"/>
-    <string id="lgza5wDq" text="Savaşın sürdüğü her gün taraflara eklenen savaş yorgunluğu miktarı. Savaş yorgunluğu oranından etkilenmez. Varsayılan: 0,25%."/>
-    <string id="PAmPVWgD" text="Günlük Topraksız Savaş Yorgunluğu"/>
+    <string id="lgza5wDq" text="Savaşın sürdüğü her gün taraflara eklenen savaş yorgunluğu miktarı. Savaş yorgunluğu oranından etkilenmez. Varsayılan: %0,25."/>
+    <string id="PAmPVWgD" text="Günlük Tımarsız Savaş Yorgunluğu"/>
     <string id="SdjYeYM5" text="Tımarı olmayan bir krallığa, tımarı olan bir krallığa kıyasla her gün eklenen savaş yorgunluğu miktarı için çarpan. Varsayılan: 10."/>
     <string id="s6dNpM6M" text="Kayıp Başına Savaş Yorgunluğu"/>
-    <string id="NcJtGeM7" text="Bir krallık savaşta kayıp verdiğinde eklenen savaş yorgunluğu miktarı. Varsayılan: 0,02%."/>
+    <string id="NcJtGeM7" text="Bir krallık savaşta kayıp verdiğinde eklenen savaş yorgunluğu miktarı. Varsayılan: %0,02."/>
     <string id="kr5zAufg" text="Kervan Yağması Başına Savaş Yorgunluğu"/>
-    <string id="PinVMCUE" text="Bir krallığın kervanı yağmalandığında eklenen savaş yorgunluğu miktarı. Varsayılan: 2,0%."/>
+    <string id="PinVMCUE" text="Bir krallığın kervanı yağmalandığında eklenen savaş yorgunluğu miktarı. Varsayılan: %2,0."/>
     <string id="qFJ23KxQ" text="Tutsak Alınan Kahraman Başına Savaş Yorgunluğu"/>
-    <string id="wctCn9uO" text="Bir krallığın soylu bir kahramanı tutsak alındığında eklenen savaş yorgunluğu miktarı. Kahramanın krallık için önemine göre değişir; azalan getiri etkisine girebilir. Varsayılan: 1,0%."/>
+    <string id="wctCn9uO" text="Bir krallığın soylu bir kahramanı tutsak alındığında eklenen savaş yorgunluğu miktarı. Kahramanın krallık için önemine göre değişir; azalan getiri etkisine girebilir. Varsayılan: %1,0."/>
     <string id="4vTzbsXD" text="Ölen Kahraman Başına Savaş Yorgunluğu"/>
-    <string id="w80tUaVd" text="Bir krallığın soylu bir kahramanı öldüğünde eklenen savaş yorgunluğu miktarı. Kahramanın krallık için önemine göre değişir; aynı klanın birden çok kahramanı öldüğünde azalan getiri etkisine girebilir. Varsayılan: 5,0%."/>
+    <string id="w80tUaVd" text="Bir krallığın soylu bir kahramanı öldüğünde eklenen savaş yorgunluğu miktarı. Kahramanın krallık için önemine göre değişir; aynı klanın birden çok kahramanı öldüğünde azalan getiri etkisine girebilir. Varsayılan: %5,0."/>
     <string id="eWVGwf2m" text="Köy Yağması Başına Savaş Yorgunluğu"/>
-    <string id="ufHDJt8H" text="Bir krallığın köyü yağmalandığında eklenen savaş yorgunluğu miktarı. Azalan getiri etkisine girebilir. Varsayılan: 3,0%."/>
+    <string id="ufHDJt8H" text="Bir krallığın köyü yağmalandığında eklenen savaş yorgunluğu miktarı. Azalan getiri etkisine girebilir. Varsayılan: %3,0."/>
     <string id="gGIaLKHk" text="Kuşatma Başına Savaş Yorgunluğu"/>
-    <string id="mCEa773h" text="Bir krallık bir yerleşkesini kaybettiğinde eklenen savaş yorgunluğu miktarı. Kale kayıpları bu miktarın yarısı kadar ekler. Azalan getiri etkisine girebilir. Varsayılan: 10,0%."/>
+    <string id="mCEa773h" text="Bir krallık bir yerleşkesini kaybettiğinde eklenen savaş yorgunluğu miktarı. Kale kayıpları bu miktarın yarısı kadar ekler. Azalan getiri etkisine girebilir. Varsayılan: %10,0."/>
     <string id="JmUPtZdw" text="Tam İşgalde Savaş Yorgunluğu"/>
-    <string id="541jGrpb" text="Bir krallık tüm topraklarını kaybettiğinde eklenen savaş yorgunluğu miktarı. Savaş yorgunluğu oranından etkilenmez; azalan getiri etkisine girebilir. Varsayılan: 15,0%."/>
+    <string id="541jGrpb" text="Bir krallık tüm tımarlarını kaybettiğinde eklenen savaş yorgunluğu miktarı. Savaş yorgunluğu oranından etkilenmez; azalan getiri etkisine girebilir. Varsayılan: %15,0."/>
     <string id="pPHLRIml" text="Ayrıntılar Bölümündeki Maksimum Kayıt"/>
     <string id="YMf0mSqy" text="Savaş yorgunluğu raporundaki ayrıntılar bölümünde gösterilecek en fazla kayıt sayısı. Görünüm için uygun bulduğunuz bir değere ayarlayabilirsiniz. Varsayılan: 35."/>
     <string id="F4iFH6un" text="Sefer Haritası Göstergesi"/>
     <string id="zTvbZ8Br" text="Sefer haritası ekranının üstünde, her devam eden savaş için ayrı bir savaş yorgunluğu göstergesi açar. Varsayılan: etkin."/>
-    <string id="jI9NSxtz" text="Savaş Yorgunluğu Mesajlarını Aktifleştir"/>
+    <string id="jI9NSxtz" text="Savaş Yorgunluğu Mesajlarını Etkinleştir"/>
     <string id="LYyNbQds" text="Oyuncu krallığına eklenen savaş yorgunluğu için ayrıntılı bilgi kayıtlarını etkinleştirir. Varsayılan: devre dışı."/>
 
   </strings>

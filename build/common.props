@@ -2,7 +2,7 @@
 
     <!--Module Version-->
     <PropertyGroup>
-        <Version>1.3.2</Version>
+        <Version>1.3.3</Version>
         <GameVersion>1.0.0</GameVersion>
     </PropertyGroup>
 
@@ -27,19 +27,12 @@
         <!--Harmony Extensions Version-->
         <HarmonyExtensionsVersion>3.2.0.77</HarmonyExtensionsVersion>
     </PropertyGroup>
-    
-    <PropertyGroup>
-        <ModuleId>Bannerlord.Diplomacy</ModuleId>
-        <ModuleName>$(ModuleId)</ModuleName>
-        <DisplayName>Diplomacy</DisplayName>
-        <RootNamespace>$(DisplayName)</RootNamespace>
-    </PropertyGroup>
 
     <PropertyGroup>
         <Authors>Diplomacy Team</Authors>
         <Product>Diplomacy Library mod for Bannerlord</Product>
         <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-        <Copyright>Copyright © 2020-2024 Diplomacy Team</Copyright>
+        <Copyright>Copyright © 2020-2025 Diplomacy Team</Copyright>
         <Description>Diplomacy system overhaul for Mount &amp; Blade II: Bannerlord</Description>
     </PropertyGroup>
 

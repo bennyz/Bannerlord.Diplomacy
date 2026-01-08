@@ -239,9 +239,9 @@ namespace Diplomacy.DiplomaticAction.WarPeace
             };
         }
 
-        public static void ApplyPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, int? dailyTribute = null, bool forcePlayerCharacterCosts = false, bool skipPlayerPrompts = false)
+        public static void ApplyPeace(Kingdom kingdomMakingPeace, Kingdom otherKingdom, int? dailyTribute = null, bool forcePlayerCharacterCosts = false, bool skipPlayerPrompts = false, bool skipBasicCosts = false)
         {
-            var diplomacyCost = DiplomacyCostCalculator.DetermineCostForMakingPeace(kingdomMakingPeace, otherKingdom, forcePlayerCharacterCosts);
+            var diplomacyCost = DiplomacyCostCalculator.DetermineCostForMakingPeace(kingdomMakingPeace, otherKingdom, forcePlayerCharacterCosts, skipBasicCosts);
             var dailyPeaceTributeToPay = dailyTribute ?? TributeHelper.GetDailyTribute(kingdomMakingPeace, otherKingdom);
             var isATie = (WarExhaustionManager.Instance?.GetWarResult(kingdomMakingPeace, otherKingdom) ?? WarExhaustionManager.WarResult.None) == WarExhaustionManager.WarResult.Tie;
             var fiefsToBeReturned = GetFiefsToBeReturned(kingdomMakingPeace, otherKingdom);

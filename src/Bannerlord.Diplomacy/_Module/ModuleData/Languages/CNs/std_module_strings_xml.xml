@@ -197,19 +197,18 @@
     <string id="G8BhBnRG" text="互不侵犯倾向"/>
     <string id="907ER5u9" text="影响各王国签订互不侵犯条约倾向的分数修正值。提高此修正值将使互不侵犯条约对AI王国更具吸引力。默认值为0。"/>
     <string id="6m1SspFW" text="启用玩家王国外交控制"/>
-    <string id="N5EouSSj" text="允许玩家对其所属王国享有宣战与议和的完全控制权，即使玩家仅为封臣而非王国统治者。默认值为禁用。"/>
-    <string id="lhysZl9j" text="行动倾向"/>
-    <string id="dRyU9E7Z" text="好友之间不会交战"/>
-    <string id="XyXJSTKr" text="若启用此选项，互为“好友”关系的王国领袖之间将不会相互开战。默认值为开启。"/>
-    <string id="pWoKQ6HO" text="关系良好不会交战"/>
-    <string id="bOuGhbPt" text="若启用此选项，当王国领袖间关系高于开战关系阈值时，将不允许他们之间发生战争。默认值为开启。"/>
-    <string id="x0Aoiomr" text="无战争良好关系阈值"/>
-    <string id="aH6rpjt6" text="当王国领袖间关系值高于此阈值时，王国之间将不会相互发动战争。默认值为30。"/>
-    <string id="jwNKk8P7" text="联姻之后不会交战"/>
-    <string id="xcMzKH48" text="若启用此选项，彼此联姻的王国领袖家族之间将不会发动战争。默认值为开启。"/>
-    <string id="xcMzKH48" text="若启用此选项，彼此联姻的王国统治者家族之间将不会发动战争。默认值为开启。"/>
-    <string id="xXKKRp99" text="统治者家族之间的婚姻影响联盟"/>
-    <string id="BGS6mUID" text="若启用此选项，当统治者家族彼此联姻时，将提升联盟倾向的加成值。默认值为开启。"/>
+    <string id="N5EouSSj" text="让玩家完全控制宣战并在他们所属的王国实现和平， 即使他们只是一只武断的，而不是王国的领导人。 默认值已禁用。"/>
+    <string id="lhysZl9j" text="动作流行率"/>
+    <string id="dRyU9E7Z" text="好友之间没有任何战争"/>
+    <string id="XyXJSTKr" text="如果活跃，作为朋友的王国领导人将不会彼此启动战争。默认值已启用。"/>
+    <string id="pWoKQ6HO" text="没有战争，如果有良好关系"/>
+    <string id="bOuGhbPt" text="如果活跃，如果关系高于战争开始关系，王国领导人之间的战争将不被允许。默认值将被启用。"/>
+    <string id="x0Aoiomr" text="无战争的良好关系阈值"/>
+    <string id="aH6rpjt6" text="王国领导人的关系值，在此之后王国不会彼此间发动战争。默认值是30。"/>
+    <string id="jwNKk8P7" text="已婚时不会有任何战争"/>
+    <string id="xcMzKH48" text="如果是活跃的，双方结婚的王国领导人将不会引发战争。默认值是有效的。"/>
+    <string id="xXKKRp99" text="部族领袖家庭婚姻影响联盟"/>
+    <string id="BGS6mUID" text="如果活跃，当领导人部族之间有家庭婚姻时，联盟趋势将获得奖励。默认值是活跃的。"/>
       
     <string id="ldLFTs92" text="成本"/>      
     <string id="Ckd1Lsoa" text="金钱成本"/>

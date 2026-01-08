@@ -7,7 +7,7 @@ using TaleWorlds.ScreenSystem;
 
 namespace Diplomacy.GauntletInterfaces
 {
-    internal sealed class RebelFactionsInterface : GenericInterface
+    public sealed class RebelFactionsInterface : GenericInterface
     {
         protected override string MovieName => "RebelFactions";
 
